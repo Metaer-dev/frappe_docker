@@ -3,7 +3,7 @@ ARG FRAPPE_BRANCH=version-15
 FROM frappe/build:${FRAPPE_BRANCH} AS builder
 
 ARG FRAPPE_BRANCH=version-15
-ARG FRAPPE_PATH=https://github.com/frappe/frappe
+ARG FRAPPE_PATH=https://gitee.com/iniself/frappe
 ARG APPS_JSON_BASE64
 
 USER root
@@ -35,6 +35,7 @@ FROM frappe/base:${FRAPPE_BRANCH} AS backend
 USER frappe
 
 COPY --from=builder --chown=frappe:frappe /home/frappe/frappe-bench /home/frappe/frappe-bench
+COPY ../../more-files/zh.po /home/frappe/frappe-bench/apps/frappe/frappe/locale/
 
 WORKDIR /home/frappe/frappe-bench
 

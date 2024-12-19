@@ -1,6 +1,14 @@
 [
   {
-    "url": "https://github.com/frappe/erpnext.git",
-    "branch": "version-15"
+    "url": "https://gitee.com/iniself/drive.git",
+    "branch": "zh"
+  },
+  {
+    "url": "https://gitee.com/iniself/dataq.git",
+    "branch": "develop"
+  },
+  {
+    "url": "https://gitee.com/iniself/insights.git",
+    "branch": "develop"
   }
 ]

@@ -1,6 +1,6 @@
 # Environment Variables
 .env
-
+.DS_Store
 # mounted volume
 sites
 
