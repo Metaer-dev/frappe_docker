@@ -8,12 +8,12 @@ services:
       - redis-queue
 
   redis-cache:
-    image: redis:6.2-alpine
+    image: ccr.ccs.tencentyun.com/iniself/redis:6.2-alpine
     volumes:
       - redis-cache-data:/data
 
   redis-queue:
-    image: redis:6.2-alpine
+    image: ccr.ccs.tencentyun.com/iniself/redis:6.2-alpine
     volumes:
       - redis-queue-data:/data
 
