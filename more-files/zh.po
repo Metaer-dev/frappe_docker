@@ -2486,7 +2486,7 @@ msgstr "需要批准"
 #: frappe/hooks.py frappe/templates/includes/navbar/navbar_login.html:18
 #: frappe/website/js/website.js:619 frappe/www/me.html:80
 msgid "Apps"
-msgstr "Apps"
+msgstr "应用"
 
 #: frappe/public/js/frappe/utils/number_systems.js:41
 msgctxt "Number system"
@@ -12608,7 +12608,7 @@ msgstr "忽略超过此大小的附件"
 #. Label of the ignored_apps (Table) field in DocType 'Website Theme'
 #: frappe/website/doctype/website_theme/website_theme.json
 msgid "Ignored Apps"
-msgstr "被忽略的Apps"
+msgstr "被忽略的应用"
 
 #: frappe/integrations/doctype/dropbox_settings/dropbox_settings.py:348
 msgid "Illegal Access Token. Please try again"
@@ -12957,7 +12957,7 @@ msgstr "在顶部栏中包含搜索"
 
 #: frappe/website/doctype/website_theme/website_theme.js:61
 msgid "Include Theme from Apps"
-msgstr "包括 Apps 的主题"
+msgstr "包括应用的主题"
 
 #. Label of the attach_view_link (Check) field in DocType 'System Settings'
 #: frappe/core/doctype/system_settings/system_settings.json
@@ -13182,7 +13182,7 @@ msgstr "已安装的应用程序"
 #: frappe/core/doctype/installed_applications/installed_applications.js:18
 #: frappe/public/js/frappe/ui/toolbar/about.js:8
 msgid "Installed Apps"
-msgstr "已安装的Apps"
+msgstr "已安装的应用"
 
 #. Label of the instructions (HTML) field in DocType 'Letter Head'
 #: frappe/printing/doctype/letter_head/letter_head.json
@@ -23180,7 +23180,7 @@ msgstr "选择图像"
 
 #: frappe/www/apps.html:10
 msgid "Select an app to continue"
-msgstr "选择一个 app 以继续"
+msgstr "选择一个应用以继续"
 
 #: frappe/printing/page/print_format_builder/print_format_builder_start.html:2
 msgid "Select an existing format to edit or start a new format."
@@ -32426,7 +32426,7 @@ msgstr "管理账单"
 
 #: frappe/www/me.html:59
 msgid "Manage your apps"
-msgstr "管理你的apps"
+msgstr "管理你的应用"
 
 #. Name of a DocType
 #: frappe/website/doctype/marketing_campaign/marketing_campaign.json
@@ -33474,4 +33474,10 @@ msgstr "我的资料"
 
 msgid "My Settings"
 msgstr "我的设置"
+
+msgid "Profile Picture"
+msgstr "个人照片"
+
+msgid "Mobile Number"
+msgstr "手机号码"
 
