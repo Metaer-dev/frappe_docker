@@ -671,8 +671,8 @@ msgid ""
 "<p>If you create a separate webform every year to capture feedback from employees add a \n"
 " field named year in doctype and add a filter <b>year = 2023</b></p>\n"
 msgstr ""
-"<p>可以为 single doctype 创建多个网页表单。添加特定于此网页表单的过滤器，以便在提交后显示正确的记录。</p><p>例如：</p>\n"
-"<p>如果你每年创建一个单独的网页表单来收集员工反馈，可在 doctype 中添加一个 \n名为 year 的字段，并添加过滤器 <b>year = 2023</b></p>\n"
+"<p>可以为 single doctype 创建多个网页表单。添加特定于此网页表单的筛选设置，以便在提交后显示正确的记录。</p><p>例如：</p>\n"
+"<p>如果你每年创建一个单独的网页表单来收集员工反馈，可在 doctype 中添加一个 \n名为 year 的字段，并添加筛选设置 <b>year = 2023</b></p>\n"
 
 #. Description of the 'Context Script' (Code) field in DocType 'Web Page'
 #: frappe/website/doctype/web_page/web_page.json
@@ -1291,7 +1291,7 @@ msgstr "添加自定义标签"
 #: frappe/public/js/frappe/widgets/widget_dialog.js:188
 #: frappe/public/js/frappe/widgets/widget_dialog.js:703
 msgid "Add Filters"
-msgstr "添加过滤器"
+msgstr "添加筛选"
 
 #. Label of the add_shade (Check) field in DocType 'Web Page Block'
 #: frappe/website/doctype/web_page_block/web_page_block.json
@@ -1391,7 +1391,7 @@ msgstr "添加视频会议"
 
 #: frappe/public/js/frappe/ui/filters/filter_list.js:298
 msgid "Add a Filter"
-msgstr "添加过滤器"
+msgstr "添加筛选"
 
 #: frappe/core/page/permission_manager/permission_manager_help.html:9
 msgid "Add a New Role"
@@ -1486,12 +1486,12 @@ msgstr "通过邮寄至 {0} 添加到此活动"
 
 #: frappe/public/js/frappe/views/kanban/kanban_column.html:20
 msgid "Add {0}"
-msgstr "添加{0}"
+msgstr "新建{0}"
 
 #: frappe/public/js/frappe/list/list_view.js:262
 msgctxt "Primary action in list view"
 msgid "Add {0}"
-msgstr "添加{0}"
+msgstr "新建{0}"
 
 #. Option for the 'Status' (Select) field in DocType 'Permission Log'
 #: frappe/core/doctype/permission_log/permission_log.json
@@ -2412,7 +2412,7 @@ msgstr "应用分配规则"
 
 #: frappe/public/js/frappe/ui/filters/filter_list.js:317
 msgid "Apply Filters"
-msgstr "应用过滤器"
+msgstr "应用筛选"
 
 #. Label of the apply_only_once (Check) field in DocType 'Energy Point Rule'
 #: frappe/social/doctype/energy_point_rule/energy_point_rule.json
@@ -2563,7 +2563,7 @@ msgstr "你确定要删除所有失败的作业吗？"
 
 #: frappe/public/js/frappe/list/list_filter.js:116
 msgid "Are you sure you want to remove the {0} filter?"
-msgstr "你确定要删除 {0} 过滤器吗？"
+msgstr "你确定要删除 {0} 筛选设置吗？"
 
 #: frappe/public/js/frappe/views/dashboard/dashboard_view.js:267
 msgid "Are you sure you want to reset all customizations?"
@@ -4361,12 +4361,12 @@ msgstr "无法编辑已取消的文档"
 
 #: frappe/desk/doctype/dashboard_chart/dashboard_chart.js:378
 msgid "Cannot edit filters for standard charts"
-msgstr "无法编辑标准图表的过滤器"
+msgstr "无法编辑标准图表的筛选设置"
 
 #: frappe/desk/doctype/number_card/number_card.js:277
 #: frappe/desk/doctype/number_card/number_card.js:364
 msgid "Cannot edit filters for standard number cards"
-msgstr "无法编辑标准数据卡的过滤器"
+msgstr "无法编辑标准数据卡的筛选设置"
 
 #: frappe/client.py:166
 msgid "Cannot edit standard fields"
@@ -4804,7 +4804,7 @@ msgstr "清除错误日志"
 
 #: frappe/public/js/frappe/ui/filters/filter_list.js:298
 msgid "Clear Filters"
-msgstr "清除过滤器"
+msgstr "清除筛选设置"
 
 #. Label of the days (Int) field in DocType 'Logs To Clear'
 #: frappe/core/doctype/logs_to_clear/logs_to_clear.json
@@ -4880,13 +4880,13 @@ msgstr "点击表格进行编辑"
 #: frappe/desk/doctype/dashboard_chart/dashboard_chart.js:502
 #: frappe/desk/doctype/number_card/number_card.js:402
 msgid "Click to Set Dynamic Filters"
-msgstr "点击以设置动态过滤器"
+msgstr "点击以设置动态筛选"
 
 #: frappe/desk/doctype/dashboard_chart/dashboard_chart.js:372
 #: frappe/desk/doctype/number_card/number_card.js:270
 #: frappe/website/doctype/web_form/web_form.js:262
 msgid "Click to Set Filters"
-msgstr "点击以设置过滤器"
+msgstr "点击以设置筛选"
 
 #: frappe/public/js/frappe/list/list_view.js:676
 msgid "Click to sort by {0}"
@@ -5809,7 +5809,7 @@ msgstr "计数自定义"
 #: frappe/desk/doctype/workspace_shortcut/workspace_shortcut.json
 #: frappe/public/js/frappe/widgets/widget_dialog.js:512
 msgid "Count Filter"
-msgstr "计数过滤器"
+msgstr "计数筛选设置"
 
 #. Label of the counter (Int) field in DocType 'Document Naming Rule'
 #: frappe/core/doctype/document_naming_rule/document_naming_rule.json
@@ -7511,12 +7511,12 @@ msgstr "禁用自动回复"
 #: frappe/public/js/frappe/views/workspace/workspace.js:349
 #: frappe/public/js/frappe/web_form/web_form.js:187
 msgid "Discard"
-msgstr "丢弃"
+msgstr "取消"
 
 #: frappe/website/doctype/web_form/templates/web_form.html:44
 msgctxt "Button in web form"
 msgid "Discard"
-msgstr "丢弃"
+msgstr "取消"
 
 #: frappe/public/js/frappe/form/form.js:853
 msgid "Discard {0}"
@@ -7524,11 +7524,11 @@ msgstr "丢弃{0}"
 
 #: frappe/public/js/frappe/web_form/web_form.js:184
 msgid "Discard?"
-msgstr "丢弃？"
+msgstr "取消？"
 
 #: frappe/desk/form/save.py:70
 msgid "Discarded"
-msgstr "废弃"
+msgstr "取消"
 
 #. Description of the 'Suggested Indexes' (Table) field in DocType 'Recorder'
 #: frappe/core/doctype/recorder/recorder.json
@@ -8378,7 +8378,7 @@ msgstr "重复条目"
 
 #: frappe/public/js/frappe/list/list_filter.js:144
 msgid "Duplicate Filter Name"
-msgstr "重复的过滤器名称"
+msgstr "重复的筛选设置名称"
 
 #: frappe/model/base_document.py:606 frappe/model/rename_doc.py:111
 msgid "Duplicate Name"
@@ -8413,20 +8413,20 @@ msgstr "持续时间"
 #. 'Dashboard Chart'
 #: frappe/desk/doctype/dashboard_chart/dashboard_chart.json
 msgid "Dynamic Filters"
-msgstr "动态过滤器"
+msgstr "动态筛选"
 
 #. Label of the dynamic_filters_json (Code) field in DocType 'Dashboard Chart'
 #. Label of the dynamic_filters_json (Code) field in DocType 'Number Card'
 #: frappe/desk/doctype/dashboard_chart/dashboard_chart.json
 #: frappe/desk/doctype/number_card/number_card.json
 msgid "Dynamic Filters JSON"
-msgstr "动态过滤器JSON"
+msgstr "动态筛选JSON"
 
 #. Label of the dynamic_filters_section (Section Break) field in DocType
 #. 'Number Card'
 #: frappe/desk/doctype/number_card/number_card.json
 msgid "Dynamic Filters Section"
-msgstr "动态过滤器区域"
+msgstr "动态筛选区域"
 
 #. Option for the 'Type' (Select) field in DocType 'DocField'
 #. Name of a DocType
@@ -8447,7 +8447,7 @@ msgstr "动态链接"
 #. 'Auto Email Report'
 #: frappe/email/doctype/auto_email_report/auto_email_report.json
 msgid "Dynamic Report Filters"
-msgstr "动态报表过滤器"
+msgstr "动态报表筛选设置"
 
 #. Label of the dynamic_route (Check) field in DocType 'Web Page'
 #: frappe/website/doctype/web_page/web_page.json
@@ -8539,7 +8539,7 @@ msgstr "编辑现有内容"
 
 #: frappe/public/js/frappe/list/list_sidebar_group_by.js:55
 msgid "Edit Filters"
-msgstr "编辑过滤器"
+msgstr "编辑筛选设置"
 
 #: frappe/public/js/print_format_builder/PrintFormat.vue:29
 msgid "Edit Footer"
@@ -10429,65 +10429,65 @@ msgstr "文件"
 #: frappe/public/js/frappe/ui/filters/filter_list.js:134
 #: frappe/website/doctype/web_form/web_form.js:197
 msgid "Filter"
-msgstr "过滤"
+msgstr "筛选"
 
 #: frappe/public/js/frappe/list/list_sidebar.html:36
 msgid "Filter By"
-msgstr "按条件过滤"
+msgstr "按条件筛选"
 
 #. Label of the filter_data (Section Break) field in DocType 'Auto Email
 #. Report'
 #: frappe/email/doctype/auto_email_report/auto_email_report.json
 msgid "Filter Data"
-msgstr "过滤数据"
+msgstr "筛选数据"
 
 #. Label of the filter_list (HTML) field in DocType 'Data Export'
 #: frappe/core/doctype/data_export/data_export.json
 msgid "Filter List"
-msgstr "过滤器列表"
+msgstr "筛选设置列表"
 
 #. Label of the filter_meta (Text) field in DocType 'Auto Email Report'
 #: frappe/email/doctype/auto_email_report/auto_email_report.json
 msgid "Filter Meta"
-msgstr "筛选器元数据"
+msgstr "筛选设置元数据"
 
 #. Label of the filter_name (Data) field in DocType 'List Filter'
 #: frappe/desk/doctype/list_filter/list_filter.json
 #: frappe/public/js/frappe/list/list_filter.js:33
 msgid "Filter Name"
-msgstr "过滤器名称"
+msgstr "筛选设置名称"
 
 #. Label of the filter_values (HTML) field in DocType 'Prepared Report'
 #: frappe/core/doctype/prepared_report/prepared_report.json
 msgid "Filter Values"
-msgstr "过滤值"
+msgstr "筛选值"
 
 #: frappe/utils/data.py:2023
 msgid "Filter must be a tuple or list (in a list)"
-msgstr "过滤器必须是元组或列表（在列表中）"
+msgstr "筛选设置必须是元组或列表（在列表中）"
 
 #: frappe/utils/data.py:2031
 msgid "Filter must have 4 values (doctype, fieldname, operator, value): {0}"
-msgstr "过滤器必须有 4 个值（文档类型、字段名称、运算符、值）：{0}"
+msgstr "筛选设置必须有 4 个值（文档类型、字段名称、运算符、值）：{0}"
 
 #: frappe/printing/page/print_format_builder/print_format_builder_sidebar.html:3
 msgid "Filter..."
-msgstr "过滤..."
+msgstr "筛选..."
 
 #. Label of the filtered_by (Data) field in DocType 'Personal Data Deletion
 #. Step'
 #: frappe/website/doctype/personal_data_deletion_step/personal_data_deletion_step.json
 msgid "Filtered By"
-msgstr "过滤依据"
+msgstr "筛选依据"
 
 #: frappe/public/js/frappe/data_import/data_exporter.js:33
 msgid "Filtered Records"
-msgstr "过滤记录"
+msgstr "筛选记录"
 
 #: frappe/website/doctype/blog_post/blog_post.py:268
 #: frappe/website/doctype/help_article/help_article.py:91 frappe/www/list.py:45
 msgid "Filtered by \"{0}\""
-msgstr "按「{0}」过滤"
+msgstr "按「{0}」筛选"
 
 #. Label of the filters (Code) field in DocType 'Access Log'
 #. Label of the filters_sb (Section Break) field in DocType 'Prepared Report'
@@ -10509,37 +10509,37 @@ msgstr "按「{0}」过滤"
 #: frappe/email/doctype/auto_email_report/auto_email_report.json
 #: frappe/email/doctype/notification/notification.json
 msgid "Filters"
-msgstr "过滤器"
+msgstr "筛选设置"
 
 #. Label of the filters_config (Code) field in DocType 'Number Card'
 #: frappe/desk/doctype/number_card/number_card.json
 msgid "Filters Configuration"
-msgstr "过滤器配置"
+msgstr "筛选设置定义"
 
 #. Label of the filters_display (HTML) field in DocType 'Auto Email Report'
 #: frappe/email/doctype/auto_email_report/auto_email_report.json
 msgid "Filters Display"
-msgstr "过滤器显示"
+msgstr "筛选设置显示"
 
 #. Label of the filters_json (Code) field in DocType 'Dashboard Chart'
 #. Label of the filters_json (Code) field in DocType 'Number Card'
 #: frappe/desk/doctype/dashboard_chart/dashboard_chart.json
 #: frappe/desk/doctype/number_card/number_card.json
 msgid "Filters JSON"
-msgstr "过滤器JSON"
+msgstr "筛选设置JSON"
 
 #. Label of the filters_section (Section Break) field in DocType 'Number Card'
 #: frappe/desk/doctype/number_card/number_card.json
 msgid "Filters Section"
-msgstr "过滤器部分"
+msgstr "筛选区"
 
 #: frappe/public/js/frappe/form/controls/link.js:495
 msgid "Filters applied for {0}"
-msgstr "已应用于 {0} 的过滤器"
+msgstr "已应用于 {0} 的筛选设置"
 
 #: frappe/public/js/frappe/views/kanban/kanban_view.js:191
 msgid "Filters saved"
-msgstr "筛选器已保存"
+msgstr "筛选设置已保存"
 
 #. Description of the 'Script' (Code) field in DocType 'Report'
 #: frappe/core/doctype/report/report.json
@@ -10548,11 +10548,11 @@ msgstr "可以通过<code>filters</code>访问<code>filters</code> 。<br><br>�
 
 #: frappe/public/js/frappe/ui/filters/filter_list.js:133
 msgid "Filters {0}"
-msgstr "过滤器{0}"
+msgstr "筛选设置{0}"
 
 #: frappe/public/js/frappe/views/reports/report_view.js:1350
 msgid "Filters:"
-msgstr "过滤器："
+msgstr "筛选设置："
 
 #: frappe/public/js/frappe/ui/toolbar/search_utils.js:572
 msgid "Find '{0}' in ..."
@@ -10691,7 +10691,7 @@ msgstr "关注者"
 
 #: frappe/email/doctype/auto_email_report/auto_email_report.py:130
 msgid "Following Report Filters have missing values:"
-msgstr "以下报表过滤器缺失值："
+msgstr "以下报表筛选设置缺失值："
 
 #: frappe/desk/form/document_follow.py:63
 msgid "Following document {0}"
@@ -12594,7 +12594,7 @@ msgstr "忽略用户权限"
 #: frappe/custom/doctype/custom_field/custom_field.json
 #: frappe/custom/doctype/customize_form_field/customize_form_field.json
 msgid "Ignore XSS Filter"
-msgstr "忽略 XSS 过滤器"
+msgstr "忽略 XSS 筛选设置"
 
 #. Description of the 'Attachment Limit (MB)' (Int) field in DocType 'Email
 #. Account'
@@ -12849,7 +12849,7 @@ msgstr "几天内"
 #: frappe/core/doctype/docfield/docfield.json
 #: frappe/custom/doctype/customize_form_field/customize_form_field.json
 msgid "In Filter"
-msgstr "在过滤器中"
+msgstr "在筛选设置中"
 
 #. Label of the in_global_search (Check) field in DocType 'DocField'
 #. Label of the in_global_search (Check) field in DocType 'Custom Field'
@@ -12868,7 +12868,7 @@ msgstr "在表格视图中"
 #. Label of the in_standard_filter (Check) field in DocType 'DocField'
 #: frappe/core/doctype/docfield/docfield.json
 msgid "In List Filter"
-msgstr "在列表过滤器中"
+msgstr "在列表筛选设置中"
 
 #. Label of the in_list_view (Check) field in DocType 'DocField'
 #. Label of the in_list_view (Check) field in DocType 'Custom Field'
@@ -12908,7 +12908,7 @@ msgstr "在回复中"
 #: frappe/custom/doctype/custom_field/custom_field.json
 #: frappe/custom/doctype/customize_form_field/customize_form_field.json
 msgid "In Standard Filter"
-msgstr "在标准过滤器中"
+msgstr "在标准筛选设置中"
 
 #. Description of the 'Font Size' (Float) field in DocType 'Print Settings'
 #: frappe/printing/doctype/print_settings/print_settings.json
@@ -12966,7 +12966,7 @@ msgstr "在邮件中包含 Web View 链接"
 
 #: frappe/public/js/frappe/views/reports/query_report.js:1512
 msgid "Include filters"
-msgstr "包括过滤器"
+msgstr "包括筛选设置"
 
 #: frappe/public/js/frappe/views/reports/query_report.js:1504
 msgid "Include indentation"
@@ -13326,7 +13326,7 @@ msgstr "无效的「depends_on」表达式"
 
 #: frappe/public/js/frappe/views/reports/query_report.js:512
 msgid "Invalid \"depends_on\" expression set in filter {0}"
-msgstr "过滤器 {0} 中设置的「depends_on」表达式无效"
+msgstr "筛选设置 {0} 中设置的「depends_on」表达式无效"
 
 #: frappe/public/js/frappe/form/save.js:159
 msgid "Invalid \"mandatory_depends_on\" expression"
@@ -13370,11 +13370,11 @@ msgstr "文件网址无效"
 
 #: frappe/public/js/form_builder/store.js:221
 msgid "Invalid Filter Format for field {0} of type {1}. Try using filter icon on the field to set it correctly"
-msgstr "类型为 {1} 的字段 {0} 的过滤器格式无效。尝试使用字段上的过滤器图标来正确设置"
+msgstr "类型为 {1} 的字段 {0} 的筛选格式无效。尝试使用字段上的筛选图标来正确设置"
 
 #: frappe/utils/dashboard.py:61
 msgid "Invalid Filter Value"
-msgstr "过滤器值无效"
+msgstr "筛选值无效"
 
 #: frappe/website/doctype/website_settings/website_settings.py:83
 msgid "Invalid Home Page"
@@ -13481,11 +13481,11 @@ msgstr "无效的文档状态"
 
 #: frappe/public/js/frappe/utils/dashboard_utils.js:229
 msgid "Invalid expression set in filter {0}"
-msgstr "过滤器 {0} 中设置的表达式无效"
+msgstr "筛选设置 {0} 中设置的表达式无效"
 
 #: frappe/public/js/frappe/utils/dashboard_utils.js:219
 msgid "Invalid expression set in filter {0} ({1})"
-msgstr "过滤器 {0} ({1}) 中的表达式集无效"
+msgstr "筛选设置 {0} ({1}) 中的表达式集无效"
 
 #: frappe/utils/data.py:2130
 msgid "Invalid field name {0}"
@@ -13502,7 +13502,7 @@ msgstr "文件路径无效：{0}"
 #: frappe/database/query.py:173
 #: frappe/public/js/frappe/ui/filters/filter_list.js:201
 msgid "Invalid filter: {0}"
-msgstr "过滤器无效：{0}"
+msgstr "筛选设置无效：{0}"
 
 #: frappe/desk/doctype/dashboard/dashboard.py:67
 #: frappe/desk/doctype/dashboard_chart/dashboard_chart.py:423
@@ -14770,7 +14770,7 @@ msgstr "链接字段名称"
 #: frappe/custom/doctype/customize_form/customize_form.json
 #: frappe/custom/doctype/customize_form_field/customize_form_field.json
 msgid "Link Filters"
-msgstr "链接过滤器"
+msgstr "链接筛选设置"
 
 #. Label of the link_name (Dynamic Link) field in DocType 'Activity Log'
 #. Label of the link_name (Dynamic Link) field in DocType 'Communication Link'
@@ -14882,7 +14882,7 @@ msgstr "列表列"
 #. Name of a DocType
 #: frappe/desk/doctype/list_filter/list_filter.json
 msgid "List Filter"
-msgstr "列表过滤器"
+msgstr "列表筛选设置"
 
 #. Label of the list_setting_message (HTML) field in DocType 'Web Form'
 #: frappe/website/doctype/web_form/web_form.json
@@ -14971,7 +14971,7 @@ msgstr "加载中"
 
 #: frappe/public/js/frappe/widgets/widget_dialog.js:107
 msgid "Loading Filters..."
-msgstr "正在加载过滤器..."
+msgstr "正在加载筛选设置..."
 
 #: frappe/core/doctype/data_import/data_import.js:257
 msgid "Loading import file..."
@@ -15097,7 +15097,7 @@ msgstr "登录页面"
 
 #: frappe/www/login.py:142
 msgid "Login To {0}"
-msgstr "登录到{0}"
+msgstr "登录到 {0}"
 
 #: frappe/twofactor.py:260
 msgid "Login Verification Code from {}"
@@ -15138,7 +15138,7 @@ msgstr "登录以开始新的讨论"
 
 #: frappe/www/login.html:61
 msgid "Login to {0}"
-msgstr "登录到{0}"
+msgstr "登录到 {0}"
 
 #: frappe/templates/includes/login/login.js:319
 msgid "Login token required"
@@ -15180,13 +15180,13 @@ msgstr "注销"
 
 #: frappe/core/doctype/user/user.js:197
 msgid "Logout All Sessions"
-msgstr "注销所有Sessions"
+msgstr "注销所有会话"
 
 #. Label of the logout_on_password_reset (Check) field in DocType 'System
 #. Settings'
 #: frappe/core/doctype/system_settings/system_settings.json
 msgid "Logout All Sessions on Password Reset"
-msgstr "密码重置时注销所有Sessions"
+msgstr "密码重置时注销所有会话"
 
 #. Label of the logout_all_sessions (Check) field in DocType 'User'
 #: frappe/core/doctype/user/user.json
@@ -15895,7 +15895,7 @@ msgstr "缺失字段"
 
 #: frappe/email/doctype/auto_email_report/auto_email_report.py:129
 msgid "Missing Filters Required"
-msgstr "缺少所需的过滤器"
+msgstr "缺少所需的筛选设置"
 
 #: frappe/desk/form/assign_to.py:109
 msgid "Missing Permission"
@@ -16877,7 +16877,7 @@ msgstr "在 LDAP 中找不到用户 {0} 的条目！"
 
 #: frappe/public/js/frappe/widgets/chart_widget.js:367
 msgid "No Filters Set"
-msgstr "未设置过滤器"
+msgstr "未设置筛选"
 
 #: frappe/integrations/doctype/google_calendar/google_calendar.py:357
 msgid "No Google Calendar Event to sync."
@@ -17068,11 +17068,11 @@ msgstr "没有附加文件"
 
 #: frappe/public/js/frappe/list/list_sidebar_group_by.js:134
 msgid "No filters found"
-msgstr "没有找到过滤器"
+msgstr "没有找到筛选设置"
 
 #: frappe/public/js/frappe/ui/filters/filter_list.js:298
 msgid "No filters selected"
-msgstr "未选择过滤器"
+msgstr "未选择筛选设置"
 
 #: frappe/desk/form/utils.py:101
 msgid "No further records"
@@ -17180,7 +17180,7 @@ msgstr "未找到{0}"
 
 #: frappe/public/js/frappe/list/list_view.js:464
 msgid "No {0} found with matching filters. Clear filters to see all {0}."
-msgstr "没有找到匹配的 {0}。清除筛选器以查看所有 {0}。"
+msgstr "没有找到匹配的 {0}。清除筛选设置以查看所有 {0}。"
 
 #: frappe/public/js/frappe/views/inbox/inbox_view.js:171
 msgid "No {0} mail"
@@ -17442,7 +17442,7 @@ msgstr "注意：为了获得最佳效果，图片必须大小相同，且宽度
 #. DocType 'System Settings'
 #: frappe/core/doctype/system_settings/system_settings.json
 msgid "Note: Multiple sessions will be allowed in case of mobile device"
-msgstr "注意：如果使用移动设备，则允许多个sessions"
+msgstr "注意：如果使用移动设备，则允许多个会话"
 
 #: frappe/core/doctype/user/user.js:385
 msgid "Note: This will be shared with user."
@@ -18718,7 +18718,7 @@ msgstr "密码重置链接生成限制"
 
 #: frappe/public/js/frappe/form/grid_row.js:811
 msgid "Password cannot be filtered"
-msgstr "密码字段无法过滤"
+msgstr "密码字段无法筛选"
 
 #: frappe/integrations/doctype/ldap_settings/ldap_settings.py:357
 msgid "Password changed successfully."
@@ -19163,7 +19163,7 @@ msgstr "请检查 OpenID 配置 URL"
 
 #: frappe/utils/dashboard.py:58
 msgid "Please check the filter values set for Dashboard Chart: {}"
-msgstr "请检查为仪表盘图表设置的过滤器值：{}"
+msgstr "请检查为仪表盘图表设置的筛选值：{}"
 
 #: frappe/model/base_document.py:884
 msgid "Please check the value of \"Fetch From\" set for field {0}"
@@ -19394,7 +19394,7 @@ msgstr "请选择包含数据的有效 csv 文件"
 
 #: frappe/utils/data.py:289
 msgid "Please select a valid date filter"
-msgstr "请选择有效的日期过滤器"
+msgstr "请选择有效的日期筛选设置"
 
 #: frappe/core/doctype/user_permission/user_permission_list.js:203
 msgid "Please select applicable Doctypes"
@@ -19436,11 +19436,11 @@ msgstr "请在打印机设置中为此打印格式设置打印机映射"
 
 #: frappe/public/js/frappe/views/reports/query_report.js:1329
 msgid "Please set filters"
-msgstr "请设置过滤器"
+msgstr "请设置筛选"
 
 #: frappe/email/doctype/auto_email_report/auto_email_report.py:251
 msgid "Please set filters value in Report Filter table."
-msgstr "请在报表过滤器表中设置过滤值。"
+msgstr "请在报表筛选表中设置筛选值。"
 
 #: frappe/model/naming.py:565
 msgid "Please set the document name"
@@ -19509,7 +19509,7 @@ msgstr "请先更新 {}，然后再继续。"
 
 #: frappe/integrations/doctype/ldap_settings/ldap_settings.py:333
 msgid "Please use a valid LDAP search filter"
-msgstr "请使用有效的 LDAP 搜索过滤器"
+msgstr "请使用有效的 LDAP 搜索筛选设置"
 
 #: frappe/email/doctype/newsletter/newsletter.py:331
 msgid "Please verify your Email Address"
@@ -20471,7 +20471,7 @@ msgstr "设置权限的快速帮助"
 #. List'
 #: frappe/desk/doctype/workspace_quick_list/workspace_quick_list.json
 msgid "Quick List Filter"
-msgstr "快捷列表过滤器"
+msgstr "快捷列表筛选设置"
 
 #. Label of the quick_lists_tab (Tab Break) field in DocType 'Workspace'
 #. Label of the quick_lists (Table) field in DocType 'Workspace'
@@ -21446,13 +21446,13 @@ msgstr "报表文档错误"
 #. Name of a DocType
 #: frappe/core/doctype/report_filter/report_filter.json
 msgid "Report Filter"
-msgstr "报表过滤器"
+msgstr "报表筛选设置"
 
 #. Label of the report_filters (Section Break) field in DocType 'Auto Email
 #. Report'
 #: frappe/email/doctype/auto_email_report/auto_email_report.json
 msgid "Report Filters"
-msgstr "报表过滤器"
+msgstr "报表筛选设置"
 
 #. Label of the report_hide (Check) field in DocType 'DocField'
 #. Label of the report_hide (Check) field in DocType 'Custom Field'
@@ -21528,7 +21528,7 @@ msgstr "无法为 Single DocType 设置报表"
 #: frappe/desk/doctype/dashboard_chart/dashboard_chart.js:208
 #: frappe/desk/doctype/number_card/number_card.js:191
 msgid "Report has no data, please modify the filters or change the Report Name"
-msgstr "报表没有数据，请修改过滤器或更改报表名称"
+msgstr "报表没有数据，请修改筛选设置或更改报表名称"
 
 #: frappe/desk/doctype/dashboard_chart/dashboard_chart.js:196
 #: frappe/desk/doctype/number_card/number_card.js:186
@@ -22525,7 +22525,7 @@ msgstr "保存报告"
 
 #: frappe/public/js/frappe/views/kanban/kanban_view.js:96
 msgid "Save filters"
-msgstr "保存过滤器"
+msgstr "保存筛选设置"
 
 #. Label of the save_on_complete (Check) field in DocType 'Form Tour'
 #: frappe/desk/doctype/form_tour/form_tour.json
@@ -22546,7 +22546,7 @@ msgstr "已保存"
 
 #: frappe/public/js/frappe/list/list_sidebar.html:88
 msgid "Saved Filters"
-msgstr "保存的过滤器"
+msgstr "保存的筛选设置"
 
 #: frappe/public/js/frappe/list/list_settings.js:40
 #: frappe/public/js/frappe/views/kanban/kanban_settings.js:47
@@ -23062,7 +23062,7 @@ msgstr "选择要更新的字段"
 
 #: frappe/public/js/frappe/list/list_sidebar_group_by.js:21
 msgid "Select Filters"
-msgstr "选择过滤器"
+msgstr "选择筛选设置"
 
 #: frappe/desk/doctype/event/event.py:96
 msgid "Select Google Calendar to which event should be synced."
@@ -23620,12 +23620,12 @@ msgstr "服务"
 #. Name of a DocType
 #: frappe/core/doctype/session_default/session_default.json
 msgid "Session Default"
-msgstr "Session默认值"
+msgstr "会话默认值"
 
 #. Name of a DocType
 #: frappe/core/doctype/session_default_settings/session_default_settings.json
 msgid "Session Default Settings"
-msgstr "Session默认设置"
+msgstr "会话默认设置"
 
 #. Label of a standard navbar item
 #. Type: Action
@@ -23634,20 +23634,20 @@ msgstr "Session默认设置"
 #: frappe/core/doctype/session_default_settings/session_default_settings.json
 #: frappe/hooks.py frappe/public/js/frappe/ui/toolbar/toolbar.js:342
 msgid "Session Defaults"
-msgstr "Session默认值"
+msgstr "会话默认值"
 
 #: frappe/public/js/frappe/ui/toolbar/toolbar.js:327
 msgid "Session Defaults Saved"
-msgstr "Session默认值已保存"
+msgstr "会话默认值已保存"
 
 #: frappe/app.py:372
 msgid "Session Expired"
-msgstr "Session已过期"
+msgstr "会话已过期"
 
 #. Label of the session_expiry (Data) field in DocType 'System Settings'
 #: frappe/core/doctype/system_settings/system_settings.json
 msgid "Session Expiry (idle timeout)"
-msgstr "Session过期（空闲超时）"
+msgstr "会话过期（空闲超时）"
 
 #: frappe/core/doctype/system_settings/system_settings.py:113
 msgid "Session Expiry must be in format {0}"
@@ -23684,19 +23684,19 @@ msgstr "为此仪表盘上所有图表设置默认选项（例如：\"colors\": 
 #: frappe/desk/doctype/dashboard_chart/dashboard_chart.js:467
 #: frappe/desk/doctype/number_card/number_card.js:367
 msgid "Set Dynamic Filters"
-msgstr "设置动态过滤器"
+msgstr "设置动态筛选"
 
 #: frappe/desk/doctype/dashboard_chart/dashboard_chart.js:381
 #: frappe/desk/doctype/number_card/number_card.js:280
 #: frappe/public/js/form_builder/components/Field.vue:80
 #: frappe/website/doctype/web_form/web_form.js:269
 msgid "Set Filters"
-msgstr "设置过滤器"
+msgstr "设置筛选"
 
 #: frappe/public/js/frappe/widgets/chart_widget.js:396
 #: frappe/public/js/frappe/widgets/quick_list_widget.js:104
 msgid "Set Filters for {0}"
-msgstr "为 {0} 设置过滤器"
+msgstr "为 {0} 设置筛选"
 
 #: frappe/public/js/frappe/views/reports/query_report.js:1970
 msgid "Set Level"
@@ -23830,7 +23830,7 @@ msgid ""
 "}]\n"
 "</code></pre>"
 msgstr ""
-"在这里设置过滤器。例如：\n"
+"在这里设置筛选。例如：\n"
 "<pre class=\"small text-muted\"><code>\n"
 "[{\n"
 "\tfieldname: \"company\",\n"
@@ -24272,7 +24272,7 @@ msgstr "在模块部分显示"
 #. Label of the show_in_filter (Check) field in DocType 'Web Form Field'
 #: frappe/website/doctype/web_form_field/web_form_field.json
 msgid "Show in filter"
-msgstr "在过滤器中显示"
+msgstr "在筛选中显示"
 
 #. Label of the show_document_link (Check) field in DocType 'Slack Webhook URL'
 #: frappe/integrations/doctype/slack_webhook_url/slack_webhook_url.json
@@ -24407,7 +24407,7 @@ msgstr "简单的 Python 表达式，例如：Example: status == 'Open' and type
 #. Label of the simultaneous_sessions (Int) field in DocType 'User'
 #: frappe/core/doctype/user/user.json
 msgid "Simultaneous Sessions"
-msgstr "同时登录 Sessions 数"
+msgstr "同时登录会话数"
 
 #: frappe/custom/doctype/customize_form/customize_form.py:122
 msgid "Single DocTypes cannot be customized."
@@ -26316,7 +26316,7 @@ msgstr "此 {1} 没有 {0}，为什么不开始一个！"
 
 #: frappe/public/js/frappe/views/reports/query_report.js:893
 msgid "There are {0} with the same filters already in the queue:"
-msgstr "队列中已存在具有相同过滤器的 {0}："
+msgstr "队列中已存在具有相同筛选设置的 {0}："
 
 #: frappe/website/doctype/web_form/web_form.js:81
 #: frappe/website/doctype/web_form/web_form.js:317
@@ -26345,7 +26345,7 @@ msgstr "文件网址有问题：{0}"
 
 #: frappe/public/js/frappe/views/reports/query_report.js:890
 msgid "There is {0} with the same filters already in the queue:"
-msgstr "队列中已有具有相同过滤器 {0}："
+msgstr "队列中已有具有相同筛选设置 {0}："
 
 #: frappe/core/page/permission_manager/permission_manager.py:156
 msgid "There must be atleast one permission rule."
@@ -26357,7 +26357,7 @@ msgstr "构建此页面时出错"
 
 #: frappe/public/js/frappe/views/kanban/kanban_view.js:185
 msgid "There was an error saving filters"
-msgstr "保存过滤器时出错"
+msgstr "保存筛选设置时出错"
 
 #: frappe/public/js/frappe/form/sidebar/attachments.js:201
 msgid "There were errors"
@@ -29433,7 +29433,7 @@ msgstr "宽度可以设置为像素 (px) 或百分比 (%)。"
 #. Label of the wildcard_filter (Check) field in DocType 'Report Filter'
 #: frappe/core/doctype/report_filter/report_filter.json
 msgid "Wildcard Filter"
-msgstr "通配符过滤器"
+msgstr "通配符筛选设置"
 
 #. Description of the 'Wildcard Filter' (Check) field in DocType 'Report
 #. Filter'
@@ -29964,7 +29964,7 @@ msgstr "如果多个用户将从同一网络登录，你可以在此设置一个
 
 #: frappe/desk/query_report.py:340
 msgid "You can try changing the filters of your report."
-msgstr "你可以尝试更改报告的过滤器。"
+msgstr "你可以尝试更改报告的筛选设置。"
 
 #: frappe/core/page/permission_manager/permission_manager_help.html:27
 msgid "You can use Customize Form to set levels on fields."
