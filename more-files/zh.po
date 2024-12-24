@@ -2027,12 +2027,12 @@ msgstr "允许快速输入"
 #. Label of the allow_incomplete (Check) field in DocType 'Web Form'
 #: frappe/website/doctype/web_form/web_form.json
 msgid "Allow incomplete forms"
-msgstr "允许不完整的表格"
+msgstr "允许不完整的表单"
 
 #. Label of the allow_multiple (Check) field in DocType 'Web Form'
 #: frappe/website/doctype/web_form/web_form.json
 msgid "Allow multiple responses"
-msgstr "允许多个回复"
+msgstr "允许多个响应"
 
 #. Label of the allow_on_submit (Check) field in DocType 'DocField'
 #. Label of the allow_on_submit (Check) field in DocType 'Custom Field'
@@ -15320,6 +15320,10 @@ msgstr "男性"
 msgid "Manage 3rd party apps"
 msgstr "管理第三方应用程序"
 
+#: frappe/www/me.html:56
+msgid "Manage third party apps"
+msgstr "管理第三方应用程序"
+
 #. Description of a Card Break in the Tools Workspace
 #: frappe/automation/workspace/tools/tools.json
 msgid "Manage your data"
@@ -25311,7 +25315,7 @@ msgstr "操作成功"
 #: frappe/desk/doctype/module_onboarding/module_onboarding.json
 #: frappe/website/doctype/web_form/web_form.json
 msgid "Success Message"
-msgstr "留言成功"
+msgstr "成功消息"
 
 #. Label of the success_title (Data) field in DocType 'Web Form'
 #: frappe/website/doctype/web_form/web_form.json
@@ -32014,4 +32018,1460 @@ msgstr "无法在 PATH 环境变量中找到 {}！这是进行备份所必需的
 #: frappe/public/js/frappe/file_uploader/WebLink.vue:4
 msgid "← Back to upload files"
 msgstr "← 返回上传文件"
+
+#: version-15
+#. Header text in the Tools Workspace
+#: frappe/automation/workspace/tools/tools.json
+msgid "<span class=\"h4\"><b>Documents</b></span>"
+msgstr "<span class=\"h4\"><b>文档</b></span>"
+
+#. Header text in the Website Workspace
+#: frappe/website/workspace/website/website.json
+msgid "<span class=\"h4\"><b>Reports & Masters</b></span>"
+msgstr "<span class=\"h4\"><b>报表与主数据</b></span>"
+
+#. Header text in the Tools Workspace
+#. Header text in the Users Workspace
+#. Header text in the Website Workspace
+#: frappe/automation/workspace/tools/tools.json
+#: frappe/core/workspace/users/users.json
+#: frappe/website/workspace/website/website.json
+msgid "<span class=\"h4\"><b>Your Shortcuts</b></span>"
+msgstr "<span class=\"h4\"><b>你的快捷方式</b></span>"
+
+#. Header text in the Build Workspace
+#: frappe/core/workspace/build/build.json
+msgid "<span style=\"font-size: 18px; letter-spacing: 0.18px;\"><b>Components to build your app</b></span>"
+msgstr "<span style=\"font-size: 18px; letter-spacing: 0.18px;\"><b>用于构建应用的组件</b></span>"
+
+#. Header text in the Build Workspace
+#: frappe/core/workspace/build/build.json
+msgid "<span style=\"font-size: 18px; letter-spacing: 0.18px;\"><b>Get started</b><br></span>"
+msgstr "<span style=\"font-size: 18px; letter-spacing: 0.18px;\"><b>开始使用</b><br></span>"
+
+#. Description of the Onboarding Step 'Custom Document Types'
+#: frappe/custom/onboarding_step/custom_doctype/custom_doctype.json
+msgid "A DocType (Document Type) is used to insert forms in ERPNext. Forms such as Customer, Orders, and Invoices are Doctypes in the backend. You can also create new DocTypes to create new forms in ERPNext as per your business needs."
+msgstr "DocType 用于在应用中插入表单。例如，客户、订单和发票等表单在后台是 DocType。您还可以根据业务需求创建新的 DocType，以创建新的表单。"
+
+#. Label of a Section Break field in DocType 'Web Form'
+#: frappe/website/doctype/web_form/web_form.json
+msgid "Access Control"
+msgstr "访问控制"
+
+#. Title of an Onboarding Step
+#: frappe/website/onboarding_step/add_blog_category/add_blog_category.json
+msgid "Add Blog Category"
+msgstr "添加博客类别”"
+
+#. Label of a Check field in DocType 'List View Settings'
+#: frappe/desk/doctype/list_view_settings/list_view_settings.json
+msgid "Allow Bulk Editing"
+msgstr "允许批量编辑"
+
+#. Label of a Check field in DocType 'Web Form'
+#: frappe/website/doctype/web_form/web_form.json
+msgid "Allow Comments"
+msgstr "允许评论"
+
+#. Label of a Check field in DocType 'Web Form'
+#: frappe/website/doctype/web_form/web_form.json
+msgid "Allow Delete"
+msgstr "允许删除"
+
+#. Label of a Check field in DocType 'Web Form'
+#: frappe/website/doctype/web_form/web_form.json
+msgid "Allow Editing After Submit"
+msgstr "允许提交后编辑"
+
+#. Label of a Check field in DocType 'Web Form'
+#: frappe/website/doctype/web_form/web_form.json
+msgid "Allow Incomplete Forms"
+msgstr "允许不完整的表单"
+
+#. Label of a Check field in DocType 'Web Form'
+#: frappe/website/doctype/web_form/web_form.json
+msgid "Allow Multiple Responses"
+msgstr "允许多个响应"
+
+#. Label of a Check field in DocType 'Web Form'
+#: frappe/website/doctype/web_form/web_form.json
+msgid "Allow Print"
+msgstr "允许打印"
+
+#. Description of the 'Allow Bulk Editing' (Check) field in DocType 'List View
+#. Settings'
+#: frappe/desk/doctype/list_view_settings/list_view_settings.json
+#. Description of the 'Allow Bulk Editing' (Check) field in DocType 'List View
+#. Settings'
+#: frappe/desk/doctype/list_view_settings/list_view_settings.json
+msgid ""
+"Allow editing even if the doctype has a workflow set up.\n"
+"\n"
+"Does nothing if a workflow isn't set up."
+msgstr ""
+"即使 doctype 已设置工作流，也允许编辑。\n"
+"\n"
+"如果没有设置工作流，则无效。"
+
+#. Label of a Small Text field in DocType 'Web Form'
+#: frappe/website/doctype/web_form/web_form.json
+msgid "Allowed embedding domains"
+msgstr "允许嵌入的域名"
+
+#. Label of a Check field in DocType 'Web Form'
+#: frappe/website/doctype/web_form/web_form.json
+msgid "Anonymous responses"
+msgstr "匿名响应"
+
+#. Label of a Check field in DocType 'Web Form'
+#: frappe/website/doctype/web_form/web_form.json
+msgid "Apply Document Permissions"
+msgstr "应用文档权限"
+
+#: frappe/public/js/frappe/views/workspace/workspace.js:930
+msgid "Are you sure you want to delete page {0}?"
+msgstr "你确定要删除页面 {0} 吗？"
+
+#: frappe/automation/doctype/assignment_rule/assignment_rule.py:55
+msgid "Assignment Rule is not allowed on document type {0}"
+msgstr "不允许在doctype {0} 上使用分配规则"
+
+#: frappe/website/doctype/web_form/web_form.js:73
+msgid "Atleast one field is required in Web Form Fields Table"
+msgstr "Web 表单字段表中至少需要一个字段"
+
+#: frappe/core/doctype/data_export/data_export.js:44
+msgid "Atleast one field of Parent Document Type is mandatory"
+msgstr "父文档类型中至少有一个字段是必填的"
+
+#. Subtitle of the Module Onboarding 'Website'
+#: frappe/website/module_onboarding/website/website.json
+msgid "Blogs, Website View Tracking, and more."
+msgstr "博客、网站浏览跟踪等。"
+
+#: frappe/desk/doctype/workspace/workspace.py:424
+msgid "Cannot delete private workspace of other users"
+msgstr "无法删除其他用户的私人工作区"
+
+#: frappe/desk/doctype/workspace/workspace.py:417
+msgid "Cannot delete public workspace without Workspace Manager role"
+msgstr "只有工作区管理员才能删除公共工作区"
+
+#: frappe/desk/doctype/workspace/workspace.py:358
+msgid "Cannot update private workspace of other users"
+msgstr "无法更新其他用户的私人工作区"
+
+#: frappe/public/js/frappe/form/templates/form_sidebar.html:26
+msgid "Click here to post bugs and suggestions"
+msgstr "点击这里提交错误和建议"
+
+#: frappe/public/js/frappe/file_uploader/FileUploader.vue:200
+msgid "Click on the lock icon to toggle public/private"
+msgstr "点击锁图标切换公开/私人"
+
+#. Linked DocType in DocType's connections
+#. Linked DocType in Module Def's connections
+#. Label of a Link in the Build Workspace
+#. Label of a shortcut in the Build Workspace
+#. Name of a DocType
+#. Label of a Code field in DocType 'DocType Layout'
+#: frappe/core/doctype/doctype/doctype.json
+#: frappe/core/doctype/module_def/module_def.json
+#: frappe/core/workspace/build/build.json
+#: frappe/custom/doctype/client_script/client_script.json
+#: frappe/custom/doctype/doctype_layout/doctype_layout.json
+#: frappe/website/doctype/web_page/web_page.js:103
+msgid "Client Script"
+msgstr "客户端脚本"
+
+#: frappe/integrations/frappe_providers/frappecloud_billing.py:28
+msgid "Communication secret not set"
+msgstr "未设置通信密钥"
+
+#. Label of a HTML field in DocType 'Web Form'
+#: frappe/website/doctype/web_form/web_form.json
+msgid "Condition description"
+msgstr "条件描述"
+
+#: frappe/integrations/oauth2.py:118
+msgid "Confirm Access"
+msgstr "确认访问"
+
+#: frappe/website/doctype/web_form/web_form.js:29
+msgid "Copy Embed Code"
+msgstr "拷贝嵌入代码"
+
+#. Title of an Onboarding Step
+#: frappe/website/onboarding_step/create_blogger/create_blogger.json
+msgid "Create Blogger"
+msgstr "创建博主"
+
+#. Title of an Onboarding Step
+#: frappe/custom/onboarding_step/custom_field/custom_field.json
+msgid "Create Custom Fields"
+msgstr "创建自定义字段"
+
+#: frappe/public/js/frappe/views/workspace/workspace.js:970
+msgid "Create Duplicate"
+msgstr "创建副本"
+
+#. Description of a Card Break in the Build Workspace
+#: frappe/core/workspace/build/build.json
+msgid "Create new forms and views with doctypes. Set up multi-level workflows for approval"
+msgstr "使用 doctypes 创建新的表单和视图。设置多级以审批为目的的工作流"
+
+#. Title of an Onboarding Step
+#: frappe/custom/onboarding_step/custom_doctype/custom_doctype.json
+msgid "Custom Document Types"
+msgstr "自定义文档类型"
+
+#. Subtitle of the Module Onboarding 'Customization'
+#: frappe/custom/module_onboarding/customization/customization.json
+msgid "Custom Field, Custom Doctype, Naming Series, Role Permission, Workflow, Print Formats, Reports"
+msgstr "自定义字段、自定义Doctype、命名系列、角色权限、工作流、打印格式、报表"
+
+#. Success message of the Module Onboarding 'Customization'
+#: frappe/custom/module_onboarding/customization/customization.json
+msgid "Customization onboarding is all done!"
+msgstr "入门引导已自定义完成"
+
+#. Title of an Onboarding Step
+#: frappe/custom/onboarding_step/print_format/print_format.json
+msgid "Customize Print Formats"
+msgstr "自定义打印格式"
+
+#: frappe/model/base_document.py:719
+msgid "Data missing in table"
+msgstr "表格中缺少数据"
+
+#. Description of the 'Currency' (Link) field in DocType 'System Settings'
+#: frappe/core/doctype/system_settings/system_settings.json
+msgid "Default display currency"
+msgstr "默认显示货币"
+
+#: frappe/public/js/frappe/views/workspace/workspace.js:869
+msgid "Delete Workspace"
+msgstr "删除工作区"
+
+#: frappe/core/doctype/doctype/doctype.js:71
+msgid "DocTypes can not be modified, please use {0} instead"
+msgstr "DocTypes无法修改，请改用 {0}"
+
+#: frappe/public/js/frappe/views/workspace/workspace.js:1348
+msgid "Doctype with same route already exist. Please choose different title."
+msgstr "具有相同路径的 Doctype 已存在。请选择不同的标题。"
+
+#: frappe/public/js/frappe/views/workspace/workspace.js:592
+#: frappe/public/js/frappe/views/workspace/workspace.js:854
+msgid "Duplicate Workspace"
+msgstr "复制工作区"
+
+#: frappe/public/js/frappe/views/workspace/workspace.js:1035
+msgid "Duplicate of {0} named as {1} is created successfully"
+msgstr "{0} 的副本已成功命名为 {1}"
+
+#. Description of the Onboarding Step 'Setup Naming Series'
+#: frappe/custom/onboarding_step/naming_series/naming_series.json
+msgid "Each document created in ERPNext can have a unique ID generated for it, using a prefix defined for it. Though each document has some prefix pre-configured, you can further customize it using tools like Naming Series Tool and Document Naming Rule.\n"
+msgstr "在应用中创建的每个文档都可以为其生成唯一的 ID，使用为其定义的前缀。尽管每个文档都有一些预配置的前缀，但你可以使用命名序列和命名规则等工具进一步自定义它。\n"
+
+#: frappe/public/js/frappe/views/workspace/workspace.js:848
+msgid "Edit Workspace"
+msgstr "编辑工作区"
+
+#. Title of an Onboarding Step
+#: frappe/website/onboarding_step/enable_website_tracking/enable_website_tracking.json
+msgid "Enable Website Tracking"
+msgstr "启用网站跟踪"
+
+#: frappe/core/doctype/server_script/server_script.py:243
+msgid "Enabled scheduled execution for script {0}"
+msgstr "已为脚本 {0} 启用执行计划"
+
+#: frappe/www/error.html:34
+msgid "Error Code: {0}"
+msgstr "错误代码：{0}"
+
+#: frappe/model/document.py:820
+msgid "Error: Document has been modified after you have opened it"
+msgstr "错误：文档在你打开它之后已被修改"
+
+#. Description of the Onboarding Step 'Create Custom Fields'
+#: frappe/custom/onboarding_step/custom_field/custom_field.json
+msgid ""
+"Every form in ERPNext has a standard set of fields. If you need to capture some information, but there is no standard Field available for it, you can insert Custom Field for it.\n"
+"\n"
+"Once custom fields are added, you can use them for reports and analytics charts as well.\n"
+msgstr ""
+"应用的每个表单都有一组标准字段。如果你需要捕获一些信息，但没有标准字段可用，你可以为其插入自定义字段。\n"
+"\n"
+"添加自定义字段后，你还可以将其用于报表和分析图表。\n"
+
+#: frappe/integrations/frappe_providers/frappecloud_billing.py:48
+msgid "Failed to generate access token"
+msgstr "生成访问令牌失败"
+
+#: frappe/integrations/frappe_providers/frappecloud_billing.py:68
+msgid "Failed to get site info"
+msgstr "获取站点信息失败"
+
+#: frappe/integrations/frappe_providers/frappecloud_billing.py:104
+msgid "Failed to request login to Frappe Cloud"
+msgstr "请求登录 Frappe Cloud 失败"
+
+#: frappe/integrations/frappe_providers/frappecloud_billing.py:83
+msgid "Failed while calling API {0}"
+msgstr "调用 API {0} 失败"
+
+#: frappe/public/js/frappe/list/list_sidebar.js:275
+msgid "Frappe Insights"
+msgstr "数据洞察"
+
+#. Title of an Onboarding Step
+#: frappe/custom/onboarding_step/report_builder/report_builder.json
+msgid "Generate Custom Reports"
+msgstr "生成自定义报表"
+
+#: frappe/public/js/frappe/views/workspace/workspace.js:860
+msgid "Hide Workspace"
+msgstr "隐藏工作区"
+
+#. Description of the 'Anonymous responses' (Check) field in DocType 'Web Form'
+#: frappe/website/doctype/web_form/web_form.json
+msgid "If enabled, all responses on the web form will be submitted anonymously"
+msgstr "如果启用，所有在网页表单上的响应将以匿名方式提交"
+
+#: frappe/core/doctype/doctype/doctype.js:81
+msgid "If you just want to customize for your site, use {0} instead."
+msgstr "如果只想对你的站点进行自定义，请改用 {0}。"
+
+#. Description of the Onboarding Step 'Setup Limited Access for a User'
+#: frappe/custom/onboarding_step/role_permissions/role_permissions.json
+msgid "In ERPNext, you can add your Employees as Users, and give them restricted access. Tools like Role Permission and User Permission allow you to define rules which give restricted access to the user to masters and transactions."
+msgstr "在应用中，你可以将员工添加为用户，并为他们提供受限访问。像角色权限和用户权限这样的工具允许你定义规则，以便为用户提供对主数据和交易数据的受限访问。"
+
+#. Description of the Onboarding Step 'Generate Custom Reports'
+#: frappe/custom/onboarding_step/report_builder/report_builder.json
+msgid "In each module, you will find a host of single-click reports, ranging from financial statements to sales and purchase analytics and stock tracking reports. If a required new report is not available out-of-the-box, you can create custom reports in ERPNext by pulling values from the same multiple ERPNext tables.\n"
+msgstr "在每个模块中，你将找到一系列通过点击即可生成的报告，从财务报表到销售和采购分析以及库存跟踪报表。如果没有开箱即用的报表，你可以通过从多个报表中提取值，并在应用中创建自定义报告。\n"
+
+#. Title of an Onboarding Step
+#: frappe/website/onboarding_step/introduction_to_website/introduction_to_website.json
+msgid "Introduction to Website"
+msgstr "网站简介"
+
+#: frappe/integrations/frappe_providers/frappecloud_billing.py:121
+msgid "Invalid Code. Please try again."
+msgstr "无效的代码。请再试一次。"
+
+#: frappe/model/utils/__init__.py:68
+msgid "Invalid include path"
+msgstr "文件路径有误"
+
+#. Label of an action in the Onboarding Step 'Customize Print Formats'
+#: frappe/custom/onboarding_step/print_format/print_format.json
+msgid "Learn about Standard and Custom Print Formats"
+msgstr "了解标准和自定义打印格式"
+
+#. Title of an Onboarding Step
+#: frappe/website/onboarding_step/web_page_tour/web_page_tour.json
+msgid "Learn about Web Pages"
+msgstr "了解网页"
+
+#. Label of an action in the Onboarding Step 'Create Custom Fields'
+#: frappe/custom/onboarding_step/custom_field/custom_field.json
+msgid "Learn how to add Custom Fields"
+msgstr "学习如何添加自定义字段"
+
+#. Label of an action in the Onboarding Step 'Generate Custom Reports'
+#: frappe/custom/onboarding_step/report_builder/report_builder.json
+msgid "Learn more about Report Builders"
+msgstr "了解更多关于报表生成器的信息"
+
+#. Label of an action in the Onboarding Step 'Custom Document Types'
+#: frappe/custom/onboarding_step/custom_doctype/custom_doctype.json
+msgid "Learn more about creating new DocTypes"
+msgstr "了解更多关于创建 DocType 的信息"
+
+#. Title of the Module Onboarding 'Website'
+#: frappe/website/module_onboarding/website/website.json
+msgid "Let's Set Up Your Website."
+msgstr "设置你的网站。"
+
+#. Label of a Section Break field in DocType 'DocType'
+#: frappe/core/doctype/doctype/doctype.json
+msgid "Linked Documents"
+msgstr "关联文档"
+
+#. Label of a HTML field in DocType 'Web Form'
+#: frappe/website/doctype/web_form/web_form.json
+msgid "List setting message"
+msgstr "列表设置信息"
+
+#: frappe/core/doctype/server_script/server_script_list.js:18
+msgid "Loving Frappe Framework?"
+msgstr "喜欢 Frappe 框架吗？"
+
+#. Label of a Check field in DocType 'DocField'
+#: frappe/core/doctype/docfield/docfield.json
+msgid "Make Attachment Public (by default)"
+msgstr "默认将附件设为公开"
+
+#. Label of a standard navbar item
+#. Type: Route
+#: frappe/hooks.py
+msgid "Manage Billing"
+msgstr "管理账单"
+
+#: frappe/www/me.html:59
+msgid "Manage your apps"
+msgstr "管理你的apps"
+
+#. Name of a DocType
+#: frappe/website/doctype/marketing_campaign/marketing_campaign.json
+msgid "Marketing Campaign"
+msgstr "营销活动"
+
+#. Label of a Int field in DocType 'Web Form'
+#: frappe/website/doctype/web_form/web_form.json
+msgid "Max attachment size"
+msgstr "最大附件大小"
+
+#. Label of a Small Text field in DocType 'Blog Post'
+#: frappe/website/doctype/blog_post/blog_post.json
+#: frappe/website/doctype/web_page/web_page.js:124
+msgid "Meta Description"
+msgstr "元数据描述"
+
+#. Label of a Attach Image field in DocType 'Blog Post'
+#: frappe/website/doctype/blog_post/blog_post.json
+#: frappe/website/doctype/web_page/web_page.js:131
+msgid "Meta Image"
+msgstr "元数据图片"
+
+#. Label of a Data field in DocType 'Blog Post'
+#: frappe/website/doctype/blog_post/blog_post.json
+#: frappe/website/doctype/web_page/web_page.js:117
+msgid "Meta Title"
+msgstr "元数据标题"
+
+#. Label of a Card Break in the Build Workspace
+#: frappe/core/workspace/build/build.json
+msgid "Models"
+msgstr "模型"
+
+#. Description of the 'Auto Name' (Data) field in DocType 'DocType'
+#: frappe/core/doctype/doctype/doctype.json
+msgid ""
+"Naming Options:\n"
+"<ol><li><b>field:[fieldname]</b> - By Field</li><li><b>autoincrement</b> - Uses Databases' Auto Increment feature</li><li><b>naming_series:</b> - By Naming Series (field called naming_series must be present)</li><li><b>Prompt</b> - Prompt user for a name</li><li><b>[series]</b> - Series by prefix (separated by a dot); for example PRE.#####</li>\n"
+"<li><b>format:EXAMPLE-{MM}morewords{fieldname1}-{fieldname2}-{#####}</b> - Replace all braced words (fieldnames, date words (DD, MM, YY), series) with their value. Outside braces, any characters can be used.</li></ol>"
+msgstr ""
+"命名选项：\n"
+"<ol><li><b>field:[fieldname]</b> - 使用指定字段的值作为名称</li><li><b>autoincrement</b> - 使用数据库的自增功能</li><li><b>根据命名序列：</b> - 使用预定义的命名序列。系统中必须存在名为 naming_series 的字段。</li><li><b>提示用户：</b> - 系统会提示用户手动输入名称。</li><li><b>按序列：</b> - 使用指定的前缀和序列号生成名称。例如：PRE.#####</li>
+"<li><b>自定义格式：</b> - 使用以下格式自定义名称：示例-{MM}morewords{fieldname1}-{fieldname2}-{#####}。花括号中的内容会被替换为实际值，包括字段名、日期（DD、MM、YY）和序列号。花括号外的字符可以任意使用。</li></ol>"
+
+#: frappe/desk/doctype/workspace/workspace.py:354
+msgid "Need Workspace Manager role to hide/unhide public workspaces"
+msgstr "只有工作区管理员才能隐藏/显示公共工作区"
+
+#: frappe/public/js/frappe/form/toolbar.js:298
+msgid "Next Document"
+msgstr "下一个文档"
+
+#: frappe/public/js/frappe/views/workspace/workspace.js:1522
+msgid "No changes made on the page"
+msgstr "页面没有改变"
+
+#: frappe/public/js/frappe/views/workspace/workspace.js:1357
+msgid "One of the child page with name {0} already exist in {1} Section. Please update the name of the child page first before moving"
+msgstr "名称为 {0} 的子页面已经存在于 {1} 区。在移动之前，请先更新子页面的名称"
+
+#: frappe/public/js/frappe/views/workspace/workspace.js:581
+msgid "Only Workspace Manager can sort or edit this page"
+msgstr "只有工作区管理员可以排序或编辑此页面"
+
+#. Description of the 'Quick Entry' (Check) field in DocType 'DocType'
+#: frappe/core/doctype/doctype/doctype.json
+msgid "Open a dialog with mandatory fields to create a new record quickly"
+msgstr "打开一个包含必填字段的对话框，快速创建新记录"
+
+#: frappe/public/js/frappe/views/workspace/workspace.js:1544
+msgid "Page Saved Successfully"
+msgstr "页面保存成功"
+
+#: frappe/public/js/frappe/views/workspace/workspace.js:1344
+msgid "Page with title {0} already exist."
+msgstr "标题为 {0} 的页面已存在。"
+
+#: frappe/core/doctype/user/user.py:1017
+msgid "Password reset instructions have been sent to your email"
+msgstr "密码重置指引已发送至你的电子邮件"
+
+#: frappe/core/doctype/navbar_settings/navbar_settings.py:43
+msgid "Please hide the standard navbar items instead of deleting them"
+msgstr "请隐藏标准导航栏项，而不是删除它们"
+
+#. Label of a Card Break in the Website Workspace
+#: frappe/website/workspace/website/website.json
+msgid "Portal"
+msgstr "门户"
+
+#. Group in Blog Category's connections
+#: frappe/website/doctype/blog_category/blog_category.json
+msgid "Posts"
+msgstr "帖子"
+
+#: frappe/public/js/frappe/form/toolbar.js:290
+msgid "Previous Document"
+msgstr "上一个文档"
+
+#. Description of the Onboarding Step 'Customize Print Formats'
+#: frappe/custom/onboarding_step/print_format/print_format.json
+msgid "Print Formats allow you can define looks for documents when printed or converted to PDF. You can also create a custom Print Format using drag-and-drop tools."
+msgstr "打印格式允许你定义文档在打印或转换为 PDF 时的样子。你还可以使用拖放工具创建自定义打印格式。"
+
+#: frappe/www/me.html:66
+msgid "Request Account Deletion"
+msgstr "申请删除帐户"
+
+#: frappe/www/me.html:36
+msgid "Reset the password for your account"
+msgstr "重置帐户密码"
+
+#: frappe/core/doctype/sms_settings/sms_settings.py:109
+msgid "SMS sent successfully"
+msgstr "短信发送成功"
+
+#. Description of the 'Enable Outgoing' (Check) field in DocType 'Email
+#. Account'
+#: frappe/email/doctype/email_account/email_account.json
+msgid "SMTP Settings for outgoing emails"
+msgstr "发送邮件的 SMTP 设置"
+
+#: frappe/public/js/frappe/list/list_sidebar.html:73
+msgid "Save Filter"
+msgstr "保存筛选设置"
+
+#: frappe/www/search.py:14
+msgid "Search Results for"
+msgstr "搜索结果"
+
+#. Label of a Dynamic Link field in DocType 'Webhook'
+#: frappe/integrations/doctype/webhook/webhook.json
+msgid "Select Document"
+msgstr "选择文档"
+
+#: frappe/integrations/doctype/webhook/webhook.py:133
+msgid "Select a document to check if it meets conditions."
+msgstr "选择一个文档以检查它是否满足条件。"
+
+#: frappe/integrations/doctype/webhook/webhook.py:145
+msgid "Select a document to preview request data"
+msgstr "选择一个文档以预览请求数据"
+
+#: frappe/www/me.html:67
+msgid "Send a request to delete your account"
+msgstr "发送删除你账户的请求"
+
+#. Description of the 'Max attachment size' (Int) field in DocType 'Web Form'
+#: frappe/website/doctype/web_form/web_form.json
+msgid "Set size in MB"
+msgstr "设置大小（MB）"
+
+#. Title of an Onboarding Step
+#: frappe/custom/onboarding_step/workflows/workflows.json
+msgid "Setup Approval Workflows"
+msgstr "设置审批工作流"
+
+#. Title of an Onboarding Step
+#: frappe/custom/onboarding_step/role_permissions/role_permissions.json
+msgid "Setup Limited Access for a User"
+msgstr "为用户设置有限访问权限"
+
+#. Title of an Onboarding Step
+#: frappe/custom/onboarding_step/naming_series/naming_series.json
+msgid "Setup Naming Series"
+msgstr "设置命名序列"
+
+#. Label of a Check field in DocType 'Web Form'
+#: frappe/website/doctype/web_form/web_form.json
+msgid "Show Attachments"
+msgstr "显示附件"
+
+#. Label of a Check field in DocType 'Web Form'
+#: frappe/website/doctype/web_form/web_form.json
+msgid "Show List"
+msgstr "显示列表"
+
+#. Description of the 'Allowed embedding domains' (Small Text) field in DocType
+#. 'Web Form'
+#: frappe/website/doctype/web_form/web_form.json
+msgid "Specify the domains or origins that are permitted to embed this form. Enter one domain per line (e.g., https://example.com). If no domains are specified, the form can only be embedded on the same origin."
+msgstr "指定允许嵌入此表单的域名或来源。每行输入一个域名（例如：https://example.com）。如果没有指定，则表单只能嵌入到相同来源的网页中。"
+
+#: frappe/core/doctype/server_script/server_script_list.js:20
+msgid "Star us on GitHub"
+msgstr "在 GitHub 上支持我们"
+
+#. Label of a Data field in DocType 'Web Form'
+#: frappe/website/doctype/web_form/web_form.json
+msgid "Submit button label"
+msgstr "提交按钮标签"
+
+#. Label of a Text field in DocType 'Web Form'
+#: frappe/website/doctype/web_form/web_form.json
+msgid "Success message"
+msgstr "成功消息"
+
+#. Label of a Data field in DocType 'Web Form'
+#: frappe/website/doctype/web_form/web_form.json
+msgid "Success title"
+msgstr "成功标题"
+
+#: frappe/core/doctype/data_import/data_import.js:149
+msgid "Successfully {0} 1 record."
+msgstr "成功{0}1条记录。"
+
+#: frappe/core/doctype/data_import/data_import.js:156
+msgid "Successfully {0} {1} record out of {2}. Click on Export Errored Rows, fix the errors and import again."
+msgstr "成功 {0} {1} 记录中的 {2} 。点击导出错误行，修复错误后重新导入。"
+
+#: frappe/core/doctype/data_import/data_import.js:161
+msgid "Successfully {0} {1} records out of {2}. Click on Export Errored Rows, fix the errors and import again."
+msgstr "成功 {0} {1} 记录中的 {2} 。点击导出错误行，修复错误后重新导入。"
+
+#: frappe/core/doctype/data_import/data_import.js:151
+msgid "Successfully {0} {1} records."
+msgstr "成功 {0} {1} 记录。"
+
+#: frappe/www/404.html:18
+msgid "The page you are looking for has gone missing."
+msgstr "你查找的页面已不存在。"
+
+#: frappe/www/404.html:15
+msgid "There's nothing here"
+msgstr "没有内容"
+
+#: frappe/desk/doctype/workspace/workspace.js:23
+msgid "This document allows you to edit limited fields. For all kinds of workspace customization, use the Edit button located on the workspace page"
+msgstr "此文档仅允许编辑有限的字段。要进行所有类型的工作空间自定义，请使用位于工作空间页面上的编辑按钮"
+
+#: frappe/www/me.html:51
+msgid "To manage your authorized third party apps"
+msgstr "管理你授权的第三方应用"
+
+#: frappe/public/js/frappe/views/workspace/workspace.js:212
+msgid "Toggle Section: {0}"
+msgstr "切换区：{0}"
+
+#: frappe/public/js/frappe/views/workspace/workspace.js:601
+msgid "Unhide Workspace"
+msgstr "取消隐藏工作区"
+
+#: frappe/utils/csvutils.py:52
+msgid "Unknown file encoding. Tried utf-8, windows-1250, windows-1252."
+msgstr "未知的文件编码。尝试了 utf-8、windows-1250、windows-1252。"
+
+#: frappe/public/js/frappe/views/workspace/workspace.js:641
+msgid "Update Details"
+msgstr "更新详情"
+
+#. Label of a Tab Break field in DocType 'System Settings'
+#: frappe/core/doctype/system_settings/system_settings.json
+msgid "Updates"
+msgstr "更新"
+
+#: frappe/public/js/billing.bundle.js:30
+msgid "Upgrade plan"
+msgstr "升级计划"
+
+#. Label of a Check field in DocType 'System Settings'
+#: frappe/core/doctype/system_settings/system_settings.json
+msgid "Use Number Format from Currency"
+msgstr "使用货币的数字格式"
+
+#: frappe/core/doctype/user_permission/user_permission_list.js:124
+msgid "User Permissions created sucessfully"
+msgstr "用户权限创建成功"
+
+#. Label of a shortcut in the Users Workspace
+#: frappe/core/workspace/users/users.json
+msgid "User Profile"
+msgstr "用户资料"
+
+#: frappe/model/base_document.py:729
+msgid "Value missing for"
+msgstr "缺少值"
+
+#: frappe/workflow/doctype/workflow/workflow.js:140
+msgid "Worflow States Don't Exist"
+msgstr "流程状态不存在"
+
+#. Description of the Onboarding Step 'Setup Approval Workflows'
+#: frappe/custom/onboarding_step/workflows/workflows.json
+msgid "Workflows allow you to define custom rules for the approval process of a particular document in ERPNext. You can also set complex Workflow Rules and set approval conditions."
+msgstr "工作流允许你为审批流程定义自定义规则。你还可以设置复杂的工作流规则和审批条件。"
+
+#: frappe/desk/doctype/workspace/workspace.py:293
+msgid "Workspace not found"
+msgstr "未找到工作区"
+
+#: frappe/public/js/frappe/views/workspace/workspace.js:1310
+msgid "Workspace {0} Created Successfully"
+msgstr "工作区 {0} 创建成功"
+
+#: frappe/public/js/frappe/views/workspace/workspace.js:939
+msgid "Workspace {0} Deleted Successfully"
+msgstr "工作区 {0} 删除成功"
+
+#: frappe/public/js/frappe/views/workspace/workspace.js:717
+msgid "Workspace {0} Edited Successfully"
+msgstr "工作区 {0} 编辑成功"
+
+#: frappe/integrations/frappe_providers/frappecloud_billing.py:24
+msgid "You are not allowed to access this resource"
+msgstr "你无权访问此资源"
+
+#: frappe/model/document.py:238
+msgid "You need the '{0}' permission on {1} {2} to perform this action."
+msgstr "你需要在 {1} {2} 上具有 「{0}」 权限才能执行此操作。"
+
+#: frappe/desk/doctype/workspace/workspace.py:113
+msgid "You need to be Workspace Manager to delete a public workspace."
+msgstr "只有工作区管理员才能删除公共工作区。"
+
+#: frappe/model/rename_doc.py:388
+msgid "You need write permission on {0} {1} to merge"
+msgstr "需要对 {0} {1} 拥有写权限才能合并"
+
+#: frappe/model/rename_doc.py:383
+msgid "You need write permission on {0} {1} to rename"
+msgstr "需要对 {0} {1} 拥有写权限才能重命名"
+
+#. Success message of the Module Onboarding 'Website'
+#: frappe/website/module_onboarding/website/website.json
+msgid "Your website is all set up!"
+msgstr "你的网站已全部设置完成！"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "adjust"
+msgstr "adjust"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "align-center"
+msgstr "align-center"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "align-justify"
+msgstr "align-justify"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "align-left"
+msgstr "align-left"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "align-right"
+msgstr "align-right"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "arrow-down"
+msgstr "arrow-down"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "arrow-left"
+msgstr "arrow-left"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "arrow-right"
+msgstr "arrow-right"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "arrow-up"
+msgstr "arrow-up"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "asterisk"
+msgstr "asterisk"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "backward"
+msgstr "backward"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "ban-circle"
+msgstr "ban-circle"
+
+#. Option for the 'Type' (Select) field in DocType 'DocField'
+#. Option for the 'Field Type' (Select) field in DocType 'Custom Field'
+#. Option for the 'Type' (Select) field in DocType 'Customize Form Field'
+#: frappe/core/doctype/docfield/docfield.json
+#: frappe/custom/doctype/custom_field/custom_field.json
+#: frappe/custom/doctype/customize_form_field/customize_form_field.json
+msgid "Barcode"
+msgstr "Barcode"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "bell"
+msgstr "bell"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "bold"
+msgstr "bold"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "book"
+msgstr "book"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "bookmark"
+msgstr "bookmark"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "briefcase"
+msgstr "briefcase"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "bullhorn"
+msgstr "bullhorn"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "camera"
+msgstr "camera"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "certificate"
+msgstr "certificate"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "check"
+msgstr "check"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "chevron-down"
+msgstr "chevron-down"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "chevron-left"
+msgstr "chevron-left"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "chevron-right"
+msgstr "chevron-right"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "chevron-up"
+msgstr "chevron-up"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "circle-arrow-down"
+msgstr "circle-arrow-down"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "circle-arrow-left"
+msgstr "circle-arrow-left"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "circle-arrow-right"
+msgstr "circle-arrow-right"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "circle-arrow-up"
+msgstr "circle-arrow-up"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "cog"
+msgstr "cog"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "comment"
+msgstr "comment"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "download"
+msgstr "download"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "download-alt"
+msgstr "download-alt"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "edit"
+msgstr "edit"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "eject"
+msgstr "eject"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "envelope"
+msgstr "envelope"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "exclamation-sign"
+msgstr "exclamation-sign"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "eye-close"
+msgstr "eye-close"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "eye-open"
+msgstr "eye-open"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "facetime-video"
+msgstr "facetime-video"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "fast-backward"
+msgstr "fast-backward"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "fast-forward"
+msgstr "fast-forward"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "file"
+msgstr "file"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "film"
+msgstr "film"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "filter"
+msgstr "filter"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "fire"
+msgstr "fire"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "flag"
+msgstr "flag"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "folder-close"
+msgstr "folder-close"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "folder-open"
+msgstr "folder-open"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "font"
+msgstr "font"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "forward"
+msgstr "forward"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "fullscreen"
+msgstr "fullscreen"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "gift"
+msgstr "gift"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "glass"
+msgstr "glass"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "globe"
+msgstr "globe"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "hand-down"
+msgstr "hand-down"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "hand-left"
+msgstr "hand-left"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "hand-right"
+msgstr "hand-right"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "hand-up"
+msgstr "hand-up"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "hdd"
+msgstr "hdd"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "headphones"
+msgstr "headphones"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "heart"
+msgstr "hear"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "home"
+msgstr "home"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "inbox"
+msgstr "inbox"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "indent-left"
+msgstr "indent-left"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "indent-right"
+msgstr "indent-right"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "info-sign"
+msgstr "info-sign"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "italic"
+msgstr "italic"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "leaf"
+msgstr "leaf"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "list-alt"
+msgstr "list-alt"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "lock"
+msgstr "lock"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "magnet"
+msgstr "magnet"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "map-marker"
+msgstr "map-marker"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "minus"
+msgstr "minus"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "minus-sign"
+msgstr "minus-sign"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "move"
+msgstr "move"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "music"
+msgstr "music"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "off"
+msgstr "off"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "ok"
+msgstr "ok"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "ok-circle"
+msgstr "ok-circle"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "ok-sign"
+msgstr "ok-sign"
+
+#: frappe/utils/data.py:1373
+msgid "only."
+msgstr "仅此。"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "pause"
+msgstr "pause"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "pencil"
+msgstr "pencil"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "picture"
+msgstr "picture"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "plane"
+msgstr "plane"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "play"
+msgstr "play"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "play-circle"
+msgstr "play-circle"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "plus"
+msgstr "plus"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "plus-sign"
+msgstr "plus-sign"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "qrcode"
+msgstr "qrcode"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "question-sign"
+msgstr "question-sign"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "random"
+msgstr "random"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "refresh"
+msgstr "refresh"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "remove"
+msgstr "remove"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "remove-circle"
+msgstr "remove-circle"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "remove-sign"
+msgstr "remove-sign"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "repeat"
+msgstr "repeat"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "resize-full"
+msgstr "resize-full"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "resize-horizontal"
+msgstr "resize-horizontal"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "resize-small"
+msgstr "resize-small"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "resize-vertical"
+msgstr "resize-vertical"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "retweet"
+msgstr "retweet"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "road"
+msgstr "road"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "screenshot"
+msgstr "screenshot"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "search"
+msgstr "search"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "share-alt"
+msgstr "share-alt"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "shopping-cart"
+msgstr "shopping-car"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "signal"
+msgstr "signal"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "star"
+msgstr "star"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "star-empty"
+msgstr "star-empty"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "step-backward"
+msgstr "step-backward"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "step-forward"
+msgstr "step-forward"
+
+#: frappe/core/doctype/recorder/recorder_list.js:87
+msgid "Stop"
+msgstr "停止"
+
+#. Name of a DocType
+#: frappe/desk/doctype/tag/tag.json
+msgid "Tag"
+msgstr "标签"
+
+#: frappe/model/meta.py:51
+#: frappe/public/js/frappe/form/templates/form_sidebar.html:100
+#: frappe/public/js/frappe/list/bulk_operations.js:430
+#: frappe/public/js/frappe/list/list_sidebar.html:50
+#: frappe/public/js/frappe/list/list_sidebar.js:228
+#: frappe/public/js/frappe/model/meta.js:204
+#: frappe/public/js/frappe/model/model.js:133
+#: frappe/public/js/frappe/ui/toolbar/awesome_bar.js:171
+msgid "Tags"
+msgstr "标签"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "tasks"
+msgstr "tasks"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "text-height"
+msgstr "text-height"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "text-width"
+msgstr "text-width"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "th"
+msgstr "th"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "th-large"
+msgstr "th-large"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "th-list"
+msgstr "th-list"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "thumbs-down"
+msgstr "thumbs-down"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "thumbs-up"
+msgstr "thumbs-up"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "time"
+msgstr "time"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "tint"
+msgstr "tint"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "trash"
+msgstr "trash"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "upload"
+msgstr "upload"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "user"
+msgstr "user"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "volume-down"
+msgstr "volume-down"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "volume-off"
+msgstr "volume-off"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "volume-up"
+msgstr "volume-up"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "warning-sign"
+msgstr "warning-sign"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "wrench"
+msgstr "wrench"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "zoom-in"
+msgstr "zoom-in"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "zoom-out"
+msgstr "zoom-out"
+
+#: frappe/public/js/frappe/utils/utils.js:941
+msgid "{0} Modules"
+msgstr "{0} 个模块"
+
+#: frappe/core/doctype/language/language.py:43
+msgid ""
+"{0} must begin and end with a letter and can only contain letters,\n"
+"\t\t\t\thyphen or underscore."
+msgstr ""
+"{0} 必须以字母开头和结尾，并且只能包含字母、\n"
+"\t\t\t\t连字符或下划线。"
+
+#: frappe/utils/print_format.py:151 frappe/utils/print_format.py:195
+msgid "{0}/{1} complete | Please leave this tab open until completion."
+msgstr "{0}/{1} 完成 | 请保持此标签页开启直到完成。"
+
+#. Count format of shortcut in the Website Workspace
+#: frappe/website/workspace/website/website.json
+msgid "{} Active"
+msgstr "{} 活跃"
+
+msgid "My Profile"
+msgstr "我的资料"
+
+msgid "My Settings"
+msgstr "我的设置"
 
