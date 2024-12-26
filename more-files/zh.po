@@ -2317,7 +2317,7 @@ msgstr "App ID"
 #: frappe/public/js/frappe/ui/toolbar/navbar.html:8
 #: frappe/website/doctype/website_settings/website_settings.json
 msgid "App Logo"
-msgstr "App Logo"
+msgstr "Logo"
 
 #. Label of the app_name (Select) field in DocType 'Module Def'
 #. Label of the app_name (Data) field in DocType 'Changelog Feed'
@@ -2329,7 +2329,7 @@ msgstr "App Logo"
 #: frappe/integrations/doctype/oauth_client/oauth_client.json
 #: frappe/website/doctype/website_settings/website_settings.json
 msgid "App Name"
-msgstr "App名称"
+msgstr "应用名称"
 
 #. Label of the app_secret_key (Password) field in DocType 'Dropbox Settings'
 #: frappe/integrations/doctype/dropbox_settings/dropbox_settings.json
@@ -6346,7 +6346,7 @@ msgstr "定制化"
 
 #: frappe/public/js/frappe/views/workspace/workspace.js:356
 msgid "Customizations Discarded"
-msgstr "舍弃的定制"
+msgstr "取消的定制"
 
 #: frappe/custom/doctype/customize_form/customize_form.js:465
 msgid "Customizations Reset"
@@ -10022,7 +10022,7 @@ msgstr "故障率"
 #. Label of the favicon (Attach) field in DocType 'Website Settings'
 #: frappe/website/doctype/website_settings/website_settings.json
 msgid "FavIcon"
-msgstr "收藏夹图标"
+msgstr "网站图标"
 
 #. Label of the fax (Data) field in DocType 'Address'
 #: frappe/contacts/doctype/address/address.json
@@ -16659,7 +16659,7 @@ msgstr "待设置的新值"
 #: frappe/public/js/frappe/widgets/widget_dialog.js:72
 #: frappe/website/doctype/web_form/web_form.py:311
 msgid "New {0}"
-msgstr "新{0}"
+msgstr "新建{0}"
 
 #: frappe/public/js/frappe/views/reports/query_report.js:393
 msgid "New {0} Created"
@@ -16675,7 +16675,7 @@ msgstr "已创建新的 {0} {1}"
 
 #: frappe/automation/doctype/auto_repeat/auto_repeat.py:374
 msgid "New {0}: {1}"
-msgstr "新{0}：{1}"
+msgstr "新建{0}：{1}"
 
 #: frappe/utils/change_log.py:373
 msgid "New {} releases for the following apps are available"
@@ -16709,7 +16709,7 @@ msgstr "Newsletter电子邮件组"
 #: frappe/email/doctype/newsletter/newsletter.json
 #: frappe/website/doctype/utm_campaign/utm_campaign.json
 msgid "Newsletter Manager"
-msgstr "Newsletter经理"
+msgstr "Newsletter负责人"
 
 #: frappe/email/doctype/newsletter/newsletter.py:128
 msgid "Newsletter has already been sent"
@@ -33481,3 +33481,5 @@ msgstr "个人照片"
 msgid "Mobile Number"
 msgstr "手机号码"
 
+msgid "Clear Cache"
+msgstr "清除缓存"
