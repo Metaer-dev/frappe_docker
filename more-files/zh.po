@@ -2287,31 +2287,31 @@ msgstr "除了系统管理员之外，具有「设置用户权限」权限的角
 #: frappe/desk/doctype/workspace/workspace.json
 #: frappe/website/doctype/website_theme_ignore_app/website_theme_ignore_app.json
 msgid "App"
-msgstr "App"
+msgstr "应用"
 
 #. Label of the app_access_key (Data) field in DocType 'Dropbox Settings'
 #: frappe/integrations/doctype/dropbox_settings/dropbox_settings.json
 msgid "App Access Key"
-msgstr "App访问密钥"
+msgstr "应用访问密钥"
 
 #: frappe/integrations/doctype/dropbox_settings/dropbox_settings.js:22
 msgid "App Access Key and/or Secret Key are not present."
-msgstr "App访问密钥 和/或 密钥不存在。"
+msgstr "应用访问密钥 和/或 密钥不存在。"
 
 #. Label of the client_id (Data) field in DocType 'OAuth Client'
 #: frappe/integrations/doctype/oauth_client/oauth_client.json
 msgid "App Client ID"
-msgstr "App客户端ID"
+msgstr "应用客户端ID"
 
 #. Label of the client_secret (Data) field in DocType 'OAuth Client'
 #: frappe/integrations/doctype/oauth_client/oauth_client.json
 msgid "App Client Secret"
-msgstr "App客户端密钥"
+msgstr "应用客户端密钥"
 
 #. Label of the app_id (Data) field in DocType 'Google Settings'
 #: frappe/integrations/doctype/google_settings/google_settings.json
 msgid "App ID"
-msgstr "App ID"
+msgstr "应用ID"
 
 #. Label of the app_logo (Attach Image) field in DocType 'Website Settings'
 #: frappe/public/js/frappe/ui/toolbar/navbar.html:8
@@ -2334,15 +2334,15 @@ msgstr "应用名称"
 #. Label of the app_secret_key (Password) field in DocType 'Dropbox Settings'
 #: frappe/integrations/doctype/dropbox_settings/dropbox_settings.json
 msgid "App Secret Key"
-msgstr "App密钥"
+msgstr "应用密钥"
 
 #: frappe/modules/utils.py:279
 msgid "App not found for module: {0}"
-msgstr "未找到模块的App：{0}"
+msgstr "未找到模块的应用：{0}"
 
 #: frappe/__init__.py:1808
 msgid "App {0} is not installed"
-msgstr "App {0} 未安装"
+msgstr "应用 {0} 未安装"
 
 #. Label of the append_emails_to_sent_folder (Check) field in DocType 'Email
 #. Account'
@@ -5528,7 +5528,7 @@ msgstr "连接到 {}"
 #: frappe/integrations/doctype/connected_app/connected_app.json
 #: frappe/integrations/doctype/token_cache/token_cache.json
 msgid "Connected App"
-msgstr "已连接的App"
+msgstr "已连接的应用"
 
 #. Label of the connected_user (Link) field in DocType 'Email Account'
 #: frappe/email/doctype/email_account/email_account.json
@@ -5930,7 +5930,7 @@ msgstr "创建新的看板"
 
 #: frappe/core/doctype/user/user.js:270
 msgid "Create User Email"
-msgstr "创建用户电子邮件"
+msgstr "创建用户邮箱"
 
 #: frappe/printing/page/print_format_builder/print_format_builder_start.html:16
 msgid "Create a New Format"
@@ -6826,7 +6826,7 @@ msgstr "默认修改命名"
 #: frappe/core/doctype/system_settings/system_settings.json
 #: frappe/core/doctype/user/user.json
 msgid "Default App"
-msgstr "默认应用程序"
+msgstr "默认应用"
 
 #. Label of the default_email_template (Link) field in DocType 'DocType'
 #. Label of the default_email_template (Link) field in DocType 'Customize Form'
@@ -9351,7 +9351,7 @@ msgstr "在 Google 设置中输入客户端 ID 和客户端密钥。"
 
 #: frappe/templates/includes/login/login.js:351
 msgid "Enter Code displayed in OTP App."
-msgstr "输入 OTP App 中显示的代码。"
+msgstr "输入 OTP 应用中显示的代码。"
 
 #: frappe/public/js/frappe/views/communication.js:762
 msgid "Enter Email Recipient(s)"
@@ -17755,7 +17755,7 @@ msgstr "或者"
 #. 'System Settings'
 #: frappe/core/doctype/system_settings/system_settings.json
 msgid "OTP App"
-msgstr "OTP App"
+msgstr "OTP应用"
 
 #. Label of the otp_issuer_name (Data) field in DocType 'System Settings'
 #: frappe/core/doctype/system_settings/system_settings.json
@@ -17772,7 +17772,7 @@ msgstr "OTP密码已重置。下次登录时需要重新注册。"
 
 #: frappe/templates/includes/login/login.js:355
 msgid "OTP setup using OTP App was not completed. Please contact Administrator."
-msgstr "使用 OTP App 的 OTP 设置未完成。请联系管理员。"
+msgstr "使用 OTP 应用的 OTP 设置未完成。请联系管理员。"
 
 #. Label of the occurrences (Int) field in DocType 'System Health Report
 #. Errors'
@@ -20816,7 +20816,7 @@ msgstr "重定向网址"
 #: frappe/core/doctype/system_settings/system_settings.json
 #: frappe/core/doctype/user/user.json
 msgid "Redirect to the selected app after login"
-msgstr "登录后重定向到选定的app"
+msgstr "登录后重定向到选定的应用"
 
 #. Description of the 'Welcome URL' (Data) field in DocType 'Email Group'
 #: frappe/email/doctype/email_group/email_group.json
@@ -28263,7 +28263,7 @@ msgstr "用户默认值"
 #. Label of the user_details_tab (Tab Break) field in DocType 'User'
 #: frappe/core/doctype/user/user.json
 msgid "User Details"
-msgstr "用户详细信息"
+msgstr "用户信息"
 
 #. Name of a report
 #: frappe/core/report/user_doctype_permissions/user_doctype_permissions.json
@@ -30186,7 +30186,7 @@ msgstr "你需要首先创建这些："
 
 #: frappe/www/login.html:73
 msgid "You need to enable JavaScript for your app to work."
-msgstr "你需要启用 JavaScript 才能使你的 app 正常运行。"
+msgstr "你需要启用 JavaScript 才能使你的应用正常运行。"
 
 #: frappe/core/doctype/docshare/docshare.py:62
 msgid "You need to have \"Share\" permission"
