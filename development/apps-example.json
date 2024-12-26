@@ -10,5 +10,9 @@
   {
     "url": "https://gitee.com/iniself/insights.git",
     "branch": "develop"
+  },
+  {
+    "url": "https://gitee.com/iniself/frapify.git",
+    "branch": "develop"
   }
 ]
