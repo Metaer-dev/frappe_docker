@@ -9360,7 +9360,7 @@ msgstr "输入收件人"
 #. Label of the doc_type (Link) field in DocType 'Customize Form'
 #: frappe/custom/doctype/customize_form/customize_form.json
 msgid "Enter Form Type"
-msgstr "输入表格类型"
+msgstr "输入表单类型"
 
 #: frappe/public/js/frappe/ui/messages.js:94
 msgctxt "Title of prompt dialog"
@@ -27778,7 +27778,7 @@ msgstr "未处理的电子邮件"
 #: frappe/custom/doctype/custom_field/custom_field.json
 #: frappe/custom/doctype/customize_form_field/customize_form_field.json
 msgid "Unique"
-msgstr "唯一"
+msgstr "唯一的"
 
 #: frappe/website/report/website_analytics/website_analytics.js:60
 msgid "Unknown"
