@@ -8603,7 +8603,7 @@ msgstr "编辑属性"
 
 #: frappe/public/js/frappe/widgets/widget_dialog.js:48
 msgid "Edit Quick List"
-msgstr "编辑快速列表"
+msgstr "编辑快捷列表"
 
 #: frappe/public/js/frappe/widgets/widget_dialog.js:40
 msgid "Edit Shortcut"
@@ -10588,7 +10588,7 @@ msgstr "一周的第一天"
 #: frappe/contacts/doctype/contact/contact.json
 #: frappe/core/doctype/user/user.json frappe/www/complete_signup.html:15
 msgid "First Name"
-msgstr "名"
+msgstr "姓名"
 
 #. Label of the first_success_message (Data) field in DocType 'Success Action'
 #: frappe/core/doctype/success_action/success_action.json
@@ -15279,7 +15279,7 @@ msgstr "维护用户"
 #. Label of the major (Int) field in DocType 'Package Release'
 #: frappe/core/doctype/package_release/package_release.json
 msgid "Major"
-msgstr "主要的"
+msgstr "主版本号"
 
 #. Label of the show_name_in_global_search (Check) field in DocType 'DocType'
 #: frappe/core/doctype/doctype/doctype.json
@@ -15852,7 +15852,7 @@ msgstr "最小密码强度"
 #. Label of the minor (Int) field in DocType 'Package Release'
 #: frappe/core/doctype/package_release/package_release.json
 msgid "Minor"
-msgstr "次要版本"
+msgstr "次版本号"
 
 #. Option for the 'Send Alert On' (Select) field in DocType 'Notification'
 #: frappe/email/doctype/notification/notification.json
@@ -16013,7 +16013,7 @@ msgstr "模块名称"
 #: frappe/core/workspace/build/build.json
 #: frappe/desk/doctype/module_onboarding/module_onboarding.json
 msgid "Module Onboarding"
-msgstr "模块入门"
+msgstr "入门模块"
 
 #. Name of a DocType
 #. Label of the module_profile (Link) field in DocType 'User'
@@ -16543,7 +16543,7 @@ msgstr "新建文件夹"
 
 #: frappe/public/js/frappe/views/kanban/kanban_view.js:346
 msgid "New Kanban Board"
-msgstr "新看板"
+msgstr "新建看板"
 
 #: frappe/public/js/frappe/widgets/widget_dialog.js:62
 msgid "New Links"
@@ -16592,7 +16592,7 @@ msgstr "新打印格式名称"
 
 #: frappe/public/js/frappe/widgets/widget_dialog.js:68
 msgid "New Quick List"
-msgstr "新的快速列表"
+msgstr "新的快捷列表"
 
 #: frappe/public/js/frappe/views/reports/report_view.js:1307
 msgid "New Report name"
@@ -16605,7 +16605,7 @@ msgstr "新角色"
 
 #: frappe/public/js/frappe/widgets/widget_dialog.js:60
 msgid "New Shortcut"
-msgstr "新快捷方式"
+msgstr "新建快捷方式"
 
 #. Label of the new_users (Int) field in DocType 'System Health Report'
 #: frappe/desk/doctype/system_health_report/system_health_report.json
@@ -17898,7 +17898,7 @@ msgstr "引导名称"
 #. Name of a DocType
 #: frappe/desk/doctype/onboarding_permission/onboarding_permission.json
 msgid "Onboarding Permission"
-msgstr "引导许可"
+msgstr "引导权限"
 
 #. Label of the onboarding_status (Small Text) field in DocType 'User'
 #: frappe/core/doctype/user/user.json
@@ -18442,7 +18442,7 @@ msgstr "包名称"
 #. Name of a DocType
 #: frappe/core/doctype/package_release/package_release.json
 msgid "Package Release"
-msgstr "发布包"
+msgstr "已发布的包"
 
 #. Label of a Card Break in the Build Workspace
 #: frappe/core/workspace/build/build.json
@@ -18474,7 +18474,7 @@ msgstr "包是轻量级应用程序（模块定义的集合），可以直接从
 #: frappe/desk/doctype/workspace_link/workspace_link.json
 #: frappe/desk/doctype/workspace_shortcut/workspace_shortcut.json
 msgid "Page"
-msgstr "页"
+msgstr "页面"
 
 #. Option for the 'Fieldtype' (Select) field in DocType 'Web Form Field'
 #: frappe/public/js/print_format_builder/PrintFormatSection.vue:63
@@ -18778,7 +18778,7 @@ msgstr "粘贴"
 #: frappe/core/doctype/package_release/package_release.json
 #: frappe/core/doctype/patch_log/patch_log.json
 msgid "Patch"
-msgstr "补丁"
+msgstr "修订版本号"
 
 #. Name of a DocType
 #: frappe/core/doctype/patch_log/patch_log.json
@@ -28833,7 +28833,7 @@ msgstr "查看日志"
 #: frappe/core/doctype/user/user.js:142
 #: frappe/core/doctype/user_permission/user_permission.js:24
 msgid "View Permitted Documents"
-msgstr "查看许可文件"
+msgstr "查看用户权限"
 
 #. Label of the view_properties (Button) field in DocType 'Notification'
 #: frappe/email/doctype/notification/notification.json
@@ -28911,7 +28911,7 @@ msgstr "视图"
 #. Label of the is_virtual (Check) field in DocType 'DocField'
 #: frappe/core/doctype/docfield/docfield.json
 msgid "Virtual"
-msgstr "虚拟的"
+msgstr "虚拟"
 
 #: frappe/model/virtual_doctype.py:76
 msgid "Virtual DocType {} requires a static method called {} found {}"
@@ -29642,7 +29642,7 @@ msgstr "工作区数值卡片"
 #. Name of a DocType
 #: frappe/desk/doctype/workspace_quick_list/workspace_quick_list.json
 msgid "Workspace Quick List"
-msgstr "工作区快速列表"
+msgstr "工作区快捷列表"
 
 #. Label of a standard navbar item
 #. Type: Action
@@ -32656,7 +32656,7 @@ msgstr "没有内容"
 
 #: frappe/desk/doctype/workspace/workspace.js:23
 msgid "This document allows you to edit limited fields. For all kinds of workspace customization, use the Edit button located on the workspace page"
-msgstr "此文档仅允许编辑有限的字段。要进行所有类型的工作空间自定义，请使用位于工作空间页面上的编辑按钮"
+msgstr "此文档仅允许编辑有限的字段。要进行所有类型的工作空间自定义，请使用位于工作区页面上的编辑按钮"
 
 #: frappe/www/me.html:51
 msgid "To manage your authorized third party apps"
@@ -33483,3 +33483,39 @@ msgstr "手机号码"
 
 msgid "Clear Cache"
 msgstr "清除缓存"
+
+msgid "Existing Chart"
+msgstr "已有图表"
+
+msgid "Custom Block"
+msgstr "自定义块"
+
+msgid "Add Custom Block"
+msgstr "添加自定义块"
+
+msgid "Shortcut"
+msgstr "快捷方式"
+
+msgid "Add Shortcut"
+msgstr "添加快捷方式"
+
+msgid "Quick List"
+msgstr "快捷列表"
+
+msgid "Add Quick List"
+msgstr "添加快捷列表"
+
+msgid "Add Links"
+msgstr "添加链接"
+
+msgid "Add Chart"
+msgstr "添加图表"
+
+msgid "Onboarding"
+msgstr "入门引导"
+
+msgid "Add Onboarding"
+msgstr "添加入门引导"
+
+msgid "Add Number Card"
+msgstr "添加数值卡片"
