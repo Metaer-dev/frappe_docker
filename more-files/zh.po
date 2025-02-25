@@ -936,18 +936,18 @@ msgstr "API端点参数"
 #: frappe/integrations/doctype/google_settings/google_settings.json
 #: frappe/integrations/doctype/push_notification_settings/push_notification_settings.json
 msgid "API Key"
-msgstr "API密钥"
+msgstr "API Key"
 
 #. Description of the 'Authentication' (Section Break) field in DocType 'Push
 #. Notification Settings'
 #: frappe/integrations/doctype/push_notification_settings/push_notification_settings.json
 msgid "API Key and Secret to interact with the relay server. These will be auto-generated when the first push notification is sent from any of the apps installed on this site."
-msgstr "与中继服务器交互的 API 密钥和密钥。当从本网站安装的任何应用发送第一次推送通知时，这些密钥将自动生成。"
+msgstr "与中继服务器交互的 API Key 和 API Secret。当从本网站安装的任何应用发送第一次推送通知时，这些密钥将自动生成。"
 
 #. Description of the 'API Key' (Data) field in DocType 'User'
 #: frappe/core/doctype/user/user.json
 msgid "API Key cannot be regenerated"
-msgstr "API密钥无法重新生成"
+msgstr "API Key无法重新生成"
 
 #. Label of the api_method (Data) field in DocType 'Server Script'
 #: frappe/core/doctype/server_script/server_script.json
@@ -962,7 +962,7 @@ msgstr "API方法"
 #: frappe/email/doctype/email_account/email_account.json
 #: frappe/integrations/doctype/push_notification_settings/push_notification_settings.json
 msgid "API Secret"
-msgstr "API密钥"
+msgstr "API Secret"
 
 #. Option for the 'Default Sort Order' (Select) field in DocType 'DocType'
 #. Option for the 'Sort Order' (Select) field in DocType 'Customize Form'
@@ -7626,7 +7626,7 @@ msgstr "文件状态"
 #: frappe/core/doctype/docfield/docfield.json
 #: frappe/custom/doctype/property_setter/property_setter.json
 msgid "DocField"
-msgstr "文档字段"
+msgstr "DocField"
 
 #. Name of a DocType
 #: frappe/core/doctype/docperm/docperm.json
@@ -11469,7 +11469,7 @@ msgstr "转到{0}"
 #: frappe/custom/doctype/doctype_layout/doctype_layout.js:42
 #: frappe/workflow/doctype/workflow/workflow.js:44
 msgid "Go to {0} List"
-msgstr "转到{0}列表"
+msgstr "查看{0}列表"
 
 #: frappe/core/doctype/page/page.js:11
 msgid "Go to {0} Page"
@@ -12308,7 +12308,7 @@ msgstr "ID（名称）"
 #. Description of the 'Field Name' (Data) field in DocType 'Property Setter'
 #: frappe/custom/doctype/property_setter/property_setter.json
 msgid "ID (name) of the entity whose property is to be set"
-msgstr "要设置属性的实体的ID（名称）"
+msgstr "要填写字段的名称而非标签"
 
 #. Description of the 'Section ID' (Data) field in DocType 'Web Page Block'
 #: frappe/website/doctype/web_page_block/web_page_block.json
@@ -12520,7 +12520,7 @@ msgstr "如果用户选中了任何角色，则该用户将成为「系统用户
 
 #: frappe/core/page/permission_manager/permission_manager_help.html:38
 msgid "If these instructions where not helpful, please add in your suggestions on GitHub Issues."
-msgstr "如果这些说明没有帮助，请在 GitHub 问题上提交你的建议。"
+msgstr "如果这些说明没有帮助，请联系我们。"
 
 #. Description of the 'Fetch on Save if Empty' (Check) field in DocType
 #. 'DocField'
@@ -12836,7 +12836,7 @@ msgstr "正在导入 {0} 个，共 {1} 个，{2}"
 
 #: frappe/public/js/frappe/ui/filters/filter.js:20
 msgid "In"
-msgstr "在"
+msgstr "在...中"
 
 #. Description of the 'Force User to Reset Password' (Int) field in DocType
 #. 'System Settings'
@@ -14438,7 +14438,7 @@ msgstr "留空以持续重复"
 #: frappe/core/doctype/communication/mixins.py:207
 #: frappe/email/doctype/email_account/email_account.py:715
 msgid "Leave this conversation"
-msgstr "留下此对话"
+msgstr "拒收"
 
 #. Option for the 'PDF Page Size' (Select) field in DocType 'Print Settings'
 #: frappe/printing/doctype/print_settings/print_settings.json
@@ -14642,7 +14642,7 @@ msgstr "浅色主题"
 #: frappe/core/doctype/communication/communication.json
 #: frappe/public/js/frappe/ui/filters/filter.js:18
 msgid "Like"
-msgstr "点赞"
+msgstr "包含"
 
 #. Label of the like_limit (Int) field in DocType 'Blog Settings'
 #: frappe/website/doctype/blog_settings/blog_settings.json
@@ -15394,7 +15394,7 @@ msgstr "地图"
 #: frappe/public/js/frappe/data_import/import_preview.js:190
 #: frappe/public/js/frappe/data_import/import_preview.js:302
 msgid "Map Columns"
-msgstr "地图列"
+msgstr "列映射"
 
 #: frappe/public/js/frappe/list/base_list.js:212
 msgid "Map View"
@@ -16481,7 +16481,7 @@ msgstr "网络打印机设置"
 #: frappe/website/doctype/web_form/templates/web_list.html:15
 #: frappe/www/list.html:19
 msgid "New"
-msgstr "新"
+msgstr "新建"
 
 #: frappe/public/js/frappe/views/interaction.js:15
 msgid "New Activity"
@@ -17262,11 +17262,11 @@ msgstr "没有帮助"
 
 #: frappe/public/js/frappe/ui/filters/filter.js:21
 msgid "Not In"
-msgstr "不在"
+msgstr "不在...中"
 
 #: frappe/public/js/frappe/ui/filters/filter.js:19
 msgid "Not Like"
-msgstr "不类似"
+msgstr "不包含"
 
 #: frappe/public/js/frappe/form/linked_with.js:45
 msgid "Not Linked to any record"
@@ -17404,12 +17404,12 @@ msgstr "不允许查看{0}"
 #: frappe/automation/workspace/tools/tools.json
 #: frappe/desk/doctype/note/note.json
 msgid "Note"
-msgstr "注"
+msgstr "弹窗"
 
 #. Name of a DocType
 #: frappe/desk/doctype/note_seen_by/note_seen_by.json
 msgid "Note Seen By"
-msgstr "笔记已读"
+msgstr "弹窗已读"
 
 #: frappe/www/confirm_workflow_action.html:8
 msgid "Note:"
@@ -17454,7 +17454,7 @@ msgstr "注意：你的帐户删除请求将在 {0} 小时内得到满足。"
 
 #: frappe/core/doctype/data_export/exporter.py:183
 msgid "Notes:"
-msgstr "笔记："
+msgstr "注意："
 
 #: frappe/public/js/frappe/ui/notifications/notifications.js:490
 msgid "Nothing New"
@@ -22504,7 +22504,7 @@ msgstr "保存"
 
 #: frappe/core/doctype/user/user.js:335
 msgid "Save API Secret: {0}"
-msgstr "保存API密钥：{0}"
+msgstr "保存API Secret：{0}"
 
 #: frappe/workflow/doctype/workflow/workflow.js:143
 msgid "Save Anyway"
@@ -23266,7 +23266,7 @@ msgstr "预定发送时间"
 #. Label of the event (Select) field in DocType 'Notification'
 #: frappe/email/doctype/notification/notification.json
 msgid "Send Alert On"
-msgstr "发送警报时"
+msgstr "发送通知时间"
 
 #. Label of the send_email_alert (Check) field in DocType 'Workflow'
 #: frappe/workflow/doctype/workflow/workflow.json
@@ -23739,7 +23739,7 @@ msgstr "设置属性"
 #. 'Notification'
 #: frappe/email/doctype/notification/notification.json
 msgid "Set Property After Alert"
-msgstr "设置警报后的属性"
+msgstr "设置通知后的属性"
 
 #: frappe/public/js/frappe/form/link_selector.js:207
 #: frappe/public/js/frappe/form/link_selector.js:208
@@ -24541,7 +24541,7 @@ msgstr "标识符"
 #: frappe/website/doctype/web_form_field/web_form_field.json
 #: frappe/website/doctype/web_template_field/web_template_field.json
 msgid "Small Text"
-msgstr "小文字"
+msgstr "短文本"
 
 #. Label of the smallest_currency_fraction_value (Currency) field in DocType
 #. 'Currency'
@@ -28947,7 +28947,7 @@ msgstr "想讨论吗？"
 #. Option for the 'Address Type' (Select) field in DocType 'Address'
 #: frappe/contacts/doctype/address/address.json
 msgid "Warehouse"
-msgstr "仓库地址"
+msgstr "仓库"
 
 #. Option for the 'Style' (Select) field in DocType 'Workflow State'
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
@@ -33519,3 +33519,9 @@ msgstr "添加入门引导"
 
 msgid "Add Number Card"
 msgstr "添加数值卡片"
+
+msgid "Chart Preview"
+msgstr "预览图表"
+
+msgid "Preview Char"
+msgstr "预览图表"
