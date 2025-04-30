@@ -1,14 +1,14 @@
 # Translations template for Framework.
 # Copyright (C) 2024 Frappe Technologies
 # This file is distributed under the same license as the Framework project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Framework VERSION\n"
 "Report-Msgid-Bugs-To: developers@frappe.io\n"
-"POT-Creation-Date: 2024-11-13 05:17+0000\n"
-"PO-Revision-Date: 2024-11-13 05:17+0000\n"
+"POT-Creation-Date: 2025-04-20 09:33+0000\n"
+"PO-Revision-Date: 2025-04-20 09:33+0000\n"
 "Last-Translator: metaer@iniself.com\n"
 "Language-Team: metaer@iniself.com\n"
 "MIME-Version: 1.0\n"
@@ -256,6 +256,89 @@ msgid "<div class=\"alert\">Please don't update it as it can mess up your form. 
 msgstr "<div class=\"alert\">请勿更新，因为这可能会弄乱你的表单。使用「自定义表单视图」和「自定义字段」来设置属性！</div>"
 
 #. Content of the 'Help HTML' (HTML) field in DocType 'Document Naming
+#. Settings'
+#: frappe/core/doctype/document_naming_settings/document_naming_settings.json
+msgid ""
+"<div class=\"well\">\n"
+"    Edit list of Series in the box. Rules:\n"
+"    <ul>\n"
+"        <li>Each Series Prefix on a new line.</li>\n"
+"        <li>Allowed special characters are \"/\" and \"-\"</li>\n"
+"        <li>\n"
+"            Optionally, set the number of digits in the series using dot (.)\n"
+"            followed by hashes (#). For example, \".####\" means that the series\n"
+"            will have four digits. Default is five digits.\n"
+"        </li>\n"
+"        <li>\n"
+"            You can also use variables in the series name by putting them\n"
+"            between (.) dots\n"
+"            <br>\n"
+"            Supported Variables:\n"
+"            <ul>\n"
+"                <li><code>.YYYY.</code> - Year in 4 digits</li>\n"
+"                <li><code>.YY.</code> - Year in 2 digits</li>\n"
+"                <li><code>.MM.</code> - Month</li>\n"
+"                <li><code>.DD.</code> - Day of month</li>\n"
+"                <li><code>.WW.</code> - Week of the year</li>\n"
+"                <li>\n"
+"                    <code>.{fieldname}.</code> - fieldname on the document e.g.\n"
+"                    <code>branch</code>\n"
+"                </li>\n"
+"                <li><code>.FY.</code> - Fiscal Year (requires ERPNext to be installed)</li>\n"
+"                <li><code>.ABBR.</code> - Company Abbreviation (requires ERPNext to be installed)</li>\n"
+"            </ul>\n"
+"        </li>\n"
+"    </ul>\n"
+"    Examples:\n"
+"    <ul>\n"
+"        <li>INV-</li>\n"
+"        <li>INV-10-</li>\n"
+"        <li>INVK-</li>\n"
+"        <li>INV-.YYYY.-.{branch}.-.MM.-.####</li>\n"
+"    </ul>\n"
+"</div>\n"
+"<br>\n"
+msgstr ""
+"<div class=\"well\">\n"
+"    在下面的框中编辑序列列表。规则：\n"
+"    <ul>\n"
+"        <li>每个序列前缀占一行。</li>\n"
+"        <li>允许使用的特殊字符是「/」和「-」</li>\n"
+"        <li>\n"
+"            可选地，使用点（.）后跟井号（#）来设置序列中的位数。例如，「.####」表示\n"
+"            序列将有4位数字。默认为5位数字。\n"
+"        </li>\n"
+"        <li>\n"
+"            你还可以在序列名称中使用变量，方法是将它们放在\n"
+"            点（.）之间\n"
+"            <br>\n"
+"            支持的变量：\n"
+"            <ul>\n"
+"                <li><code>.YYYY.</code> - 4位数年份</li>\n"
+"                <li><code>.YY.</code> - 2位数年份</li>\n"
+"                <li><code>.MM.</code> - 月份</li>\n"
+"                <li><code>.DD.</code> - 月份中的日期</li>\n"
+"                <li><code>.WW.</code> - 一年中的第几周</li>\n"
+"                <li>\n"
+"                    <code>.{fieldname}.</code> - 文档上的字段名，例如\n"
+"                    <code>branch</code>\n"
+"                </li>\n"
+"                <li><code>.FY.</code> - 财年</li>\n"
+"                <li><code>.ABBR.</code> - 公司简称</li>\n"
+"            </ul>\n"
+"        </li>\n"
+"    </ul>\n"
+"    示例：\n"
+"    <ul>\n"
+"        <li>INV-</li>\n"
+"        <li>INV-10-</li>\n"
+"        <li>INVK-</li>\n"
+"        <li>INV-.YYYY.-.{branch}.-.MM.-.####</li>\n"
+"    </ul>\n"
+"</div>\n"
+"<br>\n"
+
+#. Content of the 'Help HTML' (HTML) field in DocType 'Document Naming (version-15)
 #. Settings'
 #: frappe/core/doctype/document_naming_settings/document_naming_settings.json
 msgid ""
@@ -1375,6 +1458,11 @@ msgstr "添加模板"
 msgid "Add Total Row"
 msgstr "添加总行数"
 
+#. Label of the add_translate_data (Check) field in DocType 'Report'
+#: frappe/core/doctype/report/report.json
+msgid "Add Translate Data"
+msgstr "添加翻译"
+
 #. Label of the add_unsubscribe_link (Check) field in DocType 'Email Queue'
 #: frappe/email/doctype/email_queue/email_queue.json
 msgid "Add Unsubscribe Link"
@@ -1508,7 +1596,7 @@ msgstr "添加在网页 &lt;head&gt; 部分的 HTML 代码, 主要用于网站�
 msgid "Added default log doctypes: {}"
 msgstr "添加了默认日志文档类型：{}"
 
-#: frappe/core/doctype/file/file.py:731
+#: frappe/core/doctype/file/file.py:731 (deleted)
 msgid "Added {0}"
 msgstr "添加了{0}"
 
@@ -2139,6 +2227,11 @@ msgstr "同时添加相关的状态依赖字段 {0}"
 msgid "Alternative Email ID"
 msgstr "备用电子邮件 ID"
 
+#. Label of the always_bcc (Data) field in DocType 'Email Account'
+#: frappe/email/doctype/email_account/email_account.json
+msgid "Always BCC Address"
+msgstr "始终密送地址"
+
 #. Label of the add_draft_heading (Check) field in DocType 'Print Settings'
 #: frappe/printing/doctype/print_settings/print_settings.json
 msgid "Always add \"Draft\" Heading for printing draft documents"
@@ -2204,6 +2297,10 @@ msgstr "修改"
 msgid "Amendment Naming Override"
 msgstr "修改命名覆盖"
 
+#: frappe/model/document.py:549
+msgid "Amendment Not Allowed"
+msgstr "禁止修订"
+
 #: frappe/core/doctype/document_naming_settings/document_naming_settings.py:207
 msgid "Amendment naming rules updated."
 msgstr "修改命名规则已更新。"
@@ -2254,7 +2351,7 @@ msgstr "年度的"
 msgid "Anonymization Matrix"
 msgstr "匿名矩阵"
 
-#. Label of the anonymous (Check) field in DocType 'Web Form'
+#. Label of the anonymous (Check) field in DocType 'Web Form' (deleted)
 #: frappe/website/doctype/web_form/web_form.json
 msgid "Anonymous"
 msgstr "匿名的"
@@ -2720,7 +2817,7 @@ msgstr "分配规则日"
 msgid "Assignment Rule User"
 msgstr "分配规则用户"
 
-#: frappe/automation/doctype/assignment_rule/assignment_rule.py:54
+#: frappe/automation/doctype/assignment_rule/assignment_rule.py:54 (deleted)
 msgid "Assignment Rule is not allowed on {0} document type"
 msgstr "{0} 文档类型不允许分配规则"
 
@@ -3104,6 +3201,10 @@ msgstr "自动关注你评论的文档"
 msgid "Auto follow documents that you create"
 msgstr "自动关注你创建的文档"
 
+#: frappe/automation/doctype/auto_repeat/auto_repeat.py:227
+msgid "Auto repeat failed. Please enable auto repeat after fixing the issues."
+msgstr "自动重复失败。请在修复问题后重新启用自动重复功能"
+
 #. Option for the 'Type' (Select) field in DocType 'DocField'
 #. Option for the 'Field Type' (Select) field in DocType 'Custom Field'
 #. Option for the 'Type' (Select) field in DocType 'Customize Form Field'
@@ -3147,6 +3248,10 @@ msgstr "只有启用接收邮件功能时，才能激活自动链接。"
 #: frappe/automation/doctype/assignment_rule/assignment_rule.json
 msgid "Automatically Assign Documents to Users"
 msgstr "自动将文档分配给用户"
+
+#: frappe/public/js/frappe/list/list_view.js:128
+msgid "Automatically applied a filter for recent data. You can disable this behavior from the list view settings."
+msgstr "已自动应用最近数据的筛选器。你可以在列表视图设置中禁用此行为。"
 
 #. Label of the auto_account_deletion (Int) field in DocType 'Website Settings'
 #: frappe/website/doctype/website_settings/website_settings.json
@@ -3387,6 +3492,11 @@ msgstr "备份文件夹名称"
 #: frappe/integrations/doctype/s3_backup_settings/s3_backup_settings.json
 msgid "Backup Frequency"
 msgstr "备份频率"
+
+#. Label of the backup_path (Data) field in DocType 'S3 Backup Settings'
+#: frappe/integrations/doctype/s3_backup_settings/s3_backup_settings.json
+msgid "Backup Path"
+msgstr "备份路径"
 
 #: frappe/desk/page/backups/backups.py:95
 msgid "Backup job is already queued. You will receive an email with the download link"
@@ -4388,6 +4498,10 @@ msgstr "无法获取文件夹的文件内容"
 msgid "Cannot have multiple printers mapped to a single print format."
 msgstr "无法将多台打印机映射到单一打印格式。"
 
+#: frappe/public/js/frappe/form/grid.js:1116
+msgid "Cannot import table with more than 5000 rows."
+msgstr "不能导入超过 5000 行的表格。"
+
 #: frappe/model/document.py:1064
 msgid "Cannot link cancelled document: {0}"
 msgstr "无法链接已取消的文档：{0}"
@@ -4936,14 +5050,17 @@ msgstr "客户端 ID"
 msgid "Client Information"
 msgstr "客户端信息"
 
+#. Linked DocType in DocType's connections
+#. Linked DocType in Module Def's connections
 #. Label of a Link in the Build Workspace
+#. Label of a shortcut in the Build Workspace
 #. Name of a DocType
-#. Label of the client_script (Code) field in DocType 'DocType Layout'
-#. Label of the client_script (Code) field in DocType 'Web Form'
+#. Label of a Code field in DocType 'DocType Layout'
+#: frappe/core/doctype/doctype/doctype.json
+#: frappe/core/doctype/module_def/module_def.json
 #: frappe/core/workspace/build/build.json
 #: frappe/custom/doctype/client_script/client_script.json
 #: frappe/custom/doctype/doctype_layout/doctype_layout.json
-#: frappe/website/doctype/web_form/web_form.json
 #: frappe/website/doctype/web_page/web_page.js:103
 msgid "Client Script"
 msgstr "客户端脚本"
@@ -4961,6 +5078,11 @@ msgstr "客户端密钥"
 #: frappe/integrations/doctype/social_login_key/social_login_key.json
 msgid "Client URLs"
 msgstr "客户端 URL"
+
+#. Label of the client_script (Code) field in DocType 'Web Form'
+#: frappe/website/doctype/web_form/web_form.json
+msgid "Client script"
+msgstr "客户端脚本"
 
 #: frappe/core/doctype/communication/communication.js:39
 #: frappe/desk/doctype/todo/todo.js:23
@@ -5386,6 +5508,11 @@ msgstr "组件"
 msgid "Compose Email"
 msgstr "撰写电子邮件"
 
+#. Option for the 'Row Format' (Select) field in DocType 'DocType'
+#: frappe/core/doctype/doctype/doctype.json
+msgid "Compressed"
+msgstr "压缩"
+
 #. Label of the condition (Select) field in DocType 'Document Naming Rule
 #. Condition'
 #. Label of the condition (Small Text) field in DocType 'Bulk Update'
@@ -5409,7 +5536,7 @@ msgstr "撰写电子邮件"
 msgid "Condition"
 msgstr "条件"
 
-#. Label of the condition_description (HTML) field in DocType 'Web Form'
+#. Label of the condition_description (HTML) field in DocType 'Web Form' (deleted)
 #: frappe/website/doctype/web_form/web_form.json
 msgid "Condition Description"
 msgstr "条件描述"
@@ -5781,6 +5908,10 @@ msgstr "找不到{0}"
 #: frappe/core/doctype/data_import/importer.py:895
 msgid "Could not map column {0} to field {1}"
 msgstr "无法将列 {0} 映射到字段 {1}"
+
+#: frappe/desk/page/setup_wizard/setup_wizard.js:222
+msgid "Could not start up: "
+msgstr "启动失败："
 
 #: frappe/public/js/frappe/web_form/web_form.js:359
 msgid "Couldn't save, please check the data you have entered"
@@ -7356,6 +7487,11 @@ msgstr "桌面图标已存在"
 msgid "Details"
 msgstr "细节"
 
+#. Label of the use_csv_sniffer (Check) field in DocType 'Data Import'
+#: frappe/core/doctype/data_import/data_import.json
+msgid "Detect CSV type"
+msgstr "检测CSV类型"
+
 #: frappe/core/page/permission_manager/permission_manager.js:487
 msgid "Did not add"
 msgstr "没有添加"
@@ -7388,6 +7524,12 @@ msgstr "目录服务器"
 #: frappe/desk/doctype/list_view_settings/list_view_settings.json
 msgid "Disable Auto Refresh"
 msgstr "禁用自动刷新"
+
+#. Label of the disable_automatic_recency_filters (Check) field in DocType
+#. 'List View Settings'
+#: frappe/desk/doctype/list_view_settings/list_view_settings.json
+msgid "Disable Automatic Recency Filters"
+msgstr "关闭自动执行最近的筛选"
 
 #. Label of the disable_change_log_notification (Check) field in DocType
 #. 'System Settings'
@@ -7726,7 +7868,7 @@ msgstr "DocType布局字段"
 msgid "DocType Link"
 msgstr "DocType链接"
 
-#: frappe/core/doctype/doctype/doctype_list.js:22
+#: frappe/core/doctype/doctype/doctype_list.js:22 (deleted)
 msgid "DocType Name"
 msgstr "DocType名称"
 
@@ -8409,6 +8551,11 @@ msgstr "重复字段"
 msgid "Duration"
 msgstr "持续时间"
 
+#. Option for the 'Row Format' (Select) field in DocType 'DocType'
+#: frappe/core/doctype/doctype/doctype.json
+msgid "Dynamic"
+msgstr "动态"
+
 #. Label of the dynamic_filters_section (Section Break) field in DocType
 #. 'Dashboard Chart'
 #: frappe/desk/doctype/dashboard_chart/dashboard_chart.json
@@ -8940,6 +9087,10 @@ msgstr "邮件已被标记为垃圾邮件"
 msgid "Email has been moved to trash"
 msgstr "邮件已移至垃圾箱"
 
+#: frappe/core/doctype/user/user.js:272
+msgid "Email is mandatory to create User Email"
+msgstr "必须填写电子邮件"
+
 #: frappe/public/js/frappe/views/communication.js:807
 msgid "Email not sent to {0} (unsubscribed / disabled)"
 msgstr "邮件未发送至 {0}（退订/已禁用）"
@@ -9253,6 +9404,10 @@ msgstr "加密密钥的格式无效！"
 msgid "Encryption key is invalid! Please check site_config.json"
 msgstr "加密密钥无效！请检查 site_config.json"
 
+#: frappe/core/report/prepared_report_analytics/prepared_report_analytics.py:51
+msgid "End"
+msgstr "结束"
+
 #. Label of the end_date (Date) field in DocType 'Auto Repeat'
 #. Label of the end_date (Date) field in DocType 'Audit Trail'
 #. Label of the end_date (Datetime) field in DocType 'Web Page'
@@ -9503,7 +9658,7 @@ msgstr "连接到电子邮件帐户 {0} 时出错"
 msgid "Error while evaluating Notification {0}. Please fix your template."
 msgstr "评估通知 {0} 时出错。请检查模板。"
 
-#: frappe/model/base_document.py:746
+#: frappe/model/base_document.py:806
 msgid "Error: Data missing in table {0}"
 msgstr "错误：表 {0} 中缺少数据"
 
@@ -9511,7 +9666,7 @@ msgstr "错误：表 {0} 中缺少数据"
 msgid "Error: Value missing for {0}: {1}"
 msgstr "错误：{0} 缺少值：{1}"
 
-#: frappe/www/error.html:36
+#: frappe/www/error.html:36 (deleted)
 msgid "Error: {0}"
 msgstr "错误：{0}"
 
@@ -10044,7 +10199,7 @@ msgstr "精选"
 msgid "Feedback"
 msgstr "反馈"
 
-#. Label of the feedback_request (Data) field in DocType 'Communication'
+#. Label of the feedback_request (Data) field in DocType 'Communication' (version-15)
 #: frappe/core/doctype/communication/communication.json
 msgid "Feedback Request"
 msgstr "反馈请求"
@@ -10462,11 +10617,11 @@ msgstr "筛选设置名称"
 msgid "Filter Values"
 msgstr "筛选值"
 
-#: frappe/utils/data.py:2023
+#: frappe/utils/data.py:2023 (version-15)
 msgid "Filter must be a tuple or list (in a list)"
 msgstr "筛选设置必须是元组或列表（在列表中）"
 
-#: frappe/utils/data.py:2031
+#: frappe/utils/data.py:2031 (version-15)
 msgid "Filter must have 4 values (doctype, fieldname, operator, value): {0}"
 msgstr "筛选设置必须有 4 个值（文档类型、字段名称、运算符、值）：{0}"
 
@@ -11523,6 +11678,10 @@ msgstr "谷歌日历 - 无法从 Google 日历中删除活动 {0}，错误代码
 msgid "Google Calendar - Could not fetch event from Google Calendar, error code {0}."
 msgstr "谷歌日历 - 无法从 Google 日历获取活动，错误代码为 {0}。"
 
+#: frappe/integrations/doctype/google_calendar/google_calendar.py:252
+msgid "Google Calendar - Could not find Calendar for {0}, error code {1}."
+msgstr "Google日历 - 找不到日历 {0}，错误代码 {1}。"
+
 #: frappe/integrations/doctype/google_contacts/google_contacts.py:232
 msgid "Google Calendar - Could not insert contact in Google Contacts {0}, error code {1}."
 msgstr "谷歌日历 - 无法在 Google 通讯录 {0} 中插入联系人，错误代码为 {1}。"
@@ -11686,6 +11845,13 @@ msgstr "绿色"
 #: frappe/public/js/form_builder/components/controls/TableControl.vue:53
 msgid "Grid Empty State"
 msgstr "表格为空"
+
+#. Label of the grid_page_length (Int) field in DocType 'DocType'
+#. Label of the grid_page_length (Int) field in DocType 'Customize Form'
+#: frappe/core/doctype/doctype/doctype.json
+#: frappe/custom/doctype/customize_form/customize_form.json
+msgid "Grid Page Length"
+msgstr "表格每页行数"
 
 #: frappe/public/js/frappe/ui/keyboard.js:126
 msgid "Grid Shortcuts"
@@ -12101,6 +12267,12 @@ msgstr "隐藏天数"
 msgid "Hide Descendants"
 msgstr "隐藏子项"
 
+#. Label of the hide_empty_read_only_fields (Check) field in DocType 'System
+#. Settings'
+#: frappe/core/doctype/system_settings/system_settings.json
+msgid "Hide Empty Read-Only Fields"
+msgstr "隐藏空的只读字段"
+
 #: frappe/www/error.html:62
 msgid "Hide Error"
 msgstr "隐藏错误"
@@ -12457,11 +12629,17 @@ msgstr "如果启用，文档将在用户第一次打开时标记为已读"
 msgid "If enabled, the notification will show up in the notifications dropdown on the top right corner of the navigation bar."
 msgstr "如果启用，通知将显示在导航栏右上角的通知下拉列表中。"
 
-#. Description of the 'Enable Password Policy' (Check) field in DocType 'System
+#. Description of the 'Enable Password Policy' (Check) field in DocType 'System (version-15)
 #. Settings'
 #: frappe/core/doctype/system_settings/system_settings.json
 msgid "If enabled, the password strength will be enforced based on the Minimum Password Score value. A value of 2 being medium strong and 4 being very strong."
 msgstr "如果启用，将根据「最小密码强度」强制执行密码强度。值为 2 时为中等强度，值为 4 时为非常强。"
+
+#. Description of the 'Enable Password Policy' (Check) field in DocType 'System
+#. Settings'
+#: frappe/core/doctype/system_settings/system_settings.json
+msgid "If enabled, the password strength will be enforced based on the Minimum Password Score value. A value of 1 being very weak and 4 being very strong."
+msgstr "如果启用，将根据「最小密码强度」强制执行密码强度。值为 1 时为非常弱，值为 4 时为非常强。"
 
 #. Description of the 'Bypass Two Factor Auth for users who login from
 #. restricted IP Address' (Check) field in DocType 'System Settings'
@@ -12474,6 +12652,12 @@ msgstr "如果启用，从受限 IP 地址登录的用户将不会被提示进�
 #: frappe/desk/doctype/note/note.json
 msgid "If enabled, users will be notified every time they login. If not enabled, users will only be notified once."
 msgstr "如果启用，用户每次登录时都会收到通知。如果未启用，用户只会收到一次通知。"
+
+#. Description of the 'Backup Path' (Data) field in DocType 'S3 Backup
+#. Settings'
+#: frappe/integrations/doctype/s3_backup_settings/s3_backup_settings.json
+msgid "If it's empty, it will backup to the root of the bucket."
+msgstr "如果留空，将备份到存储桶的根目录。"
 
 #. Description of the 'Default Workspace' (Link) field in DocType 'User'
 #: frappe/core/doctype/user/user.json
@@ -12553,9 +12737,13 @@ msgstr "如果你要上传新记录，「命名序列」（如果存在）将成
 msgid "If you are uploading new records, leave the \"name\" (ID) column blank."
 msgstr "如果你要上传新记录，请将「名称」(ID) 列留空。"
 
-#: frappe/utils/password.py:198
+#: frappe/utils/password.py:198 (version-15)
 msgid "If you have recently restored the site you may need to copy the site config contaning original Encryption Key."
 msgstr "如果你最近恢复了站点，则可能需要复制包含原始加密密钥的站点配置。"
+
+#: frappe/utils/password.py:214
+msgid "If you have recently restored the site, you may need to copy the site_config.json containing the original encryption key."
+msgstr "如果您最近恢复了站点，则可能需要复制包含原始加密密钥的 site_text.json。"
 
 #. Description of the 'Parent Label' (Select) field in DocType 'Top Bar Item'
 #: frappe/website/doctype/top_bar_item/top_bar_item.json
@@ -12880,6 +13068,10 @@ msgstr "在列表筛选设置中"
 msgid "In List View"
 msgstr "在列表视图中"
 
+#: frappe/core/report/prepared_report_analytics/prepared_report_analytics.js:19
+msgid "In Minutes"
+msgstr "分钟"
+
 #. Label of the in_preview (Check) field in DocType 'DocField'
 #. Label of the in_preview (Check) field in DocType 'Custom Field'
 #. Label of the in_preview (Check) field in DocType 'Customize Form Field'
@@ -12925,7 +13117,7 @@ msgstr "几秒钟内"
 msgid "Inactive"
 msgstr "不活跃"
 
-#: frappe/public/js/frappe/ui/field_group.js:133
+#: frappe/public/js/frappe/ui/field_group.js:133 (deleted)
 msgid "Inavlid Values"
 msgstr "无效值"
 
@@ -12944,6 +13136,10 @@ msgstr "收件箱用户"
 #: frappe/public/js/frappe/list/base_list.js:210
 msgid "Inbox View"
 msgstr "收件箱视图"
+
+#: frappe/public/js/frappe/views/treeview.js:110
+msgid "Include Disabled"
+msgstr "包含已禁项"
 
 #. Label of the include_name_field (Check) field in DocType 'Form Tour'
 #: frappe/desk/doctype/form_tour/form_tour.json
@@ -13462,6 +13658,10 @@ msgstr "无效网址"
 #: frappe/email/receive.py:155
 msgid "Invalid User Name or Support Password. Please rectify and try again."
 msgstr "用户名或支持密码无效。请更正并重试。"
+
+#: frappe/public/js/frappe/ui/field_group.js:133
+msgid "Invalid Values"
+msgstr "无效值"
 
 #: frappe/integrations/doctype/webhook/webhook.py:116
 msgid "Invalid Webhook Secret"
@@ -14884,7 +15084,7 @@ msgstr "列表列"
 msgid "List Filter"
 msgstr "列表筛选设置"
 
-#. Label of the list_setting_message (HTML) field in DocType 'Web Form'
+#. Label of the list_setting_message (HTML) field in DocType 'Web Form' (deleted)
 #: frappe/website/doctype/web_form/web_form.json
 msgid "List Setting Message"
 msgstr "列表设置信息"
@@ -15148,6 +15348,10 @@ msgstr "需要登录令牌"
 msgid "Login with Email Link"
 msgstr "使用电子邮件链接登录"
 
+#: frappe/www/login.html:116
+msgid "Login with Frappe Cloud"
+msgstr "使用Frappe Cloud账号登录"
+
 #: frappe/www/login.html:46
 msgid "Login with LDAP"
 msgstr "使用 LDAP 登录"
@@ -15320,7 +15524,7 @@ msgstr "男性"
 msgid "Manage 3rd party apps"
 msgstr "管理第三方应用程序"
 
-#: frappe/www/me.html:56
+#: frappe/www/me.html:56 (version-15)
 msgid "Manage third party apps"
 msgstr "管理第三方应用程序"
 
@@ -15501,7 +15705,7 @@ msgstr "大师"
 msgid "Max 500 records at a time"
 msgstr "一次最多 500 条记录"
 
-#. Label of the max_attachment_size (Int) field in DocType 'Web Form'
+#. Label of the max_attachment_size (Int) field in DocType 'Web Form' (deleted)
 #: frappe/website/doctype/web_form/web_form.json
 msgid "Max Attachment Size (in MB)"
 msgstr "最大附件大小（以 MB 为单位）"
@@ -15620,6 +15824,10 @@ msgstr "会员"
 #: frappe/desk/doctype/system_health_report/system_health_report.json
 msgid "Memory Usage"
 msgstr "内存使用情况"
+
+#: frappe/core/report/prepared_report_analytics/prepared_report_analytics.py:63
+msgid "Memory Usage in MB"
+msgstr "内存使用量（MB）"
 
 #. Option for the 'Type' (Select) field in DocType 'Notification Log'
 #: frappe/desk/doctype/notification_log/notification_log.json
@@ -15753,17 +15961,13 @@ msgid "Meta"
 msgstr "Meta"
 
 #. Label of the meta_description (Small Text) field in DocType 'Blog Post'
-#. Label of the meta_description (Small Text) field in DocType 'Web Form'
 #: frappe/website/doctype/blog_post/blog_post.json
-#: frappe/website/doctype/web_form/web_form.json
 #: frappe/website/doctype/web_page/web_page.js:124
 msgid "Meta Description"
 msgstr "元数据描述"
 
 #. Label of the meta_image (Attach Image) field in DocType 'Blog Post'
-#. Label of the meta_image (Attach Image) field in DocType 'Web Form'
 #: frappe/website/doctype/blog_post/blog_post.json
-#: frappe/website/doctype/web_form/web_form.json
 #: frappe/website/doctype/web_page/web_page.js:131
 msgid "Meta Image"
 msgstr "元数据图像"
@@ -15778,11 +15982,24 @@ msgid "Meta Tags"
 msgstr "元标签"
 
 #. Label of the meta_title (Data) field in DocType 'Blog Post'
-#. Label of the meta_title (Data) field in DocType 'Web Form'
 #: frappe/website/doctype/blog_post/blog_post.json
-#: frappe/website/doctype/web_form/web_form.json
 #: frappe/website/doctype/web_page/web_page.js:117
 msgid "Meta Title"
+msgstr "元数据标题"
+
+#. Label of the meta_description (Small Text) field in DocType 'Web Form'
+#: frappe/website/doctype/web_form/web_form.json
+msgid "Meta description"
+msgstr "元数据描述"
+
+#. Label of the meta_image (Attach Image) field in DocType 'Web Form'
+#: frappe/website/doctype/web_form/web_form.json
+msgid "Meta image"
+msgstr "元数据图像"
+
+#. Label of the meta_title (Data) field in DocType 'Web Form'
+#: frappe/website/doctype/web_form/web_form.json
+msgid "Meta title"
 msgstr "元数据标题"
 
 #: frappe/website/doctype/web_page/web_page.js:110
@@ -16293,6 +16510,10 @@ msgstr "我的账户"
 msgid "My Device"
 msgstr "我的设备"
 
+#: frappe/public/js/frappe/ui/apps_switcher.js:58
+msgid "My Workspaces"
+msgstr "我的工作区"
+
 #. Option for the 'Database Engine' (Select) field in DocType 'DocType'
 #: frappe/core/doctype/doctype/doctype.json
 msgid "MyISAM"
@@ -16424,7 +16645,7 @@ msgstr "导航栏模板"
 msgid "Navbar Template Values"
 msgstr "导航栏模板值"
 
-#: frappe/public/js/frappe/ui/keyboard.js:225
+#: frappe/public/js/frappe/ui/keyboard.js:225 (version-15)
 msgid "Navigate Home"
 msgstr "导航到主页"
 
@@ -17738,7 +17959,7 @@ msgstr "OAuth范围"
 msgid "OAuth has been enabled but not authorised. Please use \"Authorise API Access\" button to do the same."
 msgstr "OAuth已启用但未授权。请使用“授权 API 访问”按钮执行相同操作。"
 
-#: frappe/templates/includes/oauth_confirmation.html:39
+#: frappe/templates/includes/oauth_confirmation.html:39 (version-15)
 msgid "OK"
 msgstr "可以"
 
@@ -18019,6 +18240,10 @@ msgstr "只有报表生成器类型的报表可以被编辑"
 #: frappe/custom/doctype/customize_form/customize_form.py:125
 msgid "Only standard DocTypes are allowed to be customized from Customize Form."
 msgstr "只有标准的 DocType 才允许在自定义表单中进行自定义。"
+
+#: frappe/model/delete_doc.py:240
+msgid "Only the Administrator can delete a standard DocType."
+msgstr "只有管理员可以删除标准的DocType。"
 
 #: frappe/desk/form/assign_to.py:197
 msgid "Only the assignee can complete this to-do."
@@ -18360,6 +18585,11 @@ msgstr "PDF"
 #: frappe/utils/print_format.py:146 frappe/utils/print_format.py:190
 msgid "PDF Generation in Progress"
 msgstr "PDF正在生成中"
+
+#. Label of the pdf_generator (Select) field in DocType 'Print Format'
+#: frappe/printing/doctype/print_format/print_format.json
+msgid "PDF Generator"
+msgstr "PDF生成器"
 
 #. Label of the pdf_page_height (Float) field in DocType 'Print Settings'
 #: frappe/printing/doctype/print_settings/print_settings.json
@@ -18825,6 +19055,11 @@ msgstr "路径 {0} 不是有效路径"
 #: frappe/core/doctype/data_import/data_import.json
 msgid "Payload Count"
 msgstr "有效负载计数"
+
+#. Label of the peak_memory_usage (Int) field in DocType 'Prepared Report'
+#: frappe/core/doctype/prepared_report/prepared_report.json
+msgid "Peak Memory Usage"
+msgstr "内存使用峰值"
 
 #. Option for the 'Status' (Select) field in DocType 'Data Import'
 #. Option for the 'Contribution Status' (Select) field in DocType 'Translation'
@@ -19462,13 +19697,17 @@ msgstr "请先通过短信设置设置短信，然后再将其设置为身份验
 msgid "Please setup a message first"
 msgstr "请先设置一条消息"
 
-#: frappe/email/doctype/email_account/email_account.py:424
+#: frappe/email/doctype/email_account/email_account.py:424 (deleted)
 msgid "Please setup default Email Account from Settings > Email Account"
 msgstr "请从「设置」>「电子邮件帐户」中设置默认邮件帐户"
 
 #: frappe/core/doctype/user/user.py:414
 msgid "Please setup default outgoing Email Account from Settings > Email Account"
 msgstr "请从「设置」>「电子邮件帐户」中设置默认的发送邮件帐户"
+
+#: frappe/email/doctype/email_account/email_account.py:433
+msgid "Please setup default outgoing Email Account from Tools > Email Account"
+msgstr "请在【工具】>【邮箱账户】中设置默认发件邮箱"
 
 #: frappe/public/js/frappe/model/model.js:808
 msgid "Please specify"
@@ -19673,6 +19912,11 @@ msgstr "前缀"
 #: frappe/core/doctype/report/report.json
 msgid "Prepared Report"
 msgstr "预生成报表"
+
+#. Name of a report
+#: frappe/core/report/prepared_report_analytics/prepared_report_analytics.json
+msgid "Prepared Report Analytics"
+msgstr "预生成报表分析"
 
 #. Name of a role
 #: frappe/core/doctype/prepared_report/prepared_report.json
@@ -20133,6 +20377,18 @@ msgstr "属性Setter会覆盖标准 DocType 或字段属性"
 msgid "Property Type"
 msgstr "属性类型"
 
+#. Label of the protect_attached_files (Check) field in DocType 'DocType'
+#. Label of the protect_attached_files (Check) field in DocType 'Customize
+#. Form'
+#: frappe/core/doctype/doctype/doctype.json
+#: frappe/custom/doctype/customize_form/customize_form.json
+msgid "Protect Attached Files"
+msgstr "保护附件"
+
+#: frappe/core/doctype/file/file.py:501
+msgid "Protected File"
+msgstr "保护文件"
+
 #. Description of the 'Allowed File Extensions' (Small Text) field in DocType
 #. 'System Settings'
 #: frappe/core/doctype/system_settings/system_settings.json
@@ -20378,6 +20634,10 @@ msgstr "查询必须是 SELECT 或只读 WITH 类型。"
 #: frappe/desk/doctype/system_health_report_queue/system_health_report_queue.json
 msgid "Queue"
 msgstr "队列"
+
+#: frappe/utils/background_jobs.py:720
+msgid "Queue Overloaded"
+msgstr "队列过载"
 
 #. Label of the queue_status (Table) field in DocType 'System Health Report'
 #: frappe/desk/doctype/system_health_report/system_health_report.json
@@ -21267,7 +21527,7 @@ msgstr "删除标签页"
 msgid "Removed"
 msgstr "已删除"
 
-#: frappe/core/doctype/file/file.py:156
+#: frappe/core/doctype/file/file.py:156 (deleted)
 msgid "Removed {0}"
 msgstr "已删除{0}"
 
@@ -22221,6 +22481,11 @@ msgstr "第 {0} 行："
 msgid "Row #{}: Fieldname is required"
 msgstr "第｛｝行：字段名是必需的"
 
+#. Label of the row_format (Select) field in DocType 'DocType'
+#: frappe/core/doctype/doctype/doctype.json
+msgid "Row Format"
+msgstr "行格式"
+
 #. Label of the row_index (Data) field in DocType 'Transaction Log'
 #: frappe/core/doctype/transaction_log/transaction_log.json
 msgid "Row Index"
@@ -22324,6 +22589,14 @@ msgstr "仅在连续 {0} 天未运行时，才每天运行作业"
 msgid "Run scheduled jobs only if checked"
 msgstr "只有选中后，才会运行计划作业"
 
+#: frappe/core/report/prepared_report_analytics/prepared_report_analytics.py:57
+msgid "Runtime in Minutes"
+msgstr "运行时长（分钟）"
+
+#: frappe/core/report/prepared_report_analytics/prepared_report_analytics.py:57
+msgid "Runtime in Seconds"
+msgstr "运行时长（秒）"
+
 #. Name of a DocType
 #. Label of a Link in the Integrations Workspace
 #: frappe/integrations/doctype/s3_backup_settings/s3_backup_settings.json
@@ -22373,7 +22646,7 @@ msgstr "短信参数"
 msgid "SMS Settings"
 msgstr "短信设置"
 
-#: frappe/core/doctype/sms_settings/sms_settings.py:110
+#: frappe/core/doctype/sms_settings/sms_settings.py:110 (deleted)
 msgid "SMS sent to following numbers: {0}"
 msgstr "短信已发送至以下号码：{0}"
 
@@ -22609,6 +22882,11 @@ msgstr "计划稍后发送"
 #: frappe/email/doctype/newsletter/newsletter_list.js:7
 msgid "Scheduled"
 msgstr "已计划"
+
+#. Label of the scheduled_against (Link) field in DocType 'Scheduler Event'
+#: frappe/core/doctype/scheduler_event/scheduler_event.json
+msgid "Scheduled Against"
+msgstr "调度对象"
 
 #. Label of the scheduled_job_type (Link) field in DocType 'Scheduled Job Log'
 #: frappe/core/doctype/scheduled_job_log/scheduled_job_log.json
@@ -23278,11 +23556,22 @@ msgstr "发送电子邮件警报"
 msgid "Send Email At"
 msgstr "发送电子邮件至"
 
+#. Label of the send_email (Check) field in DocType 'Workflow Document State'
+#: frappe/workflow/doctype/workflow_document_state/workflow_document_state.json
+msgid "Send Email On State"
+msgstr "状态变更时发送邮件"
+
 #. Description of the 'Send Print as PDF' (Check) field in DocType 'Print
 #. Settings'
 #: frappe/printing/doctype/print_settings/print_settings.json
 msgid "Send Email Print Attachments as PDF (Recommended)"
 msgstr "使用 PDF 格式发送打印附件（推荐）"
+
+#. Label of the send_email_to_creator (Check) field in DocType 'Workflow
+#. Transition'
+#: frappe/workflow/doctype/workflow_transition/workflow_transition.json
+msgid "Send Email To Creator"
+msgstr "发送邮件给创建者"
 
 #. Label of the send_email_for_successful_backup (Check) field in DocType
 #. 'Dropbox Settings'
@@ -23411,6 +23700,12 @@ msgstr "早上发送电子邮件提醒"
 msgid "Send days before or after the reference date"
 msgstr "在相关日期之前或之后发送"
 
+#. Description of the 'Send Email On State' (Check) field in DocType 'Workflow
+#. Document State'
+#: frappe/workflow/doctype/workflow_document_state/workflow_document_state.json
+msgid "Send email when document transitions to the state."
+msgstr "当文档流转到该状态时发送邮件。"
+
 #. Description of the 'Forward To Email Address' (Data) field in DocType
 #. 'Contact Us Settings'
 #: frappe/website/doctype/contact_us_settings/contact_us_settings.json
@@ -23518,6 +23813,12 @@ msgstr "正在发送..."
 #: frappe/email/doctype/newsletter/newsletter_list.js:5
 msgid "Sent"
 msgstr "发送"
+
+#. Label of the sent_folder_name (Data) field in DocType 'Email Domain'
+#: frappe/email/doctype/email_account/email_account.json
+#: frappe/email/doctype/email_domain/email_domain.json
+msgid "Sent Folder Name"
+msgstr "发件文件夹名"
 
 #. Label of the sent_on (Date) field in DocType 'SMS Log'
 #: frappe/core/doctype/sms_log/sms_log.json
@@ -23956,6 +24257,10 @@ msgstr "设置完成"
 #: frappe/core/doctype/document_naming_settings/document_naming_settings.json
 msgid "Setup Series for transactions"
 msgstr "记录序列设置"
+
+#: frappe/desk/page/setup_wizard/setup_wizard.js:224
+msgid "Setup failed"
+msgstr "安装失败"
 
 #. Label of the share (Check) field in DocType 'Custom DocPerm'
 #. Label of the share (Check) field in DocType 'DocPerm'
@@ -24609,6 +24914,11 @@ msgstr "软退信"
 msgid "Some columns might get cut off when printing to PDF. Try to keep number of columns under 10."
 msgstr "打印为 PDF 时，某些列可能会被截断。尝试将列数控制在 10 以下。"
 
+#. Description of the 'Sent Folder Name' (Data) field in DocType 'Email Domain'
+#: frappe/email/doctype/email_domain/email_domain.json
+msgid "Some mailboxes require a different Sent Folder Name e.g. \"INBOX.Sent\""
+msgstr "某些邮箱需要不同的文件夹名称，例如\"INBOX.Sent\""
+
 #: frappe/public/js/frappe/desk.js:20
 msgid "Some of the features might not work in your browser. Please update your browser to the latest version."
 msgstr "某些功能可能无法在您的浏览器中使用。请将您的浏览器更新至最新版本。"
@@ -25028,6 +25338,12 @@ msgstr "步骤"
 msgid "Steps to verify your login"
 msgstr "验证你的登录的步骤"
 
+#. Label of the sticky (Check) field in DocType 'DocField'
+#: frappe/core/doctype/docfield/docfield.json
+#: frappe/public/js/frappe/form/grid_row.js:438
+msgid "Sticky"
+msgstr "固定"
+
 #: frappe/core/doctype/recorder/recorder_list.js:87
 msgid "Stop"
 msgstr "停止"
@@ -25212,7 +25528,7 @@ msgstr "提交"
 msgid "Submit After Import"
 msgstr "导入后提交"
 
-#. Label of the button_label (Data) field in DocType 'Web Form'
+#. Label of the button_label (Data) field in DocType 'Web Form' (deleted)
 #: frappe/website/doctype/web_form/web_form.json
 msgid "Submit Button Label"
 msgstr "提交按钮标签"
@@ -25317,7 +25633,7 @@ msgstr "操作成功"
 msgid "Success Message"
 msgstr "成功消息"
 
-#. Label of the success_title (Data) field in DocType 'Web Form'
+#. Label of the success_title (Data) field in DocType 'Web Form' (deleted)
 #: frappe/website/doctype/web_form/web_form.json
 msgid "Success Title"
 msgstr "成功标题"
@@ -25445,6 +25761,10 @@ msgstr "切换主题"
 msgid "Switch To Desk"
 msgstr "切换到桌面"
 
+#: frappe/public/js/frappe/list/list_sidebar.js:319
+msgid "Switch to Frappe CRM for smarter sales"
+msgstr "切换到Frappe CRM，体验更智能的销售管理"
+
 #: frappe/public/js/frappe/ui/capture.js:281
 msgid "Switching Camera"
 msgstr "切换相机"
@@ -25468,6 +25788,11 @@ msgstr "同步日历"
 #: frappe/integrations/doctype/google_contacts/google_contacts.js:28
 msgid "Sync Contacts"
 msgstr "同步通讯录"
+
+#. Label of the sync_as_public (Check) field in DocType 'Google Calendar'
+#: frappe/integrations/doctype/google_calendar/google_calendar.json
+msgid "Sync events from Google as public"
+msgstr "将Google日历事件同步为公开状态"
 
 #: frappe/custom/doctype/customize_form/customize_form.js:256
 msgid "Sync on Migrate"
@@ -25840,12 +26165,12 @@ msgstr "标签"
 msgid "Tag Link"
 msgstr "标签链接"
 
-#: frappe/model/meta.py:53
-#: frappe/public/js/frappe/form/templates/form_sidebar.html:102
+#: frappe/model/meta.py:55
+#: frappe/public/js/frappe/form/templates/form_sidebar.html:93
 #: frappe/public/js/frappe/list/bulk_operations.js:430
 #: frappe/public/js/frappe/list/list_sidebar.html:48
 #: frappe/public/js/frappe/list/list_sidebar.html:60
-#: frappe/public/js/frappe/list/list_sidebar.js:251
+#: frappe/public/js/frappe/list/list_sidebar.js:253
 #: frappe/public/js/frappe/model/meta.js:207
 #: frappe/public/js/frappe/model/model.js:133
 #: frappe/public/js/frappe/ui/toolbar/awesome_bar.js:171
@@ -26075,6 +26400,10 @@ msgstr "条件“{0}”无效"
 msgid "The File URL you've entered is incorrect"
 msgstr "你输入的文件网址不正确"
 
+#: frappe/automation/doctype/auto_repeat/auto_repeat.py:108
+msgid "The Next Scheduled Date cannot be later than the End Date."
+msgstr "计划执行日期必须早于截止日期"
+
 #: frappe/integrations/doctype/push_notification_settings/push_notification_settings.py:29
 msgid "The Push Relay Server URL key (`push_relay_server_url`) is missing in your site config"
 msgstr "站点配置中缺少 Push 中继服务器 URL 键 (`push_relay_server_url`)"
@@ -26127,6 +26456,11 @@ msgstr "这封电子邮件的内容是严格保密的。请不要将此电子邮
 #: frappe/public/js/frappe/list/list_view.js:626
 msgid "The count shown is an estimated count. Click here to see the accurate count."
 msgstr "显示的计数是估计值。点击此处查看准确计数。"
+
+#. Description of the 'Code' (Data) field in DocType 'Country'
+#: frappe/geo/doctype/country/country.json
+msgid "The country's ISO 3166 ALPHA-2 code."
+msgstr "该国家的ISO 3166 ALPHA-2标准代码。"
 
 #: frappe/public/js/frappe/views/interaction.js:300
 msgid "The document could not be correctly assigned"
@@ -26251,7 +26585,7 @@ msgstr "系统正在更新中。请稍后再刷新。"
 msgid "The system provides many pre-defined roles. You can add new roles to set finer permissions."
 msgstr "系统提供了许多预定义的角色。你可以添加新角色来设置更精细的权限。"
 
-#: frappe/public/js/frappe/form/grid_row.js:636
+#: frappe/public/js/frappe/form/grid_row.js:636 (version-15)
 msgid "The total column width cannot be more than 10."
 msgstr "总列宽不能超过 10。"
 
@@ -26506,6 +26840,10 @@ msgstr ""
 "myfield\n"
 "eval:doc.myfield=='我的值'\n"
 "eval:doc.age>18"
+
+#: frappe/core/doctype/file/file.py:500
+msgid "This file is attached to a protected document and cannot be deleted."
+msgstr "该文件因关联受保护文档而不可删除"
 
 #: frappe/core/doctype/file/file.js:10
 msgid "This file is public. It can be accessed without authentication."
@@ -27149,6 +27487,10 @@ msgstr "请求过多"
 msgid "Too many changes to database in single action."
 msgstr "单次操作对数据库的更改太多。"
 
+#: frappe/utils/background_jobs.py:719
+msgid "Too many queued background jobs ({0}). Please retry after some time."
+msgstr "后台任务队列过长（{0}），请等待后重试"
+
 #: frappe/core/doctype/user/user.py:1026
 msgid "Too many users signed up recently, so the registration is disabled. Please try back in an hour"
 msgstr "最近注册的用户太多，因此注册已被禁用。请一小时后重试"
@@ -27164,6 +27506,10 @@ msgstr "工具"
 #: frappe/public/js/print_format_builder/PrintFormatControls.vue:153
 msgid "Top"
 msgstr "顶部"
+
+#: frappe/core/report/prepared_report_analytics/prepared_report_analytics.js:13
+msgid "Top 10"
+msgstr "前10项"
 
 #. Name of a DocType
 #: frappe/website/doctype/top_bar_item/top_bar_item.json
@@ -27404,6 +27750,10 @@ msgstr "流转"
 #: frappe/custom/doctype/customize_form_field/customize_form_field.json
 msgid "Translatable"
 msgstr "可翻译"
+
+#: frappe/public/js/frappe/views/reports/query_report.js:2123
+msgid "Translate Data"
+msgstr "翻译"
 
 #. Label of the translated_doctype (Check) field in DocType 'DocType'
 #. Label of the translated_doctype (Check) field in DocType 'Customize Form'
@@ -27740,7 +28090,11 @@ msgstr "无法写入 {0} 的文件格式"
 msgid "Unassign Condition"
 msgstr "取消分配条件"
 
-#: frappe/www/error.py:15
+#: frappe/app.py:383
+msgid "Uncaught Exception"
+msgstr "未捕获的异常"
+
+#: frappe/www/error.py:15 (version-15)
 msgid "Uncaught Server Exception"
 msgstr "未捕获的服务器异常"
 
@@ -27845,7 +28199,12 @@ msgstr "退订"
 msgid "Unsubscribe Method"
 msgstr "退订方法"
 
-#. Label of the unsubscribe_param (Data) field in DocType 'Email Queue'
+#. Label of the unsubscribe_params (Code) field in DocType 'Email Queue'
+#: frappe/email/doctype/email_queue/email_queue.json
+msgid "Unsubscribe Params"
+msgstr "退订参数"
+
+#. Label of a Data field in DocType 'Email Queue' (version-15)
 #: frappe/email/doctype/email_queue/email_queue.json
 msgid "Unsubscribe Param"
 msgstr "退订参数"
@@ -28021,6 +28380,10 @@ msgstr "正在更新{0}"
 msgid "Updating {0} of {1}, {2}"
 msgstr "正在更新 {0} 个，共 {1} 个，{2}"
 
+#: frappe/public/js/frappe/list/list_sidebar.js:331
+msgid "Upgrade your support experience with Frappe Helpdesk"
+msgstr "使用 Frappe Helpdesk，获得更佳支持体验"
+
 #: frappe/public/js/frappe/file_uploader/file_uploader.bundle.js:129
 #: frappe/public/js/frappe/file_uploader/file_uploader.bundle.js:130
 #: frappe/public/js/frappe/form/grid.js:63
@@ -28134,6 +28497,11 @@ msgstr "使用多个单词，避免常用短语。"
 msgid "Use different Email ID"
 msgstr "使用不同的邮件地址"
 
+#. Description of the 'Detect CSV type' (Check) field in DocType 'Data Import'
+#: frappe/core/doctype/data_import/data_import.json
+msgid "Use if the default settings don't seem to detect your data correctly"
+msgstr "如果默认设置未能正确识别数据，请启用此选项"
+
 #: frappe/model/db_query.py:426
 msgid "Use of function {0} in field is restricted"
 msgstr "{0} 函数在字段中使用受限"
@@ -28150,6 +28518,12 @@ msgstr "使用新的打印格式构建器"
 #: frappe/custom/doctype/customize_form/customize_form.json
 msgid "Use this fieldname to generate title"
 msgstr "使用此字段名称生成标题"
+
+#. Description of the 'Always BCC Address' (Data) field in DocType 'Email
+#. Account'
+#: frappe/email/doctype/email_account/email_account.json
+msgid "Use this, for example, if all sent emails should also be send to an archive."
+msgstr "例如：若需将所有发送邮件自动抄送至归档地址，可使用此选项。"
 
 #. Label of the used_oauth (Check) field in DocType 'User Email'
 #: frappe/core/doctype/user_email/user_email.json
@@ -28460,7 +28834,7 @@ msgstr "请选择要分享的用户"
 msgid "User must always select"
 msgstr "用户必须手动选择"
 
-#: frappe/model/delete_doc.py:244
+#: frappe/model/delete_doc.py:244 (version-15)
 msgid "User not allowed to delete {0}: {1}"
 msgstr "不允许用户删除{0}：{1}"
 
@@ -28548,6 +28922,15 @@ msgstr "用户名 {0} 已存在"
 #: frappe/desk/doctype/system_health_report/system_health_report.json
 msgid "Users"
 msgstr "用户"
+
+#. Description of the 'Protect Attached Files' (Check) field in DocType
+#. 'DocType'
+#. Description of the 'Protect Attached Files' (Check) field in DocType
+#. 'Customize Form'
+#: frappe/core/doctype/doctype/doctype.json
+#: frappe/custom/doctype/customize_form/customize_form.json
+msgid "Users are only able to delete attached files if the document is either in draft or if the document is canceled and they are also able to delete the document."
+msgstr "仅当文档为草稿/已取消状态时允许删除附件（需具备文档删除权限）。"
 
 #. Description of the 'Allot Points To Assigned Users' (Check) field in DocType
 #. 'Energy Point Rule'
@@ -28873,8 +29256,8 @@ msgstr "查看网站"
 msgid "View document"
 msgstr "查看文档"
 
-#: frappe/core/doctype/file/file.js:31
-msgid "View file"
+#: frappe/core/doctype/file/file.js:4
+msgid "View File"
 msgstr "查看文件"
 
 #: frappe/templates/emails/auto_email_report.html:60
@@ -29110,7 +29493,7 @@ msgstr "Webhook头部"
 msgid "Webhook Headers"
 msgstr "Webhook头部"
 
-#: frappe/public/js/frappe/form/templates/form_sidebar.html:140
+#: frappe/public/js/frappe/form/templates/form_sidebar.html:140 (deleted)
 msgid "Webhook Logs"
 msgstr "Webhook日志"
 
@@ -29454,11 +29837,17 @@ msgstr "将是你的登录ID"
 msgid "Will only be shown if section headings are enabled"
 msgstr "仅当启用章节标题时才会显示"
 
-#. Description of the 'Run Jobs only Daily if Inactive For (Days)' (Int) field
+#. Description of the 'Run Jobs only Daily if Inactive For (Days)' (Int) field (deleted)
 #. in DocType 'System Settings'
 #: frappe/core/doctype/system_settings/system_settings.json
 msgid "Will run scheduled jobs only once a day for inactive sites. Default 4 days if set to 0."
 msgstr "对于非活动站点，将每天只运行一次计划作业。如果设置为 0，则默认为 4 天。"
+
+#. Description of the 'Run Jobs only Daily if Inactive For (Days)' (Int) field
+#. in DocType 'System Settings'
+#: frappe/core/doctype/system_settings/system_settings.json
+msgid "Will run scheduled jobs only once a day for inactive sites. Set it to 0 to avoid automatically disabling the scheduler."
+msgstr "对于非活动站点，每天仅运行一次计划作业。将其设置为 0 可避免自动禁用计划作业。"
 
 #: frappe/public/js/frappe/form/print_utils.js:15
 msgid "With Letter head"
@@ -29944,8 +30333,12 @@ msgstr "你一次最多只能打印 {0} 个文档"
 msgid "You can only set the 3 custom doctypes in the Document Types table."
 msgstr "在文档类型表格中只能设置 3 个自定义doctypes。"
 
-#: frappe/handler.py:183
+#: frappe/handler.py:183 (deleted)
 msgid "You can only upload JPG, PNG, PDF, TXT or Microsoft documents."
+msgstr "你只能上传 JPG、PNG、PDF、TXT 或 Microsoft 文档。"
+
+#: frappe/handler.py:182
+msgid "You can only upload JPG, PNG, PDF, TXT, CSV or Microsoft documents."
 msgstr "你只能上传 JPG、PNG、PDF、TXT 或 Microsoft 文档。"
 
 #: frappe/core/doctype/data_export/exporter.py:199
@@ -30055,7 +30448,7 @@ msgstr "你的点数不足"
 msgid "You do not have permission to access {0}: {1}."
 msgstr "你无权访问{0}：{1}。"
 
-#: frappe/www/printview.py:375
+#: frappe/www/printview.py:375 (deleted)
 msgid "You do not have permission to view this document"
 msgstr "你没有权限查看此文档"
 
@@ -30204,7 +30597,7 @@ msgstr "你需要先选择要添加的索引。"
 msgid "You need to set one IMAP folder for {0}"
 msgstr "你需要为 {0} 设置一个 IMAP 文件夹"
 
-#: frappe/model/rename_doc.py:392
+#: frappe/model/rename_doc.py:392 (deleted)
 msgid "You need write permission to rename"
 msgstr "你需要写入权限才能重命名"
 
@@ -30347,6 +30740,10 @@ msgstr "零"
 #: frappe/email/doctype/auto_email_report/auto_email_report.json
 msgid "Zero means send records updated at anytime"
 msgstr "零表示随时更新发送记录"
+
+#: frappe/public/js/frappe/form/footer/version_timeline_content_builder.js:252
+msgid "[Action taken by {0}]"
+msgstr "[由{0}执行的操作]"
 
 #. Label of the _doctype (Link) field in DocType 'Desktop Icon'
 #: frappe/desk/doctype/desktop_icon/desktop_icon.json
@@ -30957,9 +31354,19 @@ msgstr "字符串值，即 {0} 或 uid={0},ou=users,dc=example,dc=com"
 msgid "submit"
 msgstr "提交"
 
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "tag"
+msgstr "tag"
+
 #: frappe/public/js/frappe/ui/toolbar/awesome_bar.js:173
 msgid "tag name..., e.g. #tag"
 msgstr "标签名...例如＃标签"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "tags"
+msgstr "tags"
 
 #: frappe/public/js/frappe/ui/toolbar/awesome_bar.js:168
 msgid "text in document type"
@@ -31041,6 +31448,11 @@ msgstr "想要从你的帐户访问以下详细信息"
 #: frappe/desk/doctype/form_tour_step/form_tour_step.json
 msgid "when clicked on element it will focus popover if present."
 msgstr "单击元素时，将聚焦显示的弹出信息。"
+
+#. Option for the 'PDF Generator' (Select) field in DocType 'Print Format'
+#: frappe/printing/doctype/print_format/print_format.json
+msgid "wkhtmltopdf"
+msgstr "wkhtmltopdf"
 
 #: frappe/printing/page/print/print.js:622
 msgid "wkhtmltopdf 0.12.x (with patched qt)."
@@ -31265,6 +31677,10 @@ msgctxt "Form timeline"
 msgid "{0} cancelled this document {1}"
 msgstr "{0}取消了此文档{1}"
 
+#: frappe/model/document.py:546
+msgid "{0} cannot be amended because it is not cancelled. Please cancel the document before creating an amendment."
+msgstr "​{0}无法被修改，因为它尚未被取消。请先取消该文档，然后再创建修改版本。"
+
 #: frappe/public/js/form_builder/store.js:190
 msgid "{0} cannot be hidden and mandatory without any default value"
 msgstr "{0}不能在没有默认值的情况下同时隐藏和设为必填"
@@ -31394,7 +31810,7 @@ msgstr "{0} 已成功添加到电子邮件组。"
 msgid "{0} has left the conversation in {1} {2}"
 msgstr "{0} 已退出 {1} 中的 {2} 对话"
 
-#: frappe/__init__.py:2510
+#: frappe/__init__.py:2510 (version-15)
 msgid "{0} has no versions tracked."
 msgstr "{0} 没有跟踪版本。"
 
@@ -31488,6 +31904,10 @@ msgstr "{0} 不是动态链接的有效 DocType"
 #: frappe/utils/__init__.py:199
 msgid "{0} is not a valid Email Address"
 msgstr "{0} 不是有效的邮件地址"
+
+#: frappe/geo/doctype/country/country.py:30
+msgid "{0} is not a valid ISO 3166 ALPHA-2 code."
+msgstr "​{0} 不是有效的 ISO 3166 ALPHA-2 代码。"
 
 #: frappe/utils/__init__.py:167
 msgid "{0} is not a valid Name"
@@ -31710,6 +32130,10 @@ msgstr "{0} 已撤销 {1}"
 #: frappe/public/js/frappe/roles_editor.js:62
 msgid "{0} role does not have permission on any doctype"
 msgstr "{0}角色没有任何 doctype 的权限"
+
+#: frappe/model/document.py:1775
+msgid "{0} row #{1}: "
+msgstr "​{0} 行 #{1}："
 
 #: frappe/desk/query_report.py:584
 msgid "{0} saved successfully"
@@ -32020,36 +32444,36 @@ msgid "← Back to upload files"
 msgstr "← 返回上传文件"
 
 #: version-15
-#. Header text in the Tools Workspace
+#. Header text in the Tools Workspace (deleted)
 #: frappe/automation/workspace/tools/tools.json
 msgid "<span class=\"h4\"><b>Documents</b></span>"
 msgstr "<span class=\"h4\"><b>文档</b></span>"
 
-#. Header text in the Website Workspace
+#. Header text in the Website Workspace (deleted)
 #: frappe/website/workspace/website/website.json
 msgid "<span class=\"h4\"><b>Reports & Masters</b></span>"
 msgstr "<span class=\"h4\"><b>报表与主数据</b></span>"
 
-#. Header text in the Tools Workspace
-#. Header text in the Users Workspace
-#. Header text in the Website Workspace
+#. Header text in the Tools Workspace (deleted)
+#. Header text in the Users Workspace (deleted)
+#. Header text in the Website Workspace (deleted)
 #: frappe/automation/workspace/tools/tools.json
 #: frappe/core/workspace/users/users.json
 #: frappe/website/workspace/website/website.json
 msgid "<span class=\"h4\"><b>Your Shortcuts</b></span>"
 msgstr "<span class=\"h4\"><b>你的快捷方式</b></span>"
 
-#. Header text in the Build Workspace
+#. Header text in the Build Workspace (deleted)
 #: frappe/core/workspace/build/build.json
 msgid "<span style=\"font-size: 18px; letter-spacing: 0.18px;\"><b>Components to build your app</b></span>"
 msgstr "<span style=\"font-size: 18px; letter-spacing: 0.18px;\"><b>用于构建应用的组件</b></span>"
 
-#. Header text in the Build Workspace
+#. Header text in the Build Workspace (deleted)
 #: frappe/core/workspace/build/build.json
 msgid "<span style=\"font-size: 18px; letter-spacing: 0.18px;\"><b>Get started</b><br></span>"
 msgstr "<span style=\"font-size: 18px; letter-spacing: 0.18px;\"><b>开始使用</b><br></span>"
 
-#. Description of the Onboarding Step 'Custom Document Types'
+#. Description of the Onboarding Step 'Custom Document Types' (version-15)
 #: frappe/custom/onboarding_step/custom_doctype/custom_doctype.json
 msgid "A DocType (Document Type) is used to insert forms in ERPNext. Forms such as Customer, Orders, and Invoices are Doctypes in the backend. You can also create new DocTypes to create new forms in ERPNext as per your business needs."
 msgstr "DocType 用于在应用中插入表单。例如，客户、订单和发票等表单在后台是 DocType。您还可以根据业务需求创建新的 DocType，以创建新的表单。"
@@ -32059,7 +32483,7 @@ msgstr "DocType 用于在应用中插入表单。例如，客户、订单和发�
 msgid "Access Control"
 msgstr "访问控制"
 
-#. Title of an Onboarding Step
+#. Title of an Onboarding Step (version-15)
 #: frappe/website/onboarding_step/add_blog_category/add_blog_category.json
 msgid "Add Blog Category"
 msgstr "添加博客类别”"
@@ -32069,32 +32493,32 @@ msgstr "添加博客类别”"
 msgid "Allow Bulk Editing"
 msgstr "允许批量编辑"
 
-#. Label of a Check field in DocType 'Web Form'
+#. Label of a Check field in DocType 'Web Form' (version-15)
 #: frappe/website/doctype/web_form/web_form.json
 msgid "Allow Comments"
 msgstr "允许评论"
 
-#. Label of a Check field in DocType 'Web Form'
+#. Label of a Check field in DocType 'Web Form' (version-15)
 #: frappe/website/doctype/web_form/web_form.json
 msgid "Allow Delete"
 msgstr "允许删除"
 
-#. Label of a Check field in DocType 'Web Form'
+#. Label of a Check field in DocType 'Web Form' (version-15)
 #: frappe/website/doctype/web_form/web_form.json
 msgid "Allow Editing After Submit"
 msgstr "允许提交后编辑"
 
-#. Label of a Check field in DocType 'Web Form'
+#. Label of a Check field in DocType 'Web Form' (version-15)
 #: frappe/website/doctype/web_form/web_form.json
 msgid "Allow Incomplete Forms"
 msgstr "允许不完整的表单"
 
-#. Label of a Check field in DocType 'Web Form'
+#. Label of a Check field in DocType 'Web Form' (version-15)
 #: frappe/website/doctype/web_form/web_form.json
 msgid "Allow Multiple Responses"
 msgstr "允许多个响应"
 
-#. Label of a Check field in DocType 'Web Form'
+#. Label of a Check field in DocType 'Web Form' (version-15)
 #: frappe/website/doctype/web_form/web_form.json
 msgid "Allow Print"
 msgstr "允许打印"
@@ -32119,17 +32543,17 @@ msgstr ""
 msgid "Allowed embedding domains"
 msgstr "允许嵌入的域名"
 
-#. Label of a Check field in DocType 'Web Form'
+#. Label of the anonymous (Check) field in DocType 'Web Form'
 #: frappe/website/doctype/web_form/web_form.json
 msgid "Anonymous responses"
 msgstr "匿名响应"
 
-#. Label of a Check field in DocType 'Web Form'
+#. Label of a Check field in DocType 'Web Form' (version-15)
 #: frappe/website/doctype/web_form/web_form.json
 msgid "Apply Document Permissions"
 msgstr "应用文档权限"
 
-#: frappe/public/js/frappe/views/workspace/workspace.js:930
+#: frappe/public/js/frappe/views/workspace/workspace.js:930 (version-15)
 msgid "Are you sure you want to delete page {0}?"
 msgstr "你确定要删除页面 {0} 吗？"
 
@@ -32137,53 +32561,38 @@ msgstr "你确定要删除页面 {0} 吗？"
 msgid "Assignment Rule is not allowed on document type {0}"
 msgstr "不允许在doctype {0} 上使用分配规则"
 
-#: frappe/website/doctype/web_form/web_form.js:73
+#: frappe/website/doctype/web_form/web_form.js:73 (version-15)
 msgid "Atleast one field is required in Web Form Fields Table"
 msgstr "Web 表单字段表中至少需要一个字段"
 
-#: frappe/core/doctype/data_export/data_export.js:44
+#: frappe/core/doctype/data_export/data_export.js:44 (version-15)
 msgid "Atleast one field of Parent Document Type is mandatory"
 msgstr "父文档类型中至少有一个字段是必填的"
 
-#. Subtitle of the Module Onboarding 'Website'
+#. Subtitle of the Module Onboarding 'Website' (version-15)
 #: frappe/website/module_onboarding/website/website.json
 msgid "Blogs, Website View Tracking, and more."
 msgstr "博客、网站浏览跟踪等。"
 
-#: frappe/desk/doctype/workspace/workspace.py:424
+#: frappe/desk/doctype/workspace/workspace.py:424 (version-15)
 msgid "Cannot delete private workspace of other users"
 msgstr "无法删除其他用户的私人工作区"
 
-#: frappe/desk/doctype/workspace/workspace.py:417
+#: frappe/desk/doctype/workspace/workspace.py:417 (version-15)
 msgid "Cannot delete public workspace without Workspace Manager role"
 msgstr "只有工作区管理员才能删除公共工作区"
 
-#: frappe/desk/doctype/workspace/workspace.py:358
+#: frappe/desk/doctype/workspace/workspace.py:358 (version-15)
 msgid "Cannot update private workspace of other users"
 msgstr "无法更新其他用户的私人工作区"
 
-#: frappe/public/js/frappe/form/templates/form_sidebar.html:26
+#: frappe/public/js/frappe/form/templates/form_sidebar.html:26 (version-15)
 msgid "Click here to post bugs and suggestions"
 msgstr "点击这里提交错误和建议"
 
-#: frappe/public/js/frappe/file_uploader/FileUploader.vue:200
+#: frappe/public/js/frappe/file_uploader/FileUploader.vue:200 (version-15)
 msgid "Click on the lock icon to toggle public/private"
 msgstr "点击锁图标切换公开/私人"
-
-#. Linked DocType in DocType's connections
-#. Linked DocType in Module Def's connections
-#. Label of a Link in the Build Workspace
-#. Label of a shortcut in the Build Workspace
-#. Name of a DocType
-#. Label of a Code field in DocType 'DocType Layout'
-#: frappe/core/doctype/doctype/doctype.json
-#: frappe/core/doctype/module_def/module_def.json
-#: frappe/core/workspace/build/build.json
-#: frappe/custom/doctype/client_script/client_script.json
-#: frappe/custom/doctype/doctype_layout/doctype_layout.json
-#: frappe/website/doctype/web_page/web_page.js:103
-msgid "Client Script"
-msgstr "客户端脚本"
 
 #: frappe/integrations/frappe_providers/frappecloud_billing.py:28
 msgid "Communication secret not set"
@@ -32198,50 +32607,50 @@ msgstr "条件描述"
 msgid "Confirm Access"
 msgstr "确认访问"
 
-#: frappe/website/doctype/web_form/web_form.js:29
+#: frappe/website/doctype/web_form/web_form.js:29 (version-15)
 msgid "Copy Embed Code"
 msgstr "拷贝嵌入代码"
 
-#. Title of an Onboarding Step
+#. Title of an Onboarding Step (version-15)
 #: frappe/website/onboarding_step/create_blogger/create_blogger.json
 msgid "Create Blogger"
 msgstr "创建博主"
 
-#. Title of an Onboarding Step
+#. Title of an Onboarding Step (version-15)
 #: frappe/custom/onboarding_step/custom_field/custom_field.json
 msgid "Create Custom Fields"
 msgstr "创建自定义字段"
 
-#: frappe/public/js/frappe/views/workspace/workspace.js:970
+#: frappe/public/js/frappe/views/workspace/workspace.js:970 (version-15)
 msgid "Create Duplicate"
 msgstr "创建副本"
 
-#. Description of a Card Break in the Build Workspace
+#. Description of a Card Break in the Build Workspace (deleted)
 #: frappe/core/workspace/build/build.json
 msgid "Create new forms and views with doctypes. Set up multi-level workflows for approval"
 msgstr "使用 doctypes 创建新的表单和视图。设置多级以审批为目的的工作流"
 
-#. Title of an Onboarding Step
+#. Title of an Onboarding Step (version-15)
 #: frappe/custom/onboarding_step/custom_doctype/custom_doctype.json
 msgid "Custom Document Types"
 msgstr "自定义文档类型"
 
-#. Subtitle of the Module Onboarding 'Customization'
+#. Subtitle of the Module Onboarding 'Customization' (version-15)
 #: frappe/custom/module_onboarding/customization/customization.json
 msgid "Custom Field, Custom Doctype, Naming Series, Role Permission, Workflow, Print Formats, Reports"
 msgstr "自定义字段、自定义Doctype、命名系列、角色权限、工作流、打印格式、报表"
 
-#. Success message of the Module Onboarding 'Customization'
+#. Success message of the Module Onboarding 'Customization' (version-15)
 #: frappe/custom/module_onboarding/customization/customization.json
 msgid "Customization onboarding is all done!"
 msgstr "入门引导已自定义完成"
 
-#. Title of an Onboarding Step
+#. Title of an Onboarding Step (version-15)
 #: frappe/custom/onboarding_step/print_format/print_format.json
 msgid "Customize Print Formats"
 msgstr "自定义打印格式"
 
-#: frappe/model/base_document.py:719
+#: frappe/model/base_document.py:741 (version-15)
 msgid "Data missing in table"
 msgstr "表格中缺少数据"
 
@@ -32250,54 +32659,54 @@ msgstr "表格中缺少数据"
 msgid "Default display currency"
 msgstr "默认显示货币"
 
-#: frappe/public/js/frappe/views/workspace/workspace.js:869
+#: frappe/public/js/frappe/views/workspace/workspace.js:869 (version-15)
 msgid "Delete Workspace"
 msgstr "删除工作区"
 
-#: frappe/core/doctype/doctype/doctype.js:71
+#: frappe/core/doctype/doctype/doctype.js:71 (version-15)
 msgid "DocTypes can not be modified, please use {0} instead"
 msgstr "DocTypes无法修改，请改用 {0}"
 
-#: frappe/public/js/frappe/views/workspace/workspace.js:1348
+#: frappe/public/js/frappe/views/workspace/workspace.js:1348 (version-15)
 msgid "Doctype with same route already exist. Please choose different title."
 msgstr "具有相同路径的 Doctype 已存在。请选择不同的标题。"
 
-#: frappe/public/js/frappe/views/workspace/workspace.js:592
-#: frappe/public/js/frappe/views/workspace/workspace.js:854
+#: frappe/public/js/frappe/views/workspace/workspace.js:592 (version-15)
+#: frappe/public/js/frappe/views/workspace/workspace.js:854 (version-15)
 msgid "Duplicate Workspace"
 msgstr "复制工作区"
 
-#: frappe/public/js/frappe/views/workspace/workspace.js:1035
+#: frappe/public/js/frappe/views/workspace/workspace.js:1035 (version-15)
 msgid "Duplicate of {0} named as {1} is created successfully"
 msgstr "{0} 的副本已成功命名为 {1}"
 
-#. Description of the Onboarding Step 'Setup Naming Series'
+#. Description of the Onboarding Step 'Setup Naming Series' (version-15)
 #: frappe/custom/onboarding_step/naming_series/naming_series.json
 msgid "Each document created in ERPNext can have a unique ID generated for it, using a prefix defined for it. Though each document has some prefix pre-configured, you can further customize it using tools like Naming Series Tool and Document Naming Rule.\n"
 msgstr "在应用中创建的每个文档都可以为其生成唯一的 ID，使用为其定义的前缀。尽管每个文档都有一些预配置的前缀，但你可以使用命名序列和命名规则等工具进一步自定义它。\n"
 
-#: frappe/public/js/frappe/views/workspace/workspace.js:848
+#: frappe/public/js/frappe/views/workspace/workspace.js:848 (version-15)
 msgid "Edit Workspace"
 msgstr "编辑工作区"
 
-#. Title of an Onboarding Step
+#. Title of an Onboarding Step (version-15)
 #: frappe/website/onboarding_step/enable_website_tracking/enable_website_tracking.json
 msgid "Enable Website Tracking"
 msgstr "启用网站跟踪"
 
-#: frappe/core/doctype/server_script/server_script.py:243
+#: frappe/core/doctype/server_script/server_script.py:243 (version-15)
 msgid "Enabled scheduled execution for script {0}"
 msgstr "已为脚本 {0} 启用执行计划"
 
-#: frappe/www/error.html:34
+#: frappe/www/error.html:34 (version-15)
 msgid "Error Code: {0}"
 msgstr "错误代码：{0}"
 
-#: frappe/model/document.py:820
+#: frappe/model/document.py:820 (version-15)
 msgid "Error: Document has been modified after you have opened it"
 msgstr "错误：文档在你打开它之后已被修改"
 
-#. Description of the Onboarding Step 'Create Custom Fields'
+#. Description of the Onboarding Step 'Create Custom Fields' (version-15)
 #: frappe/custom/onboarding_step/custom_field/custom_field.json
 msgid ""
 "Every form in ERPNext has a standard set of fields. If you need to capture some information, but there is no standard Field available for it, you can insert Custom Field for it.\n"
@@ -32308,7 +32717,7 @@ msgstr ""
 "\n"
 "添加自定义字段后，你还可以将其用于报表和分析图表。\n"
 
-#: frappe/integrations/frappe_providers/frappecloud_billing.py:48
+#: frappe/integrations/frappe_providers/frappecloud_billing.py:48 (deleted)
 msgid "Failed to generate access token"
 msgstr "生成访问令牌失败"
 
@@ -32324,16 +32733,16 @@ msgstr "请求登录 Frappe Cloud 失败"
 msgid "Failed while calling API {0}"
 msgstr "调用 API {0} 失败"
 
-#: frappe/public/js/frappe/list/list_sidebar.js:275
+#: frappe/public/js/frappe/list/list_sidebar.js:275 (deleted)
 msgid "Frappe Insights"
 msgstr "数据洞察"
 
-#. Title of an Onboarding Step
+#. Title of an Onboarding Step (version-15)
 #: frappe/custom/onboarding_step/report_builder/report_builder.json
 msgid "Generate Custom Reports"
 msgstr "生成自定义报表"
 
-#: frappe/public/js/frappe/views/workspace/workspace.js:860
+#: frappe/public/js/frappe/views/workspace/workspace.js:860 (version-15)
 msgid "Hide Workspace"
 msgstr "隐藏工作区"
 
@@ -32342,21 +32751,21 @@ msgstr "隐藏工作区"
 msgid "If enabled, all responses on the web form will be submitted anonymously"
 msgstr "如果启用，所有在网页表单上的响应将以匿名方式提交"
 
-#: frappe/core/doctype/doctype/doctype.js:81
+#: frappe/core/doctype/doctype/doctype.js:81 (version-15)
 msgid "If you just want to customize for your site, use {0} instead."
 msgstr "如果只想对你的站点进行自定义，请改用 {0}。"
 
-#. Description of the Onboarding Step 'Setup Limited Access for a User'
+#. Description of the Onboarding Step 'Setup Limited Access for a User' (version-15)
 #: frappe/custom/onboarding_step/role_permissions/role_permissions.json
 msgid "In ERPNext, you can add your Employees as Users, and give them restricted access. Tools like Role Permission and User Permission allow you to define rules which give restricted access to the user to masters and transactions."
 msgstr "在应用中，你可以将员工添加为用户，并为他们提供受限访问。像角色权限和用户权限这样的工具允许你定义规则，以便为用户提供对主数据和交易数据的受限访问。"
 
-#. Description of the Onboarding Step 'Generate Custom Reports'
+#. Description of the Onboarding Step 'Generate Custom Reports' (version-15)
 #: frappe/custom/onboarding_step/report_builder/report_builder.json
 msgid "In each module, you will find a host of single-click reports, ranging from financial statements to sales and purchase analytics and stock tracking reports. If a required new report is not available out-of-the-box, you can create custom reports in ERPNext by pulling values from the same multiple ERPNext tables.\n"
 msgstr "在每个模块中，你将找到一系列通过点击即可生成的报告，从财务报表到销售和采购分析以及库存跟踪报表。如果没有开箱即用的报表，你可以通过从多个报表中提取值，并在应用中创建自定义报告。\n"
 
-#. Title of an Onboarding Step
+#. Title of an Onboarding Step (version-15)
 #: frappe/website/onboarding_step/introduction_to_website/introduction_to_website.json
 msgid "Introduction to Website"
 msgstr "网站简介"
@@ -32365,41 +32774,41 @@ msgstr "网站简介"
 msgid "Invalid Code. Please try again."
 msgstr "无效的代码。请再试一次。"
 
-#: frappe/model/utils/__init__.py:68
+#: frappe/model/utils/__init__.py:68 (version-15)
 msgid "Invalid include path"
 msgstr "文件路径有误"
 
-#. Label of an action in the Onboarding Step 'Customize Print Formats'
+#. Label of an action in the Onboarding Step 'Customize Print Formats' (version-15)
 #: frappe/custom/onboarding_step/print_format/print_format.json
 msgid "Learn about Standard and Custom Print Formats"
 msgstr "了解标准和自定义打印格式"
 
-#. Title of an Onboarding Step
+#. Title of an Onboarding Step (version-15)
 #: frappe/website/onboarding_step/web_page_tour/web_page_tour.json
 msgid "Learn about Web Pages"
 msgstr "了解网页"
 
-#. Label of an action in the Onboarding Step 'Create Custom Fields'
+#. Label of an action in the Onboarding Step 'Create Custom Fields' (version-15)
 #: frappe/custom/onboarding_step/custom_field/custom_field.json
 msgid "Learn how to add Custom Fields"
 msgstr "学习如何添加自定义字段"
 
-#. Label of an action in the Onboarding Step 'Generate Custom Reports'
+#. Label of an action in the Onboarding Step 'Generate Custom Reports' (version-15)
 #: frappe/custom/onboarding_step/report_builder/report_builder.json
 msgid "Learn more about Report Builders"
 msgstr "了解更多关于报表生成器的信息"
 
-#. Label of an action in the Onboarding Step 'Custom Document Types'
+#. Label of an action in the Onboarding Step 'Custom Document Types' (version-15)
 #: frappe/custom/onboarding_step/custom_doctype/custom_doctype.json
 msgid "Learn more about creating new DocTypes"
 msgstr "了解更多关于创建 DocType 的信息"
 
-#. Title of the Module Onboarding 'Website'
+#. Title of the Module Onboarding 'Website' (version-15)
 #: frappe/website/module_onboarding/website/website.json
 msgid "Let's Set Up Your Website."
 msgstr "设置你的网站。"
 
-#. Label of a Section Break field in DocType 'DocType'
+#. Label of a Section Break field in DocType 'DocType' (version-15)
 #: frappe/core/doctype/doctype/doctype.json
 msgid "Linked Documents"
 msgstr "关联文档"
@@ -32409,7 +32818,7 @@ msgstr "关联文档"
 msgid "List setting message"
 msgstr "列表设置信息"
 
-#: frappe/core/doctype/server_script/server_script_list.js:18
+#: frappe/core/doctype/server_script/server_script_list.js:18 (version-15)
 msgid "Loving Frappe Framework?"
 msgstr "喜欢 Frappe 框架吗？"
 
@@ -32418,37 +32827,25 @@ msgstr "喜欢 Frappe 框架吗？"
 msgid "Make Attachment Public (by default)"
 msgstr "默认将附件设为公开"
 
-#. Label of a standard navbar item
+#. Label of a standard navbar item (deleted)
 #. Type: Route
 #: frappe/hooks.py
 msgid "Manage Billing"
 msgstr "管理账单"
 
-#: frappe/www/me.html:59
+#: frappe/www/me.html:59 (version-15)
 msgid "Manage your apps"
 msgstr "管理你的应用"
 
-#. Name of a DocType
+#. Name of a DocType  (version-15)
 #: frappe/website/doctype/marketing_campaign/marketing_campaign.json
 msgid "Marketing Campaign"
 msgstr "营销活动"
 
-#. Label of a Int field in DocType 'Web Form'
+#. Label of the max_attachment_size (Int) field in DocType 'Web Form'
 #: frappe/website/doctype/web_form/web_form.json
 msgid "Max attachment size"
 msgstr "最大附件大小"
-
-#. Label of a Small Text field in DocType 'Blog Post'
-#: frappe/website/doctype/blog_post/blog_post.json
-#: frappe/website/doctype/web_page/web_page.js:124
-msgid "Meta Description"
-msgstr "元数据描述"
-
-#. Label of a Attach Image field in DocType 'Blog Post'
-#: frappe/website/doctype/blog_post/blog_post.json
-#: frappe/website/doctype/web_page/web_page.js:131
-msgid "Meta Image"
-msgstr "元数据图片"
 
 #. Label of a Data field in DocType 'Blog Post'
 #: frappe/website/doctype/blog_post/blog_post.json
@@ -32456,12 +32853,12 @@ msgstr "元数据图片"
 msgid "Meta Title"
 msgstr "元数据标题"
 
-#. Label of a Card Break in the Build Workspace
+#. Label of a Card Break in the Build Workspace (deleted)
 #: frappe/core/workspace/build/build.json
 msgid "Models"
 msgstr "模型"
 
-#. Description of the 'Auto Name' (Data) field in DocType 'DocType'
+#. Description of the 'Auto Name' (Data) field in DocType 'DocType' (version-15)
 #: frappe/core/doctype/doctype/doctype.json
 msgid ""
 "Naming Options:\n"
@@ -32472,71 +32869,71 @@ msgstr ""
 "<ol><li><b>field:[fieldname]</b> - 使用指定字段的值作为名称</li><li><b>autoincrement</b> - 使用数据库的自增功能</li><li><b>根据命名序列：</b> - 使用预定义的命名序列。系统中必须存在名为 naming_series 的字段。</li><li><b>提示用户：</b> - 系统会提示用户手动输入名称。</li><li><b>按序列：</b> - 使用指定的前缀和序列号生成名称。例如：PRE.#####</li>
 "<li><b>自定义格式：</b> - 使用以下格式自定义名称：示例-{MM}morewords{fieldname1}-{fieldname2}-{#####}。花括号中的内容会被替换为实际值，包括字段名、日期（DD、MM、YY）和序列号。花括号外的字符可以任意使用。</li></ol>"
 
-#: frappe/desk/doctype/workspace/workspace.py:354
+#: frappe/desk/doctype/workspace/workspace.py:354 (version-15)
 msgid "Need Workspace Manager role to hide/unhide public workspaces"
 msgstr "只有工作区管理员才能隐藏/显示公共工作区"
 
-#: frappe/public/js/frappe/form/toolbar.js:298
+#: frappe/public/js/frappe/form/toolbar.js:298 (version-15)
 msgid "Next Document"
 msgstr "下一个文档"
 
-#: frappe/public/js/frappe/views/workspace/workspace.js:1522
+#: frappe/public/js/frappe/views/workspace/workspace.js:1522 (version-15)
 msgid "No changes made on the page"
 msgstr "页面没有改变"
 
-#: frappe/public/js/frappe/views/workspace/workspace.js:1357
+#: frappe/public/js/frappe/views/workspace/workspace.js:1357 (version-15)
 msgid "One of the child page with name {0} already exist in {1} Section. Please update the name of the child page first before moving"
 msgstr "名称为 {0} 的子页面已经存在于 {1} 区。在移动之前，请先更新子页面的名称"
 
-#: frappe/public/js/frappe/views/workspace/workspace.js:581
+#: frappe/public/js/frappe/views/workspace/workspace.js:581 (version-15)
 msgid "Only Workspace Manager can sort or edit this page"
 msgstr "只有工作区管理员可以排序或编辑此页面"
 
-#. Description of the 'Quick Entry' (Check) field in DocType 'DocType'
+#. Description of the 'Quick Entry' (Check) field in DocType 'DocType' (version-15)
 #: frappe/core/doctype/doctype/doctype.json
 msgid "Open a dialog with mandatory fields to create a new record quickly"
 msgstr "打开一个包含必填字段的对话框，快速创建新记录"
 
-#: frappe/public/js/frappe/views/workspace/workspace.js:1544
+#: frappe/public/js/frappe/views/workspace/workspace.js:1544 (version-15)
 msgid "Page Saved Successfully"
 msgstr "页面保存成功"
 
-#: frappe/public/js/frappe/views/workspace/workspace.js:1344
+#: frappe/public/js/frappe/views/workspace/workspace.js:1344 (version-15)
 msgid "Page with title {0} already exist."
 msgstr "标题为 {0} 的页面已存在。"
 
-#: frappe/core/doctype/user/user.py:1017
+#: frappe/core/doctype/user/user.py:1017 (version-15)
 msgid "Password reset instructions have been sent to your email"
 msgstr "密码重置指引已发送至你的电子邮件"
 
-#: frappe/core/doctype/navbar_settings/navbar_settings.py:43
+#: frappe/core/doctype/navbar_settings/navbar_settings.py:43 (version-15)
 msgid "Please hide the standard navbar items instead of deleting them"
 msgstr "请隐藏标准导航栏项，而不是删除它们"
 
-#. Label of a Card Break in the Website Workspace
+#. Label of a Card Break in the Website Workspace (version-15)
 #: frappe/website/workspace/website/website.json
 msgid "Portal"
 msgstr "门户"
 
-#. Group in Blog Category's connections
+#. Group in Blog Category's connections (deleted)
 #: frappe/website/doctype/blog_category/blog_category.json
 msgid "Posts"
 msgstr "帖子"
 
-#: frappe/public/js/frappe/form/toolbar.js:290
+#: frappe/public/js/frappe/form/toolbar.js:290 (version-15)
 msgid "Previous Document"
 msgstr "上一个文档"
 
-#. Description of the Onboarding Step 'Customize Print Formats'
+#. Description of the Onboarding Step 'Customize Print Formats' (version-15)
 #: frappe/custom/onboarding_step/print_format/print_format.json
 msgid "Print Formats allow you can define looks for documents when printed or converted to PDF. You can also create a custom Print Format using drag-and-drop tools."
 msgstr "打印格式允许你定义文档在打印或转换为 PDF 时的样子。你还可以使用拖放工具创建自定义打印格式。"
 
-#: frappe/www/me.html:66
+#: frappe/www/me.html:66 (version-15)
 msgid "Request Account Deletion"
 msgstr "申请删除帐户"
 
-#: frappe/www/me.html:36
+#: frappe/www/me.html:36 (version-15)
 msgid "Reset the password for your account"
 msgstr "重置帐户密码"
 
@@ -32544,34 +32941,34 @@ msgstr "重置帐户密码"
 msgid "SMS sent successfully"
 msgstr "短信发送成功"
 
-#. Description of the 'Enable Outgoing' (Check) field in DocType 'Email
+#. Description of the 'Enable Outgoing' (Check) field in DocType 'Email (version-15)
 #. Account'
 #: frappe/email/doctype/email_account/email_account.json
 msgid "SMTP Settings for outgoing emails"
 msgstr "发送邮件的 SMTP 设置"
 
-#: frappe/public/js/frappe/list/list_sidebar.html:73
+#: frappe/public/js/frappe/list/list_sidebar.html:73 (version-15)
 msgid "Save Filter"
 msgstr "保存筛选设置"
 
-#: frappe/www/search.py:14
+#: frappe/www/search.py:14 (version-15)
 msgid "Search Results for"
 msgstr "搜索结果"
 
-#. Label of a Dynamic Link field in DocType 'Webhook'
+#. Label of a Dynamic Link field in DocType 'Webhook' (version-15)
 #: frappe/integrations/doctype/webhook/webhook.json
 msgid "Select Document"
 msgstr "选择文档"
 
-#: frappe/integrations/doctype/webhook/webhook.py:133
+#: frappe/integrations/doctype/webhook/webhook.py:133 (version-15)
 msgid "Select a document to check if it meets conditions."
 msgstr "选择一个文档以检查它是否满足条件。"
 
-#: frappe/integrations/doctype/webhook/webhook.py:145
+#: frappe/integrations/doctype/webhook/webhook.py:145 (version-15)
 msgid "Select a document to preview request data"
 msgstr "选择一个文档以预览请求数据"
 
-#: frappe/www/me.html:67
+#: frappe/www/me.html:67 (version-15)
 msgid "Send a request to delete your account"
 msgstr "发送删除你账户的请求"
 
@@ -32580,27 +32977,27 @@ msgstr "发送删除你账户的请求"
 msgid "Set size in MB"
 msgstr "设置大小（MB）"
 
-#. Title of an Onboarding Step
+#. Title of an Onboarding Step (version-15)
 #: frappe/custom/onboarding_step/workflows/workflows.json
 msgid "Setup Approval Workflows"
 msgstr "设置审批工作流"
 
-#. Title of an Onboarding Step
+#. Title of an Onboarding Step (version-15)
 #: frappe/custom/onboarding_step/role_permissions/role_permissions.json
 msgid "Setup Limited Access for a User"
 msgstr "为用户设置有限访问权限"
 
-#. Title of an Onboarding Step
+#. Title of an Onboarding Step (version-15)
 #: frappe/custom/onboarding_step/naming_series/naming_series.json
 msgid "Setup Naming Series"
 msgstr "设置命名序列"
 
-#. Label of a Check field in DocType 'Web Form'
+#. Label of a Check field in DocType 'Web Form' (version-15)
 #: frappe/website/doctype/web_form/web_form.json
 msgid "Show Attachments"
 msgstr "显示附件"
 
-#. Label of a Check field in DocType 'Web Form'
+#. Label of a Check field in DocType 'Web Form' (version-15)
 #: frappe/website/doctype/web_form/web_form.json
 msgid "Show List"
 msgstr "显示列表"
@@ -32611,7 +33008,7 @@ msgstr "显示列表"
 msgid "Specify the domains or origins that are permitted to embed this form. Enter one domain per line (e.g., https://example.com). If no domains are specified, the form can only be embedded on the same origin."
 msgstr "指定允许嵌入此表单的域名或来源。每行输入一个域名（例如：https://example.com）。如果没有指定，则表单只能嵌入到相同来源的网页中。"
 
-#: frappe/core/doctype/server_script/server_script_list.js:20
+#: frappe/core/doctype/server_script/server_script_list.js:20 (version-15)
 msgid "Star us on GitHub"
 msgstr "在 GitHub 上支持我们"
 
@@ -32630,55 +33027,55 @@ msgstr "成功消息"
 msgid "Success title"
 msgstr "成功标题"
 
-#: frappe/core/doctype/data_import/data_import.js:149
+#: frappe/core/doctype/data_import/data_import.js:149 (version-15)
 msgid "Successfully {0} 1 record."
 msgstr "成功{0}1条记录。"
 
-#: frappe/core/doctype/data_import/data_import.js:156
+#: frappe/core/doctype/data_import/data_import.js:156 (version-15)
 msgid "Successfully {0} {1} record out of {2}. Click on Export Errored Rows, fix the errors and import again."
 msgstr "成功 {0} {1} 记录中的 {2} 。点击导出错误行，修复错误后重新导入。"
 
-#: frappe/core/doctype/data_import/data_import.js:161
+#: frappe/core/doctype/data_import/data_import.js:161 (version-15)
 msgid "Successfully {0} {1} records out of {2}. Click on Export Errored Rows, fix the errors and import again."
 msgstr "成功 {0} {1} 记录中的 {2} 。点击导出错误行，修复错误后重新导入。"
 
-#: frappe/core/doctype/data_import/data_import.js:151
+#: frappe/core/doctype/data_import/data_import.js:151 (version-15)
 msgid "Successfully {0} {1} records."
 msgstr "成功 {0} {1} 记录。"
 
-#: frappe/www/404.html:18
+#: frappe/www/404.html:18 (version-15)
 msgid "The page you are looking for has gone missing."
 msgstr "你查找的页面已不存在。"
 
-#: frappe/www/404.html:15
+#: frappe/www/404.html:15 (version-15)
 msgid "There's nothing here"
 msgstr "没有内容"
 
-#: frappe/desk/doctype/workspace/workspace.js:23
+#: frappe/desk/doctype/workspace/workspace.js:23 (version-15)
 msgid "This document allows you to edit limited fields. For all kinds of workspace customization, use the Edit button located on the workspace page"
 msgstr "此文档仅允许编辑有限的字段。要进行所有类型的工作空间自定义，请使用位于工作区页面上的编辑按钮"
 
-#: frappe/www/me.html:51
+#: frappe/www/me.html:51 (version-15)
 msgid "To manage your authorized third party apps"
 msgstr "管理你授权的第三方应用"
 
-#: frappe/public/js/frappe/views/workspace/workspace.js:212
+#: frappe/public/js/frappe/views/workspace/workspace.js:212 (version-15)
 msgid "Toggle Section: {0}"
 msgstr "切换区：{0}"
 
-#: frappe/public/js/frappe/views/workspace/workspace.js:601
+#: frappe/public/js/frappe/views/workspace/workspace.js:601 (version-15)
 msgid "Unhide Workspace"
 msgstr "取消隐藏工作区"
 
-#: frappe/utils/csvutils.py:52
+#: frappe/utils/csvutils.py:52 (version-15)
 msgid "Unknown file encoding. Tried utf-8, windows-1250, windows-1252."
 msgstr "未知的文件编码。尝试了 utf-8、windows-1250、windows-1252。"
 
-#: frappe/public/js/frappe/views/workspace/workspace.js:641
+#: frappe/public/js/frappe/views/workspace/workspace.js:641 (version-15)
 msgid "Update Details"
 msgstr "更新详情"
 
-#. Label of a Tab Break field in DocType 'System Settings'
+#. Label of a Tab Break field in DocType 'System Settings' (version-15)
 #: frappe/core/doctype/system_settings/system_settings.json
 msgid "Updates"
 msgstr "更新"
@@ -32692,41 +33089,41 @@ msgstr "升级计划"
 msgid "Use Number Format from Currency"
 msgstr "使用货币的数字格式"
 
-#: frappe/core/doctype/user_permission/user_permission_list.js:124
+#: frappe/core/doctype/user_permission/user_permission_list.js:124 (version-15)
 msgid "User Permissions created sucessfully"
 msgstr "用户权限创建成功"
 
-#. Label of a shortcut in the Users Workspace
+#. Label of a shortcut in the Users Workspace (version-15)
 #: frappe/core/workspace/users/users.json
 msgid "User Profile"
 msgstr "用户资料"
 
-#: frappe/model/base_document.py:729
+#: frappe/model/base_document.py:729 (version-15)
 msgid "Value missing for"
 msgstr "缺少值"
 
-#: frappe/workflow/doctype/workflow/workflow.js:140
+#: frappe/workflow/doctype/workflow/workflow.js:140 (version-15)
 msgid "Worflow States Don't Exist"
 msgstr "流程状态不存在"
 
-#. Description of the Onboarding Step 'Setup Approval Workflows'
+#. Description of the Onboarding Step 'Setup Approval Workflows' (version-15)
 #: frappe/custom/onboarding_step/workflows/workflows.json
 msgid "Workflows allow you to define custom rules for the approval process of a particular document in ERPNext. You can also set complex Workflow Rules and set approval conditions."
 msgstr "工作流允许你为审批流程定义自定义规则。你还可以设置复杂的工作流规则和审批条件。"
 
-#: frappe/desk/doctype/workspace/workspace.py:293
+#: frappe/desk/doctype/workspace/workspace.py:293 (version-15)
 msgid "Workspace not found"
 msgstr "未找到工作区"
 
-#: frappe/public/js/frappe/views/workspace/workspace.js:1310
+#: frappe/public/js/frappe/views/workspace/workspace.js:1310 (version-15)
 msgid "Workspace {0} Created Successfully"
 msgstr "工作区 {0} 创建成功"
 
-#: frappe/public/js/frappe/views/workspace/workspace.js:939
+#: frappe/public/js/frappe/views/workspace/workspace.js:939 (version-15)
 msgid "Workspace {0} Deleted Successfully"
 msgstr "工作区 {0} 删除成功"
 
-#: frappe/public/js/frappe/views/workspace/workspace.js:717
+#: frappe/public/js/frappe/views/workspace/workspace.js:717 (version-15)
 msgid "Workspace {0} Edited Successfully"
 msgstr "工作区 {0} 编辑成功"
 
@@ -32742,78 +33139,83 @@ msgstr "你需要在 {1} {2} 上具有 「{0}」 权限才能执行此操作。"
 msgid "You need to be Workspace Manager to delete a public workspace."
 msgstr "只有工作区管理员才能删除公共工作区。"
 
-#: frappe/model/rename_doc.py:388
+#: frappe/model/rename_doc.py:401
 msgid "You need write permission on {0} {1} to merge"
 msgstr "需要对 {0} {1} 拥有写权限才能合并"
 
-#: frappe/model/rename_doc.py:383
+#: frappe/model/rename_doc.py:396
 msgid "You need write permission on {0} {1} to rename"
 msgstr "需要对 {0} {1} 拥有写权限才能重命名"
 
-#. Success message of the Module Onboarding 'Website'
+#. Success message of the Module Onboarding 'Website' (version-15)
 #: frappe/website/module_onboarding/website/website.json
 msgid "Your website is all set up!"
 msgstr "你的网站已全部设置完成！"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "adjust"
 msgstr "adjust"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "align-center"
 msgstr "align-center"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "align-justify"
 msgstr "align-justify"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "align-left"
 msgstr "align-left"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "align-right"
 msgstr "align-right"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "arrow-down"
 msgstr "arrow-down"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "arrow-left"
 msgstr "arrow-left"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "arrow-right"
 msgstr "arrow-right"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "arrow-up"
 msgstr "arrow-up"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "asterisk"
 msgstr "asterisk"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "backward"
 msgstr "backward"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "ban-circle"
 msgstr "ban-circle"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "barcode"
+msgstr "barcode"
 
 #. Option for the 'Type' (Select) field in DocType 'DocField'
 #. Option for the 'Field Type' (Select) field in DocType 'Custom Field'
@@ -32824,635 +33226,624 @@ msgstr "ban-circle"
 msgid "Barcode"
 msgstr "Barcode"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "bell"
 msgstr "bell"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "bold"
 msgstr "bold"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "book"
 msgstr "book"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "bookmark"
 msgstr "bookmark"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "briefcase"
 msgstr "briefcase"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "bullhorn"
 msgstr "bullhorn"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "camera"
 msgstr "camera"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "certificate"
 msgstr "certificate"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "check"
 msgstr "check"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "chevron-down"
 msgstr "chevron-down"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "chevron-left"
 msgstr "chevron-left"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "chevron-right"
 msgstr "chevron-right"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "chevron-up"
 msgstr "chevron-up"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "circle-arrow-down"
 msgstr "circle-arrow-down"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "circle-arrow-left"
 msgstr "circle-arrow-left"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "circle-arrow-right"
 msgstr "circle-arrow-right"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "circle-arrow-up"
 msgstr "circle-arrow-up"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "cog"
 msgstr "cog"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "comment"
 msgstr "comment"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "download"
 msgstr "download"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "download-alt"
 msgstr "download-alt"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "edit"
 msgstr "edit"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "eject"
 msgstr "eject"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "envelope"
 msgstr "envelope"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "exclamation-sign"
 msgstr "exclamation-sign"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "eye-close"
 msgstr "eye-close"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "eye-open"
 msgstr "eye-open"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "facetime-video"
 msgstr "facetime-video"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "fast-backward"
 msgstr "fast-backward"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "fast-forward"
 msgstr "fast-forward"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "file"
 msgstr "file"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "film"
 msgstr "film"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "filter"
 msgstr "filter"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "fire"
 msgstr "fire"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "flag"
 msgstr "flag"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "folder-close"
 msgstr "folder-close"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "folder-open"
 msgstr "folder-open"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "font"
 msgstr "font"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "forward"
 msgstr "forward"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "fullscreen"
 msgstr "fullscreen"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "gift"
 msgstr "gift"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "glass"
 msgstr "glass"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "globe"
 msgstr "globe"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "hand-down"
 msgstr "hand-down"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "hand-left"
 msgstr "hand-left"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "hand-right"
 msgstr "hand-right"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "hand-up"
 msgstr "hand-up"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "hdd"
 msgstr "hdd"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "headphones"
 msgstr "headphones"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "heart"
 msgstr "hear"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "home"
 msgstr "home"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "inbox"
 msgstr "inbox"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "indent-left"
 msgstr "indent-left"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "indent-right"
 msgstr "indent-right"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "info-sign"
 msgstr "info-sign"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "italic"
 msgstr "italic"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "leaf"
 msgstr "leaf"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "list-alt"
 msgstr "list-alt"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "lock"
 msgstr "lock"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "magnet"
 msgstr "magnet"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "map-marker"
 msgstr "map-marker"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "minus"
 msgstr "minus"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "minus-sign"
 msgstr "minus-sign"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "move"
 msgstr "move"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "music"
 msgstr "music"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "off"
 msgstr "off"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "ok"
 msgstr "ok"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "ok-circle"
 msgstr "ok-circle"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "ok-sign"
 msgstr "ok-sign"
 
-#: frappe/utils/data.py:1373
+#: frappe/utils/data.py:1373 (version-15)
 msgid "only."
 msgstr "仅此。"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "pause"
 msgstr "pause"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "pencil"
 msgstr "pencil"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "picture"
 msgstr "picture"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "plane"
 msgstr "plane"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "play"
 msgstr "play"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "play-circle"
 msgstr "play-circle"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "plus"
 msgstr "plus"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "plus-sign"
 msgstr "plus-sign"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "qrcode"
 msgstr "qrcode"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "question-sign"
 msgstr "question-sign"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "random"
 msgstr "random"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "refresh"
 msgstr "refresh"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "remove"
 msgstr "remove"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "remove-circle"
 msgstr "remove-circle"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "remove-sign"
 msgstr "remove-sign"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "repeat"
 msgstr "repeat"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "resize-full"
 msgstr "resize-full"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "resize-horizontal"
 msgstr "resize-horizontal"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "resize-small"
 msgstr "resize-small"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "resize-vertical"
 msgstr "resize-vertical"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "retweet"
 msgstr "retweet"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "road"
 msgstr "road"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "screenshot"
 msgstr "screenshot"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "search"
 msgstr "search"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "share-alt"
 msgstr "share-alt"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "shopping-cart"
 msgstr "shopping-car"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "signal"
 msgstr "signal"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "star"
 msgstr "star"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "star-empty"
 msgstr "star-empty"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "step-backward"
 msgstr "step-backward"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "step-forward"
 msgstr "step-forward"
+
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
+#: frappe/workflow/doctype/workflow_state/workflow_state.json
+msgid "stop"
+msgstr "stop"
 
 #: frappe/core/doctype/recorder/recorder_list.js:87
 msgid "Stop"
 msgstr "停止"
 
-#. Name of a DocType
-#: frappe/desk/doctype/tag/tag.json
-msgid "Tag"
-msgstr "标签"
-
-#: frappe/model/meta.py:51
-#: frappe/public/js/frappe/form/templates/form_sidebar.html:100
-#: frappe/public/js/frappe/list/bulk_operations.js:430
-#: frappe/public/js/frappe/list/list_sidebar.html:50
-#: frappe/public/js/frappe/list/list_sidebar.js:228
-#: frappe/public/js/frappe/model/meta.js:204
-#: frappe/public/js/frappe/model/model.js:133
-#: frappe/public/js/frappe/ui/toolbar/awesome_bar.js:171
-msgid "Tags"
-msgstr "标签"
-
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "tasks"
 msgstr "tasks"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "text-height"
 msgstr "text-height"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "text-width"
 msgstr "text-width"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "th"
 msgstr "th"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "th-large"
 msgstr "th-large"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "th-list"
 msgstr "th-list"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "thumbs-down"
 msgstr "thumbs-down"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "thumbs-up"
 msgstr "thumbs-up"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "time"
 msgstr "time"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "tint"
 msgstr "tint"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "trash"
 msgstr "trash"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "upload"
 msgstr "upload"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "user"
 msgstr "user"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "volume-down"
 msgstr "volume-down"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "volume-off"
 msgstr "volume-off"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "volume-up"
 msgstr "volume-up"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "warning-sign"
 msgstr "warning-sign"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "wrench"
 msgstr "wrench"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "zoom-in"
 msgstr "zoom-in"
 
-#. Option for the 'Icon' (Select) field in DocType 'Workflow State'
+#. Option for the 'Icon' (Select) field in DocType 'Workflow State' (deleted)
 #: frappe/workflow/doctype/workflow_state/workflow_state.json
 msgid "zoom-out"
 msgstr "zoom-out"
 
-#: frappe/public/js/frappe/utils/utils.js:941
+#: frappe/public/js/frappe/utils/utils.js:941 (version-15)
 msgid "{0} Modules"
 msgstr "{0} 个模块"
 
-#: frappe/core/doctype/language/language.py:43
+#: frappe/core/doctype/language/language.py:43 (version-15)
 msgid ""
 "{0} must begin and end with a letter and can only contain letters,\n"
 "\t\t\t\thyphen or underscore."
@@ -33464,7 +33855,7 @@ msgstr ""
 msgid "{0}/{1} complete | Please leave this tab open until completion."
 msgstr "{0}/{1} 完成 | 请保持此标签页开启直到完成。"
 
-#. Count format of shortcut in the Website Workspace
+#. Count format of shortcut in the Website Workspace (version-15)
 #: frappe/website/workspace/website/website.json
 msgid "{} Active"
 msgstr "{} 活跃"
